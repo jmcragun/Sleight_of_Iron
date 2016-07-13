@@ -1,10 +1,20 @@
-
+@font-face {
+	font-family: 'Lunchds';
+	src: url('LunchtimeDoublySoReg.eot');
+	src: url('LunchtimeDoublySoReg.eot?#iefix') format('embedded-opentype'),
+		url('LunchtimeDoublySoReg.woff') format('woff'),
+		url('LunchtimeDoublySoReg.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 body {
 	background-color: black;
 }
 h1 {
 	color: white;
 	text-align: center;
+	font-family: 'Lunchds';
+	font-weight: normal;
 }
 #next {
 	background-color: black;
@@ -13,4 +23,5 @@ h1 {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	font-family: 'Lunchds';
 }
