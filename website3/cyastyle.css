@@ -20,14 +20,31 @@ h1 {
 	background-color: black;
 	color: #cfcfcf;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
 	text-align: center;
 	font-family: 'Lunchds';
 	position: absolute;
 	top: 30%;
-	left: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 }
 #next:hover {
 	color: white;
+}
+#whatsYourName {
+	background-color: #424242;
+	width: 500px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	height: 45px;
+	font-family: 'Lunchds';
+	color: #cfcfcf;
+	text-align: center;
+	font-size: 22px;
+}
+input:focus {
+	outline: none;
 }
