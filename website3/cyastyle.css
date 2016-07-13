@@ -11,17 +11,23 @@ body {
 	background-color: black;
 }
 h1 {
-	color: white;
+	color: #cfcfcf;
 	text-align: center;
 	font-family: 'Lunchds';
 	font-weight: normal;
 }
 #next {
 	background-color: black;
-	color: white;
+	color: #cfcfcf;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 	font-family: 'Lunchds';
+	position: absolute;
+	top: 30%;
+	left: 50%;
+}
+#next:hover {
+	color: white;
 }
