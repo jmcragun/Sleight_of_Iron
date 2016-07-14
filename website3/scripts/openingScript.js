@@ -14,6 +14,55 @@ $(document).ready(function () {
 			} else {
 				var nameAccepted = confirm("So, yer name is " + userName + "?");
 				if (nameAccepted == true) {
+					/////////////////////////////
+					/////////////////////////////
+					//SETTING UP CHARACTER DATA//
+					/////////////////////////////
+					/////////////////////////////
+					var characterdata = {
+						/////////////
+						//Character//
+						/////////////
+						"userName" : userName,
+						"age" : undefined,
+						"gender" : undefined,
+						"race" : undefined,
+						"eye_color" : undefined,
+						"hair_color" : undefined,
+						//////////////
+						//Attributes//
+						//////////////
+						"strength" : undefined,
+						"agility" : undefined,
+						"dexterity" : undefined,
+						"wisdom" : undefined,
+						"faith" : undefined,
+						"endurance" : undefined,
+						"intelligence" : undefined,
+						"luck" : undefined,
+						"mysterium" : undefined,
+						"personality" : undefined,
+						//////////
+						//Skills//
+						//////////
+						"deception" : undefined,
+						"insight" : undefined,
+						"intimidation" :undefined,
+						"investigation" : undefined,
+						"perception" : undefined,
+						"persuasion" : undefined,
+						"sleight_of_hand" : undefined,
+						"stealth" : undefined,
+						"survival" : undefined,
+						/////////////
+						//Inventory//
+						/////////////
+						"main_hand" : undefined,
+						"off_hand" : undefined,
+						"currency" : undefined						
+					};
+					// Put the object into storage
+					localStorage.setItem('characterdata.js', JSON.stringify(characterdata));
 					$("#greeting").fadeOut(1000);
 					$("#whatsYourName").fadeOut(1000);
 					var statement1 = "<p>Well then " + userName + ", a world in turmoil rests at your feet. Will you save it, or shall you destroy it?</p>";

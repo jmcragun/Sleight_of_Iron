@@ -1,0 +1,5 @@
+// Put the object into storage
+localStorage.setItem('characterdata.js', JSON.stringify(characterdata));
+
+// Retrieve the object from storage
+var retrievedObject = localStorage.getItem('characterdata.js');
