@@ -17,7 +17,7 @@ $(document).ready(function () {
 				if (nameAccepted == true) {
 					$("#greeting").fadeOut(1000);
 					$("#whatsYourName").fadeOut(1000);
-					$("<p>Well then " + userName + ", a world in turmoil rests at your feet. Will you save it, or shall you destroy it?</p>").hide().appendTo("body").fadeIn(1000);
+					$("<p>Well then " + userName + ", a world in turmoil rests at your feet. Will you save it, or shall you destroy it?</p>").hide().delay(1000).appendTo("body").fadeIn(1000);
 					nextCounter++;
 				}
 			}
