@@ -16,6 +16,12 @@ h1 {
 	font-family: 'Lunchds';
 	font-weight: normal;
 }
+p {
+	font-family: 'Lunchds';
+	color: #cfcfcf;
+	text-align: center;
+	font-size: 18px;
+}
 #next {
 	background-color: black;
 	color: #cfcfcf;
