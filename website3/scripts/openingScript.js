@@ -51,7 +51,7 @@ $(document).ready(function () {
 						"investigation" : undefined,
 						"perception" : undefined,
 						"persuasion" : undefined,
-						"sleight_of_hand" : undefined,
+						"pickpocket" : undefined,
 						"stealth" : undefined,
 						"survival" : undefined,
 						/////////////
