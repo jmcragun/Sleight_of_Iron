@@ -23,7 +23,7 @@ p {
 	font-size: 18px;
 	margin-top: 5%;
 }
-#next {
+.next {
 	background-color: black;
 	color: #cfcfcf;
 	display: block;
@@ -37,7 +37,7 @@ p {
 	right: 0;
 	cursor: pointer;
 }
-#next:hover {
+.next:hover {
 	color: white;
 }
 #whatsYourName {
@@ -78,4 +78,18 @@ ul li {
 ul li:hover {
 	color: white;
 	cursor: pointer;
+}
+.return {
+	background-color: black;
+	color: #cfcfcf;
+	display: block;
+	text-align: center;
+	font-family: 'Lunchds';
+	position: absolute;
+	left: 0;
+	right: 0;
+	cursor: pointer;	
+}
+.return:hover {
+	color: white;
 }
