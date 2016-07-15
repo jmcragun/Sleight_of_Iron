@@ -2,7 +2,7 @@ var nextCounter = 0;
 $(document).ready(function () {
 	$("h1").hide().delay(500).fadeIn(1000);
 	$(".assistant").hide().delay(500).fadeIn(1000);
-	$(".attributeList").hide().delay(500).fadeIn(1000);
+	$("#attributeList").hide().delay(500).fadeIn(1000);
 	$(".return").hide();
 	$(".next").hide();
 	$("li").click(function () {
