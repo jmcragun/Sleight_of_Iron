@@ -93,3 +93,7 @@ ul li:hover {
 .return:hover {
 	color: white;
 }
+.active:hover {
+	color:#cfcfcf;
+	cursor: text;
+}
