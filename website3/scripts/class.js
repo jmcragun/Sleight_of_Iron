@@ -15,7 +15,7 @@ $(document).ready(function () {
 	});
 	$(".return").click(function () {
 		$("li").children().fadeOut(500);
-		$(".inactive").fadeIn(500);
+		$(".inactive").delay(500).fadeIn(500);
 		$("li").removeClass("inactive");
 		$("li").removeClass("active");
 		$(".return").fadeOut(500);
