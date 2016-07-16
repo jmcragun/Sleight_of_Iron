@@ -117,7 +117,7 @@ $(document).ready(function () {
 			$(statement2).hide().appendTo("body").fadeIn(1000);
 			nextCounter++;
 		} else if (nextCounter == 3) {
-			location.href='./storypages/classselector.html'
+			location.href='../storypages/classselector.html'
 		}
 	});
 });
