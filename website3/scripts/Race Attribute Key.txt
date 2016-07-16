@@ -1,0 +1,4 @@
+Human- +5%xp 
+Elf- +1 mys; +1 dex; -1 end; -1 str 
+Dwarf- +1 str; +1 int; -1 mys; -1 agi;
+Orc- +2 str; +1 end; -1 int; -1 wis; -1 luck

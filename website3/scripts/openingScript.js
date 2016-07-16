@@ -2,6 +2,7 @@ var nextCounter = 0;
 var userName = "";
 var nameAccepted = false;
 $(document).ready(function () {
+	e.preventDefault();
 	$("#whatsYourName").hide();
 	$(".next").click(function () {
 		if (nextCounter == 0) {
@@ -19,88 +20,76 @@ $(document).ready(function () {
 					//SETTING UP CHARACTER DATA//
 					/////////////////////////////
 					/////////////////////////////
-					var characterdata = {
-						/////////////
-						//Character//
-						/////////////
-						"userName" : userName,
-						"Health": 50,
-						"Stamina": 50,
-						"Mana": 50,
-						"gender" : undefined,
-						"race" : undefined,
-						"eye_color" : undefined,
-						"hair_color" : undefined,
-						//////////////
-						//Attributes//
-						//////////////
-						"strength" : 1,
-						"agility" : 1,
-						"dexterity" : 1,
-						"wisdom" : 1,
-						"faith" : 1,
-						"endurance" : 1,
-						"intelligence" : 1,
-						"luck" : 1,
-						"mysterium" : 1,
-						"personality" : 1,
-						//////////
-						//Skills//
-						//////////						
-						"liar" : 0,
-						"intimidation" :0,
-						"perception" : 0,
-						"persuasion" : 0,
-						"sleight_of_hand" : 0,
-						"stealth" : 0,
-						"survival" : 0,
-						"blade" : 0,
-						"blunt" : 0, 
-						"one_handed" : 0,
-						"two_handed" : 0,
-						"light_armor" : 0,
-						"heavy_armor" : 0,
-						"block": 0,
-						"dodge" : 0,
-						"brawler" : 0,
-						"archery" : 0,
-						"marksman" : 0,
-						"throwing" : 0,
-						"divination" : 0,
-						"restoration" : 0,
-						"covenant" : 0,
-						"pyromancy" : 0,
-						"hydromany" : 0,
-						"aeromancy" : 0,
-						"geomancy" : 0,
-						"electromancy" : 0,
-						"chronomancy" : 0,
-						"skeptomancy" : 0,
-						"necromancy" : 0,
-						"conjuration" : 0,
-						"fysomancy" : 0,
-						"arcanomancy" : 0, //dark magic
-						"fitness" : { "climbing" : 0, "jumping" : 0, "swimming" : 0, },
-						"armorer" : 0,
-						"weapon_master" : 0,
-						"alchemy" : 0,
-						"engineering" : 0,
-						"tactics" : 0,
-						"mapping" : 0,
-						"tracking" : 0,
-						"looter" : 0,
-						"barter" : 0,
-						"leadership" : 0,
-						"actor" : 0,
-						/////////////
-						//Inventory//
-						/////////////
-						"main_hand" : undefined,
-						"off_hand" : undefined,
-						"gold" : 0					
-					};
+
 					// Put the object into storage
-					localStorage.setItem('characterdata.js', JSON.stringify(characterdata));
+					localStorage.setItem("user_Name", userName);
+					localStorage.setItem("Health", 50);
+					localStorage.setItem("Stamina", 50);
+					localStorage.setItem("Mana", 50);	
+					localStorage.setItem("gender", undefined);
+					localStorage.setItem("race", undefined);
+					localStorage.setItem("eye_color", undefined);
+					localStorage.setItem("hair_color", undefined);
+					localStorage.setItem("strength", 1);
+					localStorage.setItem("agility", 1);	
+					localStorage.setItem("dexterity", 1);
+					localStorage.setItem("faith", 1);
+					localStorage.setItem("endurance", 1);
+					localStorage.setItem("intelligence", 1);
+					localStorage.setItem("luck", 1);
+					localStorage.setItem("mysterium", 1);	
+					localStorage.setItem("personality", 1);
+					localStorage.setItem("liar", 0);
+					localStorage.setItem("intimidation", 0);
+					localStorage.setItem("perception", 0);
+					localStorage.setItem("persuasion", 0);
+					localStorage.setItem("sleight_of_hand", 0);	
+					localStorage.setItem("stealth", 0);
+					localStorage.setItem("stealth", 0);
+					localStorage.setItem("survival", 0);
+					localStorage.setItem("blade", 0);
+					localStorage.setItem("blunt", 0);
+					localStorage.setItem("one_handed", 0);	
+					localStorage.setItem("two_handed", 0);
+					localStorage.setItem("light_armor", 0);
+					localStorage.setItem("heavy_armor", 0);
+					localStorage.setItem("block", 0);
+					localStorage.setItem("dodge", 0);
+					localStorage.setItem("brawler", 0);	
+					localStorage.setItem("archery", 0);
+					localStorage.setItem("marksman", 0);
+					localStorage.setItem("throwing", 0);
+					localStorage.setItem("divination", 0);
+					localStorage.setItem("restoration", 0);
+					localStorage.setItem("covenant", 0);	
+					localStorage.setItem("pyromancy", 0);
+					localStorage.setItem("hydromany", 0);
+					localStorage.setItem("aeromancy", 0);
+					localStorage.setItem("geomancy", 0);
+					localStorage.setItem("electromancy", 0);
+					localStorage.setItem("chronomancy", 0);	
+					localStorage.setItem("skeptomancy", 0);
+					localStorage.setItem("necromancy", 0);
+					localStorage.setItem("conjuration", 0);
+					localStorage.setItem("fysomancy", 0);
+					localStorage.setItem("arcanomancy", 0);
+					localStorage.setItem("climbing", 0);	
+					localStorage.setItem("jumping", 0);
+					localStorage.setItem("swimming", 0);
+					localStorage.setItem("armorer", 0);
+					localStorage.setItem("weapon_master", 0);
+					localStorage.setItem("alchemy", 0);
+					localStorage.setItem("engineering", 0);	
+					localStorage.setItem("tactics", 0);
+					localStorage.setItem("mapping", 0);
+					localStorage.setItem("tracking", 0);
+					localStorage.setItem("looter", 0);
+					localStorage.setItem("barter", 0);
+					localStorage.setItem("leadership", 0);	
+					localStorage.setItem("actor", 0);
+					localStorage.setItem("main_hand", undefined);
+					localStorage.setItem("off_hand", undefined);
+					localStorage.setItem("gold", 0);	
 					$("#greeting").fadeOut(1000);
 					$("#whatsYourName").fadeOut(1000);
 					var statement1 = "<p>Well then " + userName + ", a world in turmoil rests at your feet. Will you save it, or shall you destroy it?</p>";
