@@ -2,6 +2,7 @@ var nextCounter = 0;
 var userName = "";
 var nameAccepted = false;
 $(document).ready(function () {
+	e.preventDefault();
 	$("#whatsYourName").hide();
 	$(".next").click(function () {
 		if (nextCounter == 0) {
