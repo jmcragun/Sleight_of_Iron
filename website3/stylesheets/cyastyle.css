@@ -55,13 +55,6 @@ p {
 input:focus {
 	outline: none;
 }
-.assistant {
-	font-family: 'Lunchds';
-	color: #cfcfcf;
-	text-align: center;
-	font-size: 18px;
-	margin-top: 2%;
-}
 ul {
 	list-style-type: none;
 	margin-top: 5%;
@@ -77,22 +70,4 @@ ul li {
 ul li:hover {
 	color: white;
 	cursor: pointer;
-}
-.return {
-	background-color: black;
-	color: #cfcfcf;
-	display: block;
-	text-align: center;
-	font-family: 'Lunchds';
-	position: absolute;
-	left: 0;
-	right: 0;
-	cursor: pointer;	
-}
-.return:hover {
-	color: white;
-}
-.active:hover {
-	color:#cfcfcf;
-	cursor: text;
 }
