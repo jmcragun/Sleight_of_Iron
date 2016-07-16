@@ -47,10 +47,8 @@ $(document).ready(function () {
 						//////////
 						//Skills//
 						//////////						
-						"deception" : 0,
-						"insight" : 0,
+						"liar" : 0,
 						"intimidation" :0,
-						"investigation" : 0,
 						"perception" : 0,
 						"persuasion" : 0,
 						"sleight_of_hand" : 0,
@@ -71,14 +69,13 @@ $(document).ready(function () {
 						"divination" : 0,
 						"restoration" : 0,
 						"covenant" : 0,
-						"magic_affinity" : 0,
 						"pyromancy" : 0,
 						"hydromany" : 0,
 						"aeromancy" : 0,
 						"geomancy" : 0,
 						"electromancy" : 0,
 						"chronomancy" : 0,
-						"illusion" : 0,
+						"skeptomancy" : 0,
 						"necromancy" : 0,
 						"conjuration" : 0,
 						"fysomancy" : 0,
