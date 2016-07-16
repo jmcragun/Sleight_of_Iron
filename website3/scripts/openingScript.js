@@ -34,6 +34,19 @@ $(document).ready(function () {
 						//////////////
 						//Attributes//
 						//////////////
+						"strength" : 1,
+						"agility" : 1,
+						"dexterity" : 1,
+						"wisdom" : 1,
+						"faith" : 1,
+						"endurance" : 1,
+						"intelligence" : 1,
+						"luck" : 1,
+						"mysterium" : 1,
+						"personality" : 1,
+						//////////
+						//Skills//
+						//////////						
 						"deception" : 0,
 						"insight" : 0,
 						"intimidation" :0,
