@@ -6,7 +6,17 @@ $(document).ready(function () {
 	$("#totalAttrPnts").hide().delay(500).fadeIn(1000);
 	$(".return").hide();
 	$(".next").hide();
-	$("ul#attributeList li").children().hide();
+	$("ul#attributeList li").hide();
+	$(".unlockable").hide();
+	$("ul#raceList li").children().hide();
+	$("ul#raceList").hide().delay(500).fadeIn(1000);
+	$("ul#raceList li").click(function () {
+		$(this).siblings().not(".unlockable").addClass("inactive");
+		$(this).addClass("active");
+		$(".inactive").fadeOut(500);
+		$(".return").delay(500).fadeIn(500);
+		$(this).children().delay(500).fadeIn(500);
+	});
 	$("ul#attributeList li").click(function () {
 		$(this).siblings().addClass("inactive");
 		$(this).addClass("active");

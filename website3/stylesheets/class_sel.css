@@ -74,3 +74,39 @@ div:hover {
 	position: absolute;
 	left: 81%;
 }
+#selectHuman {
+	color: #FFDF00;
+	margin-top: 25px;
+	font-size: 24px;
+}
+#selectHuman:hover {
+	cursor: pointer;
+	color: #CFB53B;
+}
+#selectElf {
+	color: #FFDF00;
+	margin-top: 25px;
+	font-size: 24px;
+}
+#selectElf:hover {
+	cursor: pointer;
+	color: #CFB53B;
+}
+#selectDwarf {
+	color: #FFDF00;
+	margin-top: 25px;
+	font-size: 24px;
+}
+#selectDwarf:hover {
+	cursor: pointer;
+	color: #CFB53B;
+}
+#selectOrc {
+	color: #FFDF00;
+	margin-top: 25px;
+	font-size: 24px;
+}
+#selectOrc:hover {
+	cursor: pointer;
+	color: #CFB53B;
+}
