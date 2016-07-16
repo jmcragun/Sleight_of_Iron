@@ -5,7 +5,7 @@ $(document).ready(function () {
 	$("#attributeList").hide().delay(500).fadeIn(1000);
 	$(".return").hide();
 	$(".next").hide();
-	$("ul#attributeList li p").hide();
+	$("ul#attributeList li").children().hide();
 	$("ul#attributeList li").click(function () {
 		$(this).siblings().addClass("inactive");
 		$(this).addClass("active");

@@ -24,7 +24,9 @@ $(document).ready(function () {
 						//Character//
 						/////////////
 						"userName" : userName,
-						"age" : undefined,
+						"Health": 50,
+						"Stamina": 50,
+						"Mana": 50,
 						"gender" : undefined,
 						"race" : undefined,
 						"eye_color" : undefined,
@@ -32,34 +34,33 @@ $(document).ready(function () {
 						//////////////
 						//Attributes//
 						//////////////
-						"strength" : undefined,
-						"agility" : undefined,
-						"dexterity" : undefined,
-						"wisdom" : undefined,
-						"faith" : undefined,
-						"endurance" : undefined,
-						"intelligence" : undefined,
-						"luck" : undefined,
-						"mysterium" : undefined,
-						"personality" : undefined,
+						"strength" : 1,
+						"agility" : 1,
+						"dexterity" : 1,
+						"wisdom" : 1,
+						"faith" : 1,
+						"endurance" : 1,
+						"intelligence" : 1,
+						"luck" : 1,
+						"mysterium" : 1,
+						"personality" : 1,
 						//////////
 						//Skills//
 						//////////
-						"deception" : undefined,
-						"insight" : undefined,
-						"intimidation" :undefined,
-						"investigation" : undefined,
-						"perception" : undefined,
-						"persuasion" : undefined,
-						"pickpocket" : undefined,
-						"stealth" : undefined,
-						"survival" : undefined,
+						"liar" : 0,
+						"intimidation" : 0,
+						"tracking" : 0,
+						"perception" : 0,
+						"persuasion" : 0,
+						"pickpocket" : 0,
+						"stealth" : 0,
+						"survivalism" : 0,
 						/////////////
 						//Inventory//
 						/////////////
 						"main_hand" : undefined,
 						"off_hand" : undefined,
-						"currency" : undefined						
+						"gold" : 0					
 					};
 					// Put the object into storage
 					localStorage.setItem('characterdata.js', JSON.stringify(characterdata));
