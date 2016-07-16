@@ -31,4 +31,28 @@ $(document).ready(function () {
 		$("li").removeClass("active");
 		$(".return").fadeOut(500);
 	});
+	$("#selectHuman").click(function () {
+		var acceptHuman = confirm("Do you truly wish to walk the sunken path as a human?");
+		if (acceptHuman == true) {
+			
+		}
+	});
+	$("#selectElf").click(function () {
+		var acceptElf = confirm("Do you truly wish to walk the sunken path as an elf?");
+		if (acceptElf == true) {
+			
+		}
+	});
+	$("#selectDwarf").click(function () {
+		var acceptDwarf = confirm("Do you truly wish to walk the sunken path as a dwarf?");
+		if (acceptDwarf == true) {
+			
+		}
+	});
+	$("#selectOrc").click(function () {
+		var acceptOrc = confirm("Do you truly wish to walk the sunken path as an orc?");
+		if (acceptOrc == true) {
+			
+		}
+	});
 });
