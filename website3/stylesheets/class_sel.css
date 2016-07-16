@@ -57,3 +57,7 @@ ul li:hover {
 	color:#cfcfcf;
 	cursor: text;
 }
+div:hover {
+	color:white;
+	cursor:pointer;
+}
