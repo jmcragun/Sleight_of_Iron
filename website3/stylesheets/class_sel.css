@@ -1,0 +1,59 @@
+@font-face {
+	font-family: 'Lunchds';
+	src: url('../LunchtimeDoublySoReg.eot');
+	src: url('../LunchtimeDoublySoReg.eot?#iefix') format('embedded-opentype'),
+		url('../LunchtimeDoublySoReg.woff') format('woff'),
+		url('../LunchtimeDoublySoReg.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+	background-color: black;
+}
+h1 {
+	color: #cfcfcf;
+	text-align: center;
+	font-family: 'Lunchds';
+	font-weight: normal;
+}
+.assistant {
+	font-family: 'Lunchds';
+	color: #cfcfcf;
+	text-align: center;
+	font-size: 18px;
+	margin-top: 2%;
+}
+ul {
+	list-style-type: none;
+	margin-top: 5%;
+	padding: 0;
+}
+ul li {
+	font-family: 'Lunchds';
+	color: #cfcfcf;
+	font-size: 18px;
+	margin-bottom: 12px;
+	text-align: center;
+}
+ul li:hover {
+	color: white;
+	cursor: pointer;
+}
+.return {
+	background-color: black;
+	color: #cfcfcf;
+	display: block;
+	text-align: center;
+	font-family: 'Lunchds';
+	position: absolute;
+	left: 0;
+	right: 0;
+	cursor: pointer;	
+}
+.return:hover {
+	color: white;
+}
+.active:hover {
+	color:#cfcfcf;
+	cursor: text;
+}
