@@ -11,6 +11,8 @@ body {
 	background-color: black;
 }
 h1 {
+	width: 225px;
+	margin: 0 auto;
 	color: #cfcfcf;
 	text-align: center;
 	font-family: 'Lunchds';
@@ -60,4 +62,15 @@ ul li:hover {
 div:hover {
 	color:white;
 	cursor:pointer;
+}
+.header {
+	cursor: pointer;
+}
+#totalAttrPnts {
+	float: right;
+	background-color: red;
+	width: 350px;
+	height: 150px;
+	position: absolute;
+	left: 81%;
 }
