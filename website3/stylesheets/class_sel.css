@@ -68,11 +68,12 @@ div:hover {
 }
 #totalAttrPnts {
 	float: right;
-	background-color: red;
+	background-color: black;
 	width: 350px;
 	height: 150px;
 	position: absolute;
 	left: 81%;
+	z-index: -1;
 }
 #selectHuman {
 	color: #FFDF00;

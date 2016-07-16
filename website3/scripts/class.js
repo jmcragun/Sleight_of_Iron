@@ -34,25 +34,45 @@ $(document).ready(function () {
 	$("#selectHuman").click(function () {
 		var acceptHuman = confirm("Do you truly wish to walk the sunken path as a human?");
 		if (acceptHuman == true) {
-			
+			$("li").children().fadeOut(500);
+			$("li").removeClass("inactive");
+			$("li").removeClass("active");
+			$("#raceList").fadeOut(500);
+			$(".return").fadeOut(500);
+			return false;
 		}
 	});
 	$("#selectElf").click(function () {
 		var acceptElf = confirm("Do you truly wish to walk the sunken path as an elf?");
 		if (acceptElf == true) {
-			
+			$("li").children().fadeOut(500);
+			$("li").removeClass("inactive");
+			$("li").removeClass("active");
+			$(".return").fadeOut(500);
+			$("#raceList").fadeOut(500);
+			return false;
 		}
 	});
 	$("#selectDwarf").click(function () {
 		var acceptDwarf = confirm("Do you truly wish to walk the sunken path as a dwarf?");
 		if (acceptDwarf == true) {
-			
+			$("li").children().fadeOut(500);
+			$("li").removeClass("inactive");
+			$("li").removeClass("active");
+			$(".return").fadeOut(500);
+			$("#raceList").fadeOut(500);
+			return false;
 		}
 	});
 	$("#selectOrc").click(function () {
 		var acceptOrc = confirm("Do you truly wish to walk the sunken path as an orc?");
 		if (acceptOrc == true) {
-			
+			$("li").children().fadeOut(500);
+			$("li").removeClass("inactive");
+			$("li").removeClass("active");
+			$(".return").fadeOut(500);
+			$("#raceList").fadeOut(500);
+			return false;
 		}
 	});
 });
