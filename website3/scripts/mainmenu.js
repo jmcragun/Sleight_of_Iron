@@ -5,4 +5,10 @@ $(document).ready(function () {
 			location.href='./storypages/newgame.html'
 		}
 	});
+	$("#quit").click(function () {
+		var acceptQuit = confirm("Are you sure you want to quit?");
+		if (acceptQuit == true) {
+			window.close();
+		}
+	});
 });
