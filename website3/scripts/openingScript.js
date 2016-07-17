@@ -2,7 +2,9 @@ var nextCounter = 0;
 var userName = "";
 var nameAccepted = false;
 $(document).ready(function () {
-	e.preventDefault();
+	$(function() {
+		$("form").submit(function() { return false; });
+	});
 	$("#whatsYourName").hide();
 	$(".next").click(function () {
 		if (nextCounter == 0) {
