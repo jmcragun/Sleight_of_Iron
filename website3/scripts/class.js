@@ -1,3 +1,12 @@
+localStorage.getItem('strength');
+localStorage.getItem('agility');
+localStorage.getItem('dexterity');
+localStorage.getItem('faith');
+localStorage.getItem('endurance');
+localStorage.getItem('intelligence');
+localStorage.getItem('luck');
+localStorage.getItem('mysterium');
+localStorage.getItem('personality');
 var nextCounter = 0;
 $(document).ready(function () {
 	$("#firstq").hide().delay(500).fadeIn(1000);
@@ -50,6 +59,10 @@ $(document).ready(function () {
 	$("#selectElf").click(function () {
 		var acceptElf = confirm("Do you truly wish to walk the sunken path as an elf?");
 		if (acceptElf == true) {
+			localStorage.mysterium = Number(localStorage.mysterium)+1;
+			localStorage.dexterity = Number(localStorage.dexterity)+1;
+			localStorage.endurance = Number(localStorage.endurance)-1;
+			localStorage.strength = Number(localStorage.strength)-1;
 			$("li").children().fadeOut(500);
 			$("li").removeClass("inactive");
 			$("li").removeClass("active");
@@ -65,6 +78,10 @@ $(document).ready(function () {
 	$("#selectDwarf").click(function () {
 		var acceptDwarf = confirm("Do you truly wish to walk the sunken path as a dwarf?");
 		if (acceptDwarf == true) {
+			localStorage.strength = Number(localStorage.strength)+1;
+			localStorage.intelligence = Number(localStorage.intelligence)+1;
+			localStorage.mysterium = Number(localStorage.mysterium)-1;
+			localStorage.agility = Number(localStorage.agility)-1;
 			$("li").children().fadeOut(500);
 			$("li").removeClass("inactive");
 			$("li").removeClass("active");
@@ -80,6 +97,11 @@ $(document).ready(function () {
 	$("#selectOrc").click(function () {
 		var acceptOrc = confirm("Do you truly wish to walk the sunken path as an orc?");
 		if (acceptOrc == true) {
+			localStorage.strength = Number(localStorage.strength)+2;
+			localStorage.endurance = Number(localStorage.endurance)+1;
+			localStorage.intelligence = Number(localStorage.intelligence)-1;
+			localStorage.wisdom = Number(localStorage.wisdom)-1;
+			localStorage.luck = Number(localStorage.luck)-1;
 			$("li").children().fadeOut(500);
 			$("li").removeClass("inactive");
 			$("li").removeClass("active");

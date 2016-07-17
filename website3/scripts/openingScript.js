@@ -35,6 +35,7 @@ $(document).ready(function () {
 					localStorage.setItem("strength", 1);
 					localStorage.setItem("agility", 1);	
 					localStorage.setItem("dexterity", 1);
+					localStorage.setItem("wisdom", 1)
 					localStorage.setItem("faith", 1);
 					localStorage.setItem("endurance", 1);
 					localStorage.setItem("intelligence", 1);
