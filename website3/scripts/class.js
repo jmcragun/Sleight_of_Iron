@@ -1,11 +1,12 @@
 var nextCounter = 0;
 $(document).ready(function () {
-	$("h1").hide().delay(500).fadeIn(1000);
-	$(".assistant").hide().delay(500).fadeIn(1000);
+	$("#firstq").hide().delay(500).fadeIn(1000);
 	$("#attributeList").hide().delay(500).fadeIn(1000);
 	$("#totalAttrPnts").hide().delay(500).fadeIn(1000);
 	$(".return").hide();
 	$(".next").hide();
+	$("#as1").hide();
+	$("#secondq").hide();
 	$("ul#attributeList li").hide();
 	$(".unlockable").hide();
 	$("ul#raceList li").children().hide();
@@ -37,8 +38,11 @@ $(document).ready(function () {
 			$("li").children().fadeOut(500);
 			$("li").removeClass("inactive");
 			$("li").removeClass("active");
+			$("#firstq").fadeOut(500);
 			$("#raceList").fadeOut(500);
 			$("ul#attributeList li").delay(500).fadeIn(500);
+			$("#secondq").delay(500).fadeIn(500);
+			$("#as1").delay(500).fadeIn(500);
 			$(".return").fadeOut(500);
 			return false;
 		}
@@ -50,7 +54,10 @@ $(document).ready(function () {
 			$("li").removeClass("inactive");
 			$("li").removeClass("active");
 			$("ul#attributeList li").delay(500).fadeIn(500);
+			$("#firstq").fadeOut(500);
 			$("#raceList").fadeOut(500);
+			$("#secondq").delay(500).fadeIn(500);
+			$("#as1").delay(500).fadeIn(500);
 			$(".return").fadeOut(500);
 			return false;
 		}
@@ -62,7 +69,10 @@ $(document).ready(function () {
 			$("li").removeClass("inactive");
 			$("li").removeClass("active");
 			$("ul#attributeList li").delay(500).fadeIn(500);
+			$("#firstq").fadeOut(500);
 			$("#raceList").fadeOut(500);
+			$("#secondq").delay(500).fadeIn(500);
+			$("#as1").delay(500).fadeIn(500);
 			$(".return").fadeOut(500);
 			return false;
 		}
@@ -74,7 +84,10 @@ $(document).ready(function () {
 			$("li").removeClass("inactive");
 			$("li").removeClass("active");
 			$("ul#attributeList li").delay(500).fadeIn(500);
+			$("#firstq").fadeOut(500);
 			$("#raceList").fadeOut(500);
+			$("#secondq").delay(500).fadeIn(500);
+			$("#as1").delay(500).fadeIn(500);
 			$(".return").fadeOut(500);
 			return false;
 		}
