@@ -38,7 +38,7 @@ $(document).ready(function () {
 					localStorage.setItem("Wisdom", 1)
 					localStorage.setItem("Faith", 1);
 					localStorage.setItem("Endurance", 1);
-					localStorage.setItem("Lntelligence", 1);
+					localStorage.setItem("Intelligence", 1);
 					localStorage.setItem("Luck", 1);
 					localStorage.setItem("Mysterium", 1);	
 					localStorage.setItem("Personality", 1);
