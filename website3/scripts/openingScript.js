@@ -23,7 +23,7 @@ $(document).ready(function () {
 					/////////////////////////////
 					/////////////////////////////
 
-					// Put the object into storage
+					// Putting the objects into storage
 					localStorage.setItem("user_Name", userName);
 					localStorage.setItem("Health", 50);
 					localStorage.setItem("Stamina", 50);
@@ -32,16 +32,16 @@ $(document).ready(function () {
 					localStorage.setItem("race", undefined);
 					localStorage.setItem("eye_color", undefined);
 					localStorage.setItem("hair_color", undefined);
-					localStorage.setItem("strength", 1);
-					localStorage.setItem("agility", 1);	
-					localStorage.setItem("dexterity", 1);
-					localStorage.setItem("wisdom", 1)
-					localStorage.setItem("faith", 1);
-					localStorage.setItem("endurance", 1);
-					localStorage.setItem("intelligence", 1);
-					localStorage.setItem("luck", 1);
-					localStorage.setItem("mysterium", 1);	
-					localStorage.setItem("personality", 1);
+					localStorage.setItem("Strength", 1);
+					localStorage.setItem("Agility", 1);	
+					localStorage.setItem("Dexterity", 1);
+					localStorage.setItem("Wisdom", 1)
+					localStorage.setItem("Faith", 1);
+					localStorage.setItem("Endurance", 1);
+					localStorage.setItem("Lntelligence", 1);
+					localStorage.setItem("Luck", 1);
+					localStorage.setItem("Mysterium", 1);	
+					localStorage.setItem("Personality", 1);
 					localStorage.setItem("liar", 0);
 					localStorage.setItem("intimidation", 0);
 					localStorage.setItem("perception", 0);
@@ -90,9 +90,9 @@ $(document).ready(function () {
 					localStorage.setItem("barter", 0);
 					localStorage.setItem("leadership", 0);	
 					localStorage.setItem("actor", 0);
-					localStorage.setItem("main_hand", undefined);
-					localStorage.setItem("off_hand", undefined);
-					localStorage.setItem("gold", 0);	
+					localStorage.setItem("Main_hand", undefined);
+					localStorage.setItem("Off_hand", undefined);
+					localStorage.setItem("Gold", 0);	
 					$("#greeting").fadeOut(1000);
 					$("#whatsYourName").fadeOut(1000);
 					var statement1 = "<p>Well then " + userName + ", a world in turmoil rests at your feet. Will you save it, or shall you destroy it?</p>";

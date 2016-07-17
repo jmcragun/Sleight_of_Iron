@@ -1,12 +1,12 @@
-localStorage.getItem('strength');
-localStorage.getItem('agility');
-localStorage.getItem('dexterity');
-localStorage.getItem('faith');
-localStorage.getItem('endurance');
-localStorage.getItem('intelligence');
-localStorage.getItem('luck');
-localStorage.getItem('mysterium');
-localStorage.getItem('personality');
+localStorage.getItem('Strength');
+localStorage.getItem('Agility');
+localStorage.getItem('Dexterity');
+localStorage.getItem('Faith');
+localStorage.getItem('Endurance');
+localStorage.getItem('Intelligence');
+localStorage.getItem('Luck');
+localStorage.getItem('Mysterium');
+localStorage.getItem('Personality');
 var nextCounter = 0;
 $(document).ready(function () {
 	$("#firstq").hide().delay(500).fadeIn(1000);
@@ -59,10 +59,10 @@ $(document).ready(function () {
 	$("#selectElf").click(function () {
 		var acceptElf = confirm("Do you truly wish to walk the sunken path as an elf?");
 		if (acceptElf == true) {
-			localStorage.mysterium = Number(localStorage.mysterium)+1;
-			localStorage.dexterity = Number(localStorage.dexterity)+1;
-			localStorage.endurance = Number(localStorage.endurance)-1;
-			localStorage.strength = Number(localStorage.strength)-1;
+			localStorage.Mysterium = Number(localStorage.Mysterium)+1;
+			localStorage.Dexterity = Number(localStorage.Dexterity)+1;
+			localStorage.Endurance = Number(localStorage.Endurance)-1;
+			localStorage.Strength = Number(localStorage.Strength)-1;
 			$("li").children().fadeOut(500);
 			$("li").removeClass("inactive");
 			$("li").removeClass("active");
@@ -78,10 +78,10 @@ $(document).ready(function () {
 	$("#selectDwarf").click(function () {
 		var acceptDwarf = confirm("Do you truly wish to walk the sunken path as a dwarf?");
 		if (acceptDwarf == true) {
-			localStorage.strength = Number(localStorage.strength)+1;
-			localStorage.intelligence = Number(localStorage.intelligence)+1;
-			localStorage.mysterium = Number(localStorage.mysterium)-1;
-			localStorage.agility = Number(localStorage.agility)-1;
+			localStorage.Strength = Number(localStorage.Strength)+1;
+			localStorage.Intelligence = Number(localStorage.Intelligence)+1;
+			localStorage.Mysterium = Number(localStorage.Mysterium)-1;
+			localStorage.Agility = Number(localStorage.Agility)-1;
 			$("li").children().fadeOut(500);
 			$("li").removeClass("inactive");
 			$("li").removeClass("active");
@@ -97,11 +97,11 @@ $(document).ready(function () {
 	$("#selectOrc").click(function () {
 		var acceptOrc = confirm("Do you truly wish to walk the sunken path as an orc?");
 		if (acceptOrc == true) {
-			localStorage.strength = Number(localStorage.strength)+2;
-			localStorage.endurance = Number(localStorage.endurance)+1;
-			localStorage.intelligence = Number(localStorage.intelligence)-1;
-			localStorage.wisdom = Number(localStorage.wisdom)-1;
-			localStorage.luck = Number(localStorage.luck)-1;
+			localStorage.Strength = Number(localStorage.Strength)+2;
+			localStorage.Endurance = Number(localStorage.Endurance)+1;
+			localStorage.Intelligence = Number(localStorage.Intelligence)-1;
+			localStorage.Wisdom = Number(localStorage.Wisdom)-1;
+			localStorage.Luck = Number(localStorage.Luck)-1;
 			$("li").children().fadeOut(500);
 			$("li").removeClass("inactive");
 			$("li").removeClass("active");
