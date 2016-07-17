@@ -66,7 +66,7 @@ $(document).ready(function () {
 					localStorage.setItem("restoration", 0);
 					localStorage.setItem("covenant", 0);	
 					localStorage.setItem("pyromancy", 0);
-					localStorage.setItem("hydromany", 0);
+					localStorage.setItem("hydromancy", 0);
 					localStorage.setItem("aeromancy", 0);
 					localStorage.setItem("geomancy", 0);
 					localStorage.setItem("electromancy", 0);
