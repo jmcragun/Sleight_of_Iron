@@ -38,6 +38,7 @@ $(document).ready(function () {
 			$("li").removeClass("inactive");
 			$("li").removeClass("active");
 			$("#raceList").fadeOut(500);
+			$("ul#attributeList li").delay(500).fadeIn(500);
 			$(".return").fadeOut(500);
 			return false;
 		}
@@ -48,8 +49,9 @@ $(document).ready(function () {
 			$("li").children().fadeOut(500);
 			$("li").removeClass("inactive");
 			$("li").removeClass("active");
-			$(".return").fadeOut(500);
+			$("ul#attributeList li").delay(500).fadeIn(500);
 			$("#raceList").fadeOut(500);
+			$(".return").fadeOut(500);
 			return false;
 		}
 	});
@@ -59,8 +61,9 @@ $(document).ready(function () {
 			$("li").children().fadeOut(500);
 			$("li").removeClass("inactive");
 			$("li").removeClass("active");
-			$(".return").fadeOut(500);
+			$("ul#attributeList li").delay(500).fadeIn(500);
 			$("#raceList").fadeOut(500);
+			$(".return").fadeOut(500);
 			return false;
 		}
 	});
@@ -70,8 +73,9 @@ $(document).ready(function () {
 			$("li").children().fadeOut(500);
 			$("li").removeClass("inactive");
 			$("li").removeClass("active");
-			$(".return").fadeOut(500);
+			$("ul#attributeList li").delay(500).fadeIn(500);
 			$("#raceList").fadeOut(500);
+			$(".return").fadeOut(500);
 			return false;
 		}
 	});
