@@ -1,4 +1,6 @@
 $(document).ready(function () {
+	$("h1").hide().fadeIn(1000);
+	$("ul").hide().fadeIn(1000);
 	$("#newG").click(function () {
 		var acceptNewG = confirm("Are you sure you want to start a new game?");
 		if (acceptNewG == true) {

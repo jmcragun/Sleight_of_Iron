@@ -17,6 +17,17 @@ h1 {
 	font-family: 'Lunchds';
 	font-weight: normal;
 }
+#firstq:hover {
+	cursor: text;
+	color:#cfcfcf;
+}
+#secondq:hover {
+	cursor: text;
+	color:#cfcfcf;
+}
+.header:hover {
+	cursor:default
+}
 .assistant {
 	font-family: 'Lunchds';
 	color: #cfcfcf;
