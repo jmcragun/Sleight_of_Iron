@@ -24,14 +24,14 @@ $(document).ready(function () {
 					/////////////////////////////
 
 					// Putting the objects into storage
-					localStorage.setItem("user_Name", userName);
+					localStorage.setItem("User_Name", userName);
 					localStorage.setItem("Health", 50);
 					localStorage.setItem("Stamina", 50);
 					localStorage.setItem("Mana", 50);	
-					localStorage.setItem("gender", undefined);
-					localStorage.setItem("race", undefined);
-					localStorage.setItem("eye_color", undefined);
-					localStorage.setItem("hair_color", undefined);
+					localStorage.setItem("Gender", undefined);
+					localStorage.setItem("Race", undefined);
+					localStorage.setItem("Eye_color", undefined);
+					localStorage.setItem("Hair_color", undefined);
 					localStorage.setItem("Strength", 1);
 					localStorage.setItem("Agility", 1);	
 					localStorage.setItem("Dexterity", 1);

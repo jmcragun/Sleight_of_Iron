@@ -44,6 +44,7 @@ $(document).ready(function () {
 	$("#selectHuman").click(function () {
 		var acceptHuman = confirm("Do you truly wish to walk the sunken path as a human?");
 		if (acceptHuman == true) {
+			localStorage.Race = "Human";
 			$("li").children().fadeOut(500);
 			$("li").removeClass("inactive");
 			$("li").removeClass("active");
@@ -63,6 +64,7 @@ $(document).ready(function () {
 			localStorage.Dexterity = Number(localStorage.Dexterity)+1;
 			localStorage.Endurance = Number(localStorage.Endurance)-1;
 			localStorage.Strength = Number(localStorage.Strength)-1;
+			localStorage.Race = "Elf";
 			$("li").children().fadeOut(500);
 			$("li").removeClass("inactive");
 			$("li").removeClass("active");
@@ -82,6 +84,7 @@ $(document).ready(function () {
 			localStorage.Intelligence = Number(localStorage.Intelligence)+1;
 			localStorage.Mysterium = Number(localStorage.Mysterium)-1;
 			localStorage.Agility = Number(localStorage.Agility)-1;
+			localStorage.Race = "Dwarf";
 			$("li").children().fadeOut(500);
 			$("li").removeClass("inactive");
 			$("li").removeClass("active");
@@ -102,6 +105,7 @@ $(document).ready(function () {
 			localStorage.Intelligence = Number(localStorage.Intelligence)-1;
 			localStorage.Wisdom = Number(localStorage.Wisdom)-1;
 			localStorage.Luck = Number(localStorage.Luck)-1;
+			localStorage.Race = "Orc";
 			$("li").children().fadeOut(500);
 			$("li").removeClass("inactive");
 			$("li").removeClass("active");
