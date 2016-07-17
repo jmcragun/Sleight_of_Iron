@@ -7,11 +7,13 @@ localStorage.getItem('Intelligence');
 localStorage.getItem('Luck');
 localStorage.getItem('Mysterium');
 localStorage.getItem('Personality');
+var attrRemain = 25;
 var nextCounter = 0;
 $(document).ready(function () {
 	$("#firstq").hide().delay(500).fadeIn(1000);
 	$("#attributeList").hide().delay(500).fadeIn(1000);
-	$("#totalAttrPnts").hide().delay(500).fadeIn(1000);
+	$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+	$("#totalAttrPnts").hide();
 	$(".return").hide();
 	$(".next").hide();
 	$("#as1").hide();
@@ -51,6 +53,7 @@ $(document).ready(function () {
 			$("#firstq").fadeOut(500);
 			$("#raceList").fadeOut(500);
 			$("ul#attributeList li").delay(500).fadeIn(500);
+			$("#totalAttrPnts").hide().delay(500).fadeIn(1000);
 			$("#secondq").delay(500).fadeIn(500);
 			$("#as1").delay(500).fadeIn(500);
 			$(".return").fadeOut(500);
@@ -71,6 +74,7 @@ $(document).ready(function () {
 			$("ul#attributeList li").delay(500).fadeIn(500);
 			$("#firstq").fadeOut(500);
 			$("#raceList").fadeOut(500);
+			$("#totalAttrPnts").hide().delay(500).fadeIn(1000);
 			$("#secondq").delay(500).fadeIn(500);
 			$("#as1").delay(500).fadeIn(500);
 			$(".return").fadeOut(500);
@@ -91,6 +95,7 @@ $(document).ready(function () {
 			$("ul#attributeList li").delay(500).fadeIn(500);
 			$("#firstq").fadeOut(500);
 			$("#raceList").fadeOut(500);
+			$("#totalAttrPnts").hide().delay(500).fadeIn(1000);
 			$("#secondq").delay(500).fadeIn(500);
 			$("#as1").delay(500).fadeIn(500);
 			$(".return").fadeOut(500);
@@ -112,6 +117,7 @@ $(document).ready(function () {
 			$("ul#attributeList li").delay(500).fadeIn(500);
 			$("#firstq").fadeOut(500);
 			$("#raceList").fadeOut(500);
+			$("#totalAttrPnts").hide().delay(500).fadeIn(1000);
 			$("#secondq").delay(500).fadeIn(500);
 			$("#as1").delay(500).fadeIn(500);
 			$(".return").fadeOut(500);

@@ -124,3 +124,14 @@ div:hover {
 	cursor: pointer;
 	color: #CFB53B;
 }
+#totalAttrPnts {
+	color: #07e6ed;
+	font-size: 24px;
+	font-family: 'Lunchds';
+	margin-top: 1%;
+}
+#totalAttrPnts p {
+	color: #cfcfcf;
+	font-family: 'Lunchds';
+	display: inline;
+}
