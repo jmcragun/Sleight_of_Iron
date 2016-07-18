@@ -170,145 +170,145 @@ $(document).ready(function () {
 	$("#incAgl").click(function () {
 		if (agiCount >= 0){
 			attrRemain--;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain--);
+			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			agiCount++;
-			$("#agiCount").html(agiCount++);
+			$("#agiCount").html(agiCount);
 		}
 	});
 	$("#decAgl").click(function () {
 		if (agiCount >= 1){
 			attrRemain++;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain++);
+			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			agiCount--;
-			$("#agiCount").html(agiCount--);
+			$("#agiCount").html(agiCount);
 		}
 	});
 	$("#incDex").click(function () {
 		if (dexCount >= 0){
 			attrRemain--;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain--);
+			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			dexCount++;
-			$("#dexCount").html(dexCount++);
+			$("#dexCount").html(dexCount);
 		}
 	});
 	$("#decDex").click(function () {
 		if (dexCount >= 1){
 			attrRemain++;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain++);
+			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			dexCount--;
-			$("#dexCount").html(dexCount--);
+			$("#dexCount").html(dexCount);
 		}
 	});
 	$("#incEnd").click(function () {
 		if (endCount >= 0){
 			attrRemain--;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain--);
+			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			endCount++;
-			$("#endCount").html(endCount++);
+			$("#endCount").html(endCount);
 		}
 	});
 	$("#decEnd").click(function () {
 		if (endCount >= 1){
 			attrRemain++;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain++);
+			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			endCount--;
-			$("#endCount").html(endCount--);
+			$("#endCount").html(endCount);
 		}
 	});
 	$("#incInt").click(function () {
 		if (intCount >= 0){
 			attrRemain--;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain--);
+			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			intCount++;
-			$("#intCount").html(intCount++);
+			$("#intCount").html(intCount);
 		}
 	});
 	$("#decInt").click(function () {
 		if (intCount >= 1){
 			attrRemain++;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain++);
+			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			intCount--;
-			$("#intCount").html(intCount--);
+			$("#intCount").html(intCount);
 		}
 	});
 	$("#incWis").click(function () {
 		if (wisCount >= 0){
 			attrRemain--;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain--);
+			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			wisCount++;
-			$("#wisCount").html(wisCount++);
+			$("#wisCount").html(wisCount);
 		}
 	});
 	$("#decWis").click(function () {
 		if (wisCount >= 1){
 			attrRemain++;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain++);
+			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			wisCount--;
-			$("#wisCount").html(wisCount--);
+			$("#wisCount").html(wisCount);
 		}
 	});
 	$("#incFat").click(function () {
 		if (fatCount >= 0){
 			attrRemain--;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain--);
+			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			fatCount++;
-			$("#fatCount").html(fatCount++);
+			$("#fatCount").html(fatCount);
 		}
 	});
 	$("#decFat").click(function () {
 		if (fatCount >= 1){
 			attrRemain++;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain++);
+			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			fatCount--;
-			$("#fatCount").html(fatCount--);
+			$("#fatCount").html(fatCount);
 		}
 	});
 	$("#incMys").click(function () {
 		if (mysCount >= 0){
 			attrRemain--;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain--);
+			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			mysCount++;
-			$("#mysCount").html(mysCount++);
+			$("#mysCount").html(mysCount);
 		}
 	});
 	$("#decMys").click(function () {
 		if (mysCount >= 1){
 			attrRemain++;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain++);
+			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			mysCount--;
-			$("#mysCount").html(mysCount--);
+			$("#mysCount").html(mysCount);
 		}
 	});
 	$("#incPer").click(function () {
 		if (perCount >= 0){
 			attrRemain--;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain--);
+			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			perCount++;
-			$("#perCount").html(perCount++);
+			$("#perCount").html(perCount);
 		}
 	});
 	$("#decPer").click(function () {
 		if (perCount >= 1){
 			attrRemain++;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain++);
+			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			perCount--;
-			$("#perCount").html(perCount--);
+			$("#perCount").html(perCount);
 		}
 	});
 	$("#incLuc").click(function () {
 		if (lukCount >= 0){
 			attrRemain--;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain--);
+			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			lukCount++;
-			$("#lukCount").html(lukCount++);
+			$("#lukCount").html(lukCount);
 		}
 	});
 	$("#decLuc").click(function () {
 		if (lukCount >= 1){
 			attrRemain++;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain++);
+			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			lukCount--;
-			$("#lukCount").html(lukCount--);
+			$("#lukCount").html(lukCount);
 		}
 	});
 });
