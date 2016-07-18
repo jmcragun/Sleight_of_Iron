@@ -60,6 +60,7 @@ $(document).ready(function () {
 	});
 	$(".return").click(function () {
 		$("li").children().fadeOut(500);
+		$("#attributeCount").delay(500).fadeIn(500);
 		$(".inactive").delay(500).fadeIn(500);
 		$("li").removeClass("inactive");
 		$("li").removeClass("active");
@@ -75,8 +76,8 @@ $(document).ready(function () {
 			$("#firstq").fadeOut(500);
 			$("#raceList").fadeOut(500);
 			$("ul#attributeList li").delay(500).fadeIn(500);
-			$("#attributeCount").delay(500).fadeIn(1000);
-			$("#totalAttrPnts").delay(500).fadeIn(1000);
+			$("#attributeCount").delay(500).fadeIn(500);
+			$("#totalAttrPnts").delay(500).fadeIn(500);
 			$("#secondq").delay(500).fadeIn(500);
 			$("#as1").delay(500).fadeIn(500);
 			$(".return").fadeOut(500);
@@ -97,8 +98,8 @@ $(document).ready(function () {
 			$("ul#attributeList li").delay(500).fadeIn(500);
 			$("#firstq").fadeOut(500);
 			$("#raceList").fadeOut(500);
-			$("#attributeCount").delay(500).fadeIn(1000);
-			$("#totalAttrPnts").delay(500).fadeIn(1000);
+			$("#attributeCount").delay(500).fadeIn(500);
+			$("#totalAttrPnts").delay(500).fadeIn(500);
 			$("#secondq").delay(500).fadeIn(500);
 			$("#as1").delay(500).fadeIn(500);
 			$(".return").fadeOut(500);
@@ -119,8 +120,8 @@ $(document).ready(function () {
 			$("ul#attributeList li").delay(500).fadeIn(500);
 			$("#firstq").fadeOut(500);
 			$("#raceList").fadeOut(500);
-			$("#attributeCount").delay(500).fadeIn(1000);
-			$("#totalAttrPnts").delay(500).fadeIn(1000);
+			$("#attributeCount").delay(500).fadeIn(500);
+			$("#totalAttrPnts").delay(500).fadeIn(500);
 			$("#secondq").delay(500).fadeIn(500);
 			$("#as1").delay(500).fadeIn(500);
 			$(".return").fadeOut(500);
@@ -142,8 +143,8 @@ $(document).ready(function () {
 			$("ul#attributeList li").delay(500).fadeIn(500);
 			$("#firstq").fadeOut(500);
 			$("#raceList").fadeOut(500);
-			$("#attributeCount").delay(500).fadeIn(1000);
-			$("#totalAttrPnts").delay(500).fadeIn(1000);
+			$("#attributeCount").delay(500).fadeIn(500);
+			$("#totalAttrPnts").delay(500).fadeIn(500);
 			$("#secondq").delay(500).fadeIn(500);
 			$("#as1").delay(500).fadeIn(500);
 			$(".return").fadeOut(500);
