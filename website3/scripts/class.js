@@ -60,7 +60,7 @@ $(document).ready(function () {
 	});
 	$(".return").click(function () {
 		$("li").children().fadeOut(500);
-		$("#attributeCount").delay(500).fadeIn(500);
+		$("#attributeCount li").delay(500).fadeIn(500);
 		$(".inactive").delay(500).fadeIn(500);
 		$("li").removeClass("inactive");
 		$("li").removeClass("active");
