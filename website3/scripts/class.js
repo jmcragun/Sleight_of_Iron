@@ -9,11 +9,32 @@ localStorage.getItem('Mysterium');
 localStorage.getItem('Personality');
 var attrRemain = 25;
 var nextCounter = 0;
+var strCount = 0;
+var agiCount = 0;
+var dexCount = 0;
+var endCount = 0;
+var intCount = 0;
+var wisCount = 0;
+var fatCount = 0;
+var mysCount = 0;
+var perCount = 0;
+var lukCount = 0;
 $(document).ready(function () {
 	$("#firstq").hide().delay(500).fadeIn(1000);
 	$("#attributeList").hide().delay(500).fadeIn(1000);
 	$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+	$("#strCount").html(strCount);
+	$("#agiCount").html(agiCount);
+	$("#dexCount").html(dexCount);
+	$("#endCount").html(endCount);
+	$("#intCount").html(intCount);
+	$("#wisCount").html(wisCount);
+	$("#fatCount").html(fatCount);
+	$("#mysCount").html(mysCount);
+	$("#perCount").html(perCount);
+	$("#lukCount").html(lukCount);
 	$("#totalAttrPnts").hide();
+	$("#attributeCount").hide();
 	$(".return").hide();
 	$(".next").hide();
 	$("#as1").hide();
@@ -33,6 +54,7 @@ $(document).ready(function () {
 		$(this).siblings().addClass("inactive");
 		$(this).addClass("active");
 		$(".inactive").fadeOut(500);
+		$("#attributeCount li").fadeOut(500);
 		$(".return").delay(500).fadeIn(500);
 		$(this).children().delay(500).fadeIn(500);
 	});
@@ -53,7 +75,8 @@ $(document).ready(function () {
 			$("#firstq").fadeOut(500);
 			$("#raceList").fadeOut(500);
 			$("ul#attributeList li").delay(500).fadeIn(500);
-			$("#totalAttrPnts").hide().delay(500).fadeIn(1000);
+			$("#attributeCount").delay(500).fadeIn(1000);
+			$("#totalAttrPnts").delay(500).fadeIn(1000);
 			$("#secondq").delay(500).fadeIn(500);
 			$("#as1").delay(500).fadeIn(500);
 			$(".return").fadeOut(500);
@@ -74,7 +97,8 @@ $(document).ready(function () {
 			$("ul#attributeList li").delay(500).fadeIn(500);
 			$("#firstq").fadeOut(500);
 			$("#raceList").fadeOut(500);
-			$("#totalAttrPnts").hide().delay(500).fadeIn(1000);
+			$("#attributeCount").delay(500).fadeIn(1000);
+			$("#totalAttrPnts").delay(500).fadeIn(1000);
 			$("#secondq").delay(500).fadeIn(500);
 			$("#as1").delay(500).fadeIn(500);
 			$(".return").fadeOut(500);
@@ -95,7 +119,8 @@ $(document).ready(function () {
 			$("ul#attributeList li").delay(500).fadeIn(500);
 			$("#firstq").fadeOut(500);
 			$("#raceList").fadeOut(500);
-			$("#totalAttrPnts").hide().delay(500).fadeIn(1000);
+			$("#attributeCount").delay(500).fadeIn(1000);
+			$("#totalAttrPnts").delay(500).fadeIn(1000);
 			$("#secondq").delay(500).fadeIn(500);
 			$("#as1").delay(500).fadeIn(500);
 			$(".return").fadeOut(500);
@@ -117,11 +142,132 @@ $(document).ready(function () {
 			$("ul#attributeList li").delay(500).fadeIn(500);
 			$("#firstq").fadeOut(500);
 			$("#raceList").fadeOut(500);
-			$("#totalAttrPnts").hide().delay(500).fadeIn(1000);
+			$("#attributeCount").delay(500).fadeIn(1000);
+			$("#totalAttrPnts").delay(500).fadeIn(1000);
 			$("#secondq").delay(500).fadeIn(500);
 			$("#as1").delay(500).fadeIn(500);
 			$(".return").fadeOut(500);
 			return false;
+		}
+	});
+	$("#incStr").click(function () {
+		if (strCount >= 0){
+			attrRemain--;
+			strCount++;
+		}
+	});
+	$("#decStr").click(function () {
+		if (strCount >= 0){
+			attrRemain++;
+			strCount--;
+		}
+	});
+	$("#incAgl").click(function () {
+		if (agiCount >= 0){
+			attrRemain--;
+			agiCount++;
+		}
+	});
+	$("#decAgl").click(function () {
+		if (agiCount >= 0){
+			attrRemain++;
+			agiCount--;
+		}
+	});
+	$("#incDex").click(function () {
+		if (dexCount >= 0){
+			attrRemain--;
+			dexCount++;
+		}
+	});
+	$("#decDex").click(function () {
+		if (dexCount >= 0){
+			attrRemain++;
+			dexCount--;
+		}
+	});
+	$("#incEnd").click(function () {
+		if (endCount >= 0){
+			attrRemain--;
+			endCount++;
+		}
+	});
+	$("#decEnd").click(function () {
+		if (endCount >= 0){
+			attrRemain++;
+			endCount--;
+		}
+	});
+	$("#incInt").click(function () {
+		if (intCount >= 0){
+			attrRemain--;
+			intCount++;
+		}
+	});
+	$("#decInt").click(function () {
+		if (intCount >= 0){
+			attrRemain++;
+			intCount--;
+		}
+	});
+	$("#incWis").click(function () {
+		if (wisCount >= 0){
+			attrRemain--;
+			wisCount++;
+		}
+	});
+	$("#decWis").click(function () {
+		if (wisCount >= 0){
+			attrRemain++;
+			wisCount--;
+		}
+	});
+	$("#incFat").click(function () {
+		if (fatCount >= 0){
+			attrRemain--;
+			fatCount++;
+		}
+	});
+	$("#decFat").click(function () {
+		if (fatCount >= 0){
+			attrRemain++;
+			fatCount--;
+		}
+	});
+	$("#incMys").click(function () {
+		if (mysCount >= 0){
+			attrRemain--;
+			mysCount++;
+		}
+	});
+	$("#decMys").click(function () {
+		if (mysCount >= 0){
+			attrRemain++;
+			mysCount--;
+		}
+	});
+	$("#incPer").click(function () {
+		if (perCount >= 0){
+			attrRemain--;
+			perCount++;
+		}
+	});
+	$("#decPer").click(function () {
+		if (perCount >= 0){
+			attrRemain++;
+			perCount--;
+		}
+	});
+	$("#incLuc").click(function () {
+		if (lukCount >= 0){
+			attrRemain--;
+			lukCount++;
+		}
+	});
+	$("#decLuc").click(function () {
+		if (lukCount >= 0){
+			attrRemain++;
+			lukCount--;
 		}
 	});
 });

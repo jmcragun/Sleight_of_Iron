@@ -135,3 +135,16 @@ div:hover {
 	font-family: 'Lunchds';
 	display: inline;
 }
+#attributeCount {
+	display:  inline-block;
+	float: right;
+	margin-right: 40%;
+}
+#attributeCount li:hover {
+	cursor: text;
+	color: #cfcfcf;
+}
+#attributeList {
+	display:  inline-block;
+	margin-left: 49%;
+}
