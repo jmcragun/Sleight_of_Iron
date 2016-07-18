@@ -48,7 +48,6 @@ $(document).ready(function () {
 					localStorage.setItem("persuasion", 0);
 					localStorage.setItem("sleight_of_hand", 0);	
 					localStorage.setItem("stealth", 0);
-					localStorage.setItem("stealth", 0);
 					localStorage.setItem("survival", 0);
 					localStorage.setItem("blade", 0);
 					localStorage.setItem("blunt", 0);
