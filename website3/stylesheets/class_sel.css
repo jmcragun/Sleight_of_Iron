@@ -104,6 +104,8 @@ ul li:hover {
 }
 #attributeList {
 	display: inline-block;
+	float: none;
+	overflow: hidden;
 	margin-left: auto;
 	margin-right: auto;
 	-webkit-touch-callout: none;
@@ -112,7 +114,6 @@ ul li:hover {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	left: 50%;
 }
 #attributeList li div{
 	display: inline-block;

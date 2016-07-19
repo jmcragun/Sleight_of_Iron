@@ -93,7 +93,7 @@ $(document).ready(function () {
 			$("li").children().fadeOut(500);
 			$("li").removeClass("inactive");
 			$("li").removeClass("active");
-			$("ul#attributeList li").delay(500).fadeIn(500);
+			$("ul#attributeList li").delay(500).fadeIn(500).children().fadeIn(500);
 			$("#firstq").fadeOut(500);
 			$("#raceList").fadeOut(500);
 			$("#counters").delay(500).fadeIn(500);
@@ -115,7 +115,7 @@ $(document).ready(function () {
 			$("li").children().fadeOut(500);
 			$("li").removeClass("inactive");
 			$("li").removeClass("active");
-			$("ul#attributeList li").delay(500).fadeIn(500);
+			$("ul#attributeList li").delay(500).fadeIn(500).children().fadeIn(500);
 			$("#firstq").fadeOut(500);
 			$("#raceList").fadeOut(500);
 			$("#counters").delay(500).fadeIn(500);
@@ -138,7 +138,7 @@ $(document).ready(function () {
 			$("li").children().fadeOut(500);
 			$("li").removeClass("inactive");
 			$("li").removeClass("active");
-			$("ul#attributeList li").delay(500).fadeIn(500);
+			$("ul#attributeList li").delay(500).fadeIn(500).children().fadeIn(500);
 			$("#firstq").fadeOut(500);
 			$("#raceList").fadeOut(500);
 			$("#counters").delay(500).fadeIn(500);
