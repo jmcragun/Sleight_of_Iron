@@ -10,6 +10,16 @@ localStorage.getItem('Personality');
 var race = localStorage.Race;
 var attrRemain = 25;
 var nextCounter = 1;
+var strCount 
+var agiCount 
+var dexCount 
+var endCount
+var intCount
+var wisCount
+var fatCount
+var mysCount
+var perCount
+var lukCount
 $(document).ready(function () {
 	$("#firstq").hide().delay(500).fadeIn(1000);
 	$("#attributeList").hide().delay(500).fadeIn(1000);
@@ -56,16 +66,16 @@ $(document).ready(function () {
 		var acceptHuman = confirm("Do you truly wish to walk the sunken path as a human?");
 		if (acceptHuman == true) {
 			localStorage.Race = "Human";
-			var strCount = 1;
-			var agiCount = 1;
-			var dexCount = 1;
-			var endCount = 1;
-			var intCount = 1;
-			var wisCount = 1;
-			var fatCount = 1;
-			var mysCount = 1;
-			var perCount = 1;
-			var lukCount = 1;
+			strCount = 1;
+			agiCount = 1;
+			dexCount = 1;
+			endCount = 1;
+			intCount = 1;
+			wisCount = 1;
+			fatCount = 1;
+			mysCount = 1;
+			perCount = 1;
+			lukCount = 1;
 			$("#strCount").html(strCount);
 			$("#agiCount").html(agiCount);
 			$("#dexCount").html(dexCount);
@@ -98,16 +108,16 @@ $(document).ready(function () {
 			localStorage.Endurance = Number(localStorage.Endurance)-1;
 			localStorage.Strength = Number(localStorage.Strength)-1;
 			localStorage.Race = "Elf";
-			var strCount = 0;
-			var agiCount = 1;
-			var dexCount = 2;
-			var endCount = 0;
-			var intCount = 1;
-			var wisCount = 1;
-			var fatCount = 1;
-			var mysCount = 2;
-			var perCount = 1;
-			var lukCount = 1;
+			strCount = 0;
+			agiCount = 1;
+			dexCount = 2;
+			endCount = 0;
+			intCount = 1;
+			wisCount = 1;
+			fatCount = 1;
+			mysCount = 2;
+			perCount = 1;
+			lukCount = 1;
 			$("#strCount").html(strCount);
 			$("#agiCount").html(agiCount);
 			$("#dexCount").html(dexCount);
@@ -140,16 +150,16 @@ $(document).ready(function () {
 			localStorage.Mysterium = Number(localStorage.Mysterium)-1;
 			localStorage.Agility = Number(localStorage.Agility)-1;
 			localStorage.Race = "Dwarf";
-			var strCount = 2;
-			var agiCount = 0;
-			var dexCount = 1;
-			var endCount = 1;
-			var intCount = 2;
-			var wisCount = 1;
-			var fatCount = 1;
-			var mysCount = 0;
-			var perCount = 1;
-			var lukCount = 1;
+			strCount = 2;
+			agiCount = 0;
+			dexCount = 1;
+			endCount = 1;
+			intCount = 2;
+			wisCount = 1;
+			fatCount = 1;
+			mysCount = 0;
+			perCount = 1;
+			lukCount = 1;
 			$("#strCount").html(strCount);
 			$("#agiCount").html(agiCount);
 			$("#dexCount").html(dexCount);
@@ -183,16 +193,16 @@ $(document).ready(function () {
 			localStorage.Wisdom = Number(localStorage.Wisdom)-1;
 			localStorage.Luck = Number(localStorage.Luck)-1;
 			localStorage.Race = "Orc";
-			var strCount = 3;
-			var agiCount = 1;
-			var dexCount = 1;
-			var endCount = 3;
-			var intCount = 0;
-			var wisCount = 0;
-			var fatCount = 1;
-			var mysCount = 1;
-			var perCount = 1;
-			var lukCount = 0;			
+			strCount = 3;
+			agiCount = 1;
+			dexCount = 1;
+			endCount = 3;
+			intCount = 0;
+			wisCount = 0;
+			fatCount = 1;
+			mysCount = 1;
+			perCount = 1;
+			lukCount = 0;			
 			$("#strCount").html(strCount);
 			$("#agiCount").html(agiCount);
 			$("#dexCount").html(dexCount);
