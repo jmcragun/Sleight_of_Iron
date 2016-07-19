@@ -204,11 +204,11 @@ div:hover {
 	user-select: none;
 }
 #counters li {
-	color: #07e6ed;
+	color: #FFDF00;
 }
 #counters li:hover {
 	cursor: text;
-	color: #07e6ed;
+	color: #FFDF00;
 }
 .attributeContainer {
 	width: 12.5%;
