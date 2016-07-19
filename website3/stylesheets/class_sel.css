@@ -88,25 +88,13 @@ ul li:hover {
 }
 .active {
 	color: white;
-	margin: 0 auto;
-    overflow: hidden;
-	float: none;
 }
-.active p {
-	margin: 0 auto;
-    display: inline-block;
-    overflow: hidden;
-	float: none;
-}
+
 .inactive {
-	margin-top: 12px;
 	
 }
 .active div {
-	margin: 0 auto;
-    display: inline-block;
-    overflow: hidden;
-	float: none;
+	color: #cfcfcf !important;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -124,9 +112,11 @@ ul li:hover {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	left: 50%;
 }
-#attributeList li {
-	
+#attributeList li div{
+	display: inline-block;
+	color: black;
 }
 
 .active:hover {
