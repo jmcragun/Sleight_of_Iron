@@ -181,7 +181,31 @@ $(document).ready(function () {
 				}
 			});
 			$("#decStr").click(function () {
-				if (strCount >= 2){
+				if (race == "Dwarf"){
+					if (strCount >= 3) {
+						attrRemain++;
+						$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+						strCount--;
+						$("#strCount").html(strCount);
+					}
+				}
+				else if (race == "Orc") {
+					if (strCount >= 4) {
+						attrRemain++;
+						$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+						strCount--;
+						$("#strCount").html(strCount);
+					}
+				}
+				else if (race == "Elf") {
+					if (strCount >= 1) {
+						attrRemain++;
+						$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+						strCount--;
+						$("#strCount").html(strCount);
+					}
+				}
+				else if (strCount >= 2) {
 					attrRemain++;
 					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 					strCount--;
@@ -197,7 +221,23 @@ $(document).ready(function () {
 				}
 			});
 			$("#decAgl").click(function () {
-				if (agiCount >= 2){
+				if (race == "Elf"){
+					if (agiCount >= 3) {
+						attrRemain++;
+						$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+						agiCount--;
+						$("#agiCount").html(agiCount);
+					}
+				}
+				else if (race == "Dwarf"){
+					if (agiCount >= 1) {
+						attrRemain++;
+						$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+						agiCount--;
+						$("#agiCount").html(agiCount);
+					}
+				}
+				else if (agiCount >= 2) {
 					attrRemain++;
 					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 					agiCount--;
@@ -213,7 +253,15 @@ $(document).ready(function () {
 				}
 			});
 			$("#decDex").click(function () {
-				if (dexCount >= 2){
+				if (race == "Elf"){
+					if (dexCount >= 3) {
+						attrRemain++;
+						$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+						dexCount--;
+						$("#dexCount").html(dexCount);
+					}
+				}
+				else if (dexCount >= 2) {
 					attrRemain++;
 					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 					dexCount--;
@@ -229,7 +277,23 @@ $(document).ready(function () {
 				}
 			});
 			$("#decEnd").click(function () {
-				if (endCount >= 2){
+				if (race == "Elf") {
+					if (endCount >= 1) {
+						attrRemain++;
+						$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+						endCount--;
+						$("#endCount").html(endCount);
+					}
+				}
+				else if (race == "Orc") {
+					if (endCount >= 3) {
+						attrRemain++;
+						$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+						endCount--;
+						$("#endCount").html(endCount);
+					}
+				}
+				else if (endCount >= 2){
 					attrRemain++;
 					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 					endCount--;
@@ -245,7 +309,23 @@ $(document).ready(function () {
 				}
 			});
 			$("#decInt").click(function () {
-				if (intCount >= 2){
+				if (race == "Dwarf") {
+					if (intCount >= 3) {
+						attrRemain++;
+						$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+						intCount--;
+						$("#intCount").html(intCount);
+					}
+				}
+				else if (race == "Orc") {
+					if (intCount >= 1) {
+						attrRemain++;
+						$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+						intCount--;
+						$("#intCount").html(intCount);
+					}
+				}
+				else if (intCount >= 2){
 					attrRemain++;
 					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 					intCount--;
@@ -261,7 +341,15 @@ $(document).ready(function () {
 				}
 			});
 			$("#decWis").click(function () {
-				if (wisCount >= 2){
+				if (race == "Orc") {
+					if (wisCount >= 1) {
+						attrRemain++;
+						$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+						wisCount--;
+						$("#wisCount").html(wisCount);
+					}
+				}
+				else if (wisCount >= 2){
 					attrRemain++;
 					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 					wisCount--;
@@ -293,7 +381,23 @@ $(document).ready(function () {
 				}
 			});
 			$("#decMys").click(function () {
-				if (mysCount >= 2){
+				if (race == "Elf") {
+					if (mysCount >= 3) {
+						attrRemain++;
+						$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+						mysCount--;
+						$("#mysCount").html(mysCount);
+					}
+				}
+				else if (race == "Dwarf") {
+					if (mysCount >= 1) {
+						attrRemain++;
+						$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+						mysCount--;
+						$("#mysCount").html(mysCount);
+					}
+				}
+				else if (mysCount >= 2){
 					attrRemain++;
 					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 					mysCount--;
@@ -325,7 +429,15 @@ $(document).ready(function () {
 				}
 			});
 			$("#decLuc").click(function () {
-				if (lukCount >= 2){
+				if (race == "Orc") {
+					if (lukCount >= 1) {
+						attrRemain++;
+						$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+						lukCount--;
+						$("#lukCount").html(lukCount);
+					}
+				}
+				else if (lukCount >= 2){
 					attrRemain++;
 					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 					lukCount--;
