@@ -104,10 +104,7 @@ ul li:hover {
 }
 #attributeList {
 	display: inline-block;
-	float: none;
-	overflow: hidden;
-	margin-left: auto;
-	margin-right: auto;
+	text-align: center;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -194,8 +191,6 @@ div:hover {
 }
 #counters {
 	display:  inline-block;
-	float: right;
-	margin-right: 40%;
 	color: #07e6ed;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
