@@ -60,6 +60,7 @@ ul {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	
 }
 ul li {
 	font-family: 'Lunchds';
@@ -111,6 +112,7 @@ ul li:hover {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	margin: 95.188 auto auto 16
 }
 #attributeList li div{
 	display: inline-block;
@@ -205,4 +207,8 @@ div:hover {
 #counters li:hover {
 	cursor: text;
 	color: #07e6ed;
+}
+.fuckingNormies {
+	width: 12.5%;
+    margin: 0 auto; 
 }
