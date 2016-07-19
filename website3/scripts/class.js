@@ -66,6 +66,7 @@ $(document).ready(function () {
 		var acceptHuman = confirm("Do you truly wish to walk the sunken path as a human?");
 		if (acceptHuman == true) {
 			localStorage.Race = "Human";
+			console.log(race);
 			strCount = 1;
 			agiCount = 1;
 			dexCount = 1;
@@ -108,6 +109,7 @@ $(document).ready(function () {
 			localStorage.Endurance = Number(localStorage.Endurance)-1;
 			localStorage.Strength = Number(localStorage.Strength)-1;
 			localStorage.Race = "Elf";
+			console.log(race);
 			strCount = 0;
 			agiCount = 1;
 			dexCount = 2;
@@ -150,6 +152,7 @@ $(document).ready(function () {
 			localStorage.Mysterium = Number(localStorage.Mysterium)-1;
 			localStorage.Agility = Number(localStorage.Agility)-1;
 			localStorage.Race = "Dwarf";
+			console.log(race);
 			strCount = 2;
 			agiCount = 0;
 			dexCount = 1;
@@ -193,6 +196,7 @@ $(document).ready(function () {
 			localStorage.Wisdom = Number(localStorage.Wisdom)-1;
 			localStorage.Luck = Number(localStorage.Luck)-1;
 			localStorage.Race = "Orc";
+			console.log(race);
 			strCount = 3;
 			agiCount = 1;
 			dexCount = 1;
