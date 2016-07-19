@@ -486,6 +486,6 @@ $(document).ready(function () {
 			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			lukCount--;
 			$("#lukCount").html(lukCount);
-			}
+		}
 	});
 });	
