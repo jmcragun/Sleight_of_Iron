@@ -56,6 +56,13 @@ $(document).ready(function () {
 		}
 		$(this).addClass("active");
 		$(this).siblings().removeClass("active").addClass("inactive");
+	});		
+	$("ul#attributeList li").click(function () {
+		if ($(this).hasClass("inactive")) {
+			$(this).removeClass("inactive");
+		}
+		$(this).addClass("active");
+		$(this).siblings().removeClass("active").addClass("inactive");
 	});
 	$(".return").click(function () {
 		$("li").children().fadeOut(500);
