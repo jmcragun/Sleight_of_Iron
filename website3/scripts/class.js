@@ -144,6 +144,7 @@ $(document).ready(function () {
 			var mysCount = 0;
 			var agiCount = 0;
 			var perCount = 1;
+			var endCount = 1;
 			var lukCount = 1;
 			var wisCount = 1;
 			var fatCount = 1;
