@@ -200,7 +200,7 @@ $(document).ready(function () {
 			strCount = 3;
 			agiCount = 1;
 			dexCount = 1;
-			endCount = 3;
+			endCount = 2;
 			intCount = 0;
 			wisCount = 0;
 			fatCount = 1;
