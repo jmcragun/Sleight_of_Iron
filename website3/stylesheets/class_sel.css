@@ -105,6 +105,7 @@ ul li:hover {
 }
 #attributeList {
 	display: inline-block;
+	position: fixed;
 	text-align: center;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -192,6 +193,7 @@ div:hover {
 	display: inline;
 }
 #counters {
+	position: fixed;
 	display:  inline-block;
 	color: #07e6ed;
 	-webkit-touch-callout: none;
