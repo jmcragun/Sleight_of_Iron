@@ -214,3 +214,10 @@ div:hover {
 	width: 12.5%;
     margin: 0 42.5% 0 47%
 }
+.preview {
+	border: 2px;
+	display: inline;
+}
+.userNamePreview {
+	display: inline-block;
+}

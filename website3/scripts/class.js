@@ -7,6 +7,7 @@ localStorage.getItem('Intelligence');
 localStorage.getItem('Luck');
 localStorage.getItem('Mysterium');
 localStorage.getItem('Personality');
+localStorage.getItem('User_Name');
 var race = localStorage.Race;
 var attrRemain = 25;
 var nextCounter = 1;
@@ -474,4 +475,9 @@ $(document).ready(function () {
 			$("#lukCount").html(lukCount);
 		}
 	});
+	$(document).ready(function () {
+		var name_preview_intro = "Name: ";
+		$("#userNamePreview").html(name_preview_intro);
+		$("#userNamePreview").append(localStorage.User_Name);
+	});	
 });	
