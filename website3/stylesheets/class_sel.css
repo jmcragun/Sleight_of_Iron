@@ -216,6 +216,7 @@ div:hover {
     margin: 0 42.5% 0 47%
 }
 #preview {
+	background-color: #222222;
 	border: 2px;
 	position: absolute;
 	left: 80%;
@@ -229,19 +230,19 @@ div:hover {
 }
 #userNamePreview, #healthPreview, #manaPreview, #staminaPreview {
 	cursor: text !important; 
-	color: white;
+	color: #CFCFCF;
 }
 #userNamePreview:hover {
-	color: white;
+	color: #CFCFCF;
 }
 #healthPreview:hover {
-	color: white;
+	color: #CFCFCF;
 }
 #manaPreview:hover {
-	color: white;
+	color: #CFCFCF;
 }
 #staminaPreview:hover {
-	color: white;
+	color: #CFCFCF;
 }
 .userNamePreview {
 	display: inline-block;
