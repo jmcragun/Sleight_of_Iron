@@ -1,0 +1,6 @@
+Preview Box(classselector.html):
+
+Name
+Health
+Mana
+Stamina
