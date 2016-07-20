@@ -38,12 +38,12 @@ var switchtoSki = function() {
 	$("li").children().fadeOut(500);
 	$("li").removeClass("inactive");
 	$("li").removeClass("active");
-	$("secondq").fadeOut(500);
+	$("#secondq").fadeOut(500);
 	$("ul#attributeList li").fadeOut(500);
 	$("#counters").fadeOut(500);
 	$("as1").fadeOut(500);
 	$("ul#skillList li").delay(500).fadeIn(500);
-	$("thirdq").delay(500).fadeIn(500);
+	$("#thirdq").delay(500).fadeIn(500);
 	nextCounter++;
 };
 $(document).ready(function () {
