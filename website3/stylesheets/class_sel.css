@@ -227,6 +227,7 @@ div:hover {
 	z-index: 100;
 	cursor: text;
 	padding-right: 17px;
+	position: fixed;
 }
 #userNamePreview, #healthPreview, #manaPreview, #staminaPreview {
 	cursor: text !important; 
