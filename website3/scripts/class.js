@@ -43,6 +43,7 @@ var switchtoSki = function() {
 	$("#counters").fadeOut(500);
 	$("as1").fadeOut(500);
 	$("ul#skillList li").delay(500).fadeIn(500);
+	$("thirdq").delay(500).fadeIn(500);
 	nextCounter++;
 };
 $(document).ready(function () {
