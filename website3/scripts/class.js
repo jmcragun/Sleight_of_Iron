@@ -33,7 +33,6 @@ var switchtoAtt = function() {
 	$("#secondq").delay(500).fadeIn(500);
 	$("#as1").delay(500).fadeIn(500);
 	$(".return").fadeOut(500);
-	return false;
 };
 $(document).ready(function () {
 	$("#firstq").hide().delay(500).fadeIn(1000);
@@ -104,6 +103,7 @@ $(document).ready(function () {
 			$("#perCount").html(perCount);
 			$("#lukCount").html(lukCount);
 			switchtoAtt();
+			return false;
 		}
 	});
 	$("#selectElf").click(function () {
@@ -136,6 +136,7 @@ $(document).ready(function () {
 			$("#perCount").html(perCount);
 			$("#lukCount").html(lukCount);				
 			switchtoAtt();
+			return false;
 		}
 	});
 	$("#selectDwarf").click(function () {
@@ -168,6 +169,7 @@ $(document).ready(function () {
 			$("#perCount").html(perCount);
 			$("#lukCount").html(lukCount);	
 			switchtoAtt();
+			return false;
 		}
 	});
 	$("#selectOrc").click(function () {
@@ -201,6 +203,7 @@ $(document).ready(function () {
 			$("#perCount").html(perCount);
 			$("#lukCount").html(lukCount);			
 			switchtoAtt();
+			return false;
 		}
 	});
 	$("#incStr").click(function () {
