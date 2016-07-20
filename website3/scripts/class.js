@@ -10,16 +10,30 @@ localStorage.getItem('Personality');
 var race = localStorage.Race;
 var attrRemain = 25;
 var nextCounter = 1;
-var strCount 
-var agiCount 
-var dexCount 
-var endCount
-var intCount
-var wisCount
-var fatCount
-var mysCount
-var perCount
-var lukCount
+var strCount; 
+var agiCount;
+var dexCount; 
+var endCount;
+var intCount;
+var wisCount;
+var fatCount;
+var mysCount;
+var perCount;
+var lukCount;
+var switchtoAtt = function() {
+	$("li").children().fadeOut(500);
+	$("li").removeClass("inactive");
+	$("li").removeClass("active");
+	$("#firstq").fadeOut(500);
+	$("#raceList").fadeOut(500);
+	$("ul#attributeList li").delay(500).fadeIn(500).children().fadeIn(500);
+	$("#counters").delay(500).fadeIn(500);
+	$("#totalAttrPnts").delay(500).fadeIn(500);
+	$("#secondq").delay(500).fadeIn(500);
+	$("#as1").delay(500).fadeIn(500);
+	$(".return").fadeOut(500);
+	return false;
+};
 $(document).ready(function () {
 	$("#firstq").hide().delay(500).fadeIn(1000);
 	$("#attributeList").hide().delay(500).fadeIn(1000);
@@ -86,19 +100,8 @@ $(document).ready(function () {
 			$("#fatCount").html(fatCount);
 			$("#mysCount").html(mysCount);
 			$("#perCount").html(perCount);
-			$("#lukCount").html(lukCount);				
-			$("li").children().fadeOut(500);
-			$("li").removeClass("inactive");
-			$("li").removeClass("active");
-			$("#firstq").fadeOut(500);
-			$("#raceList").fadeOut(500);
-			$("ul#attributeList li").delay(500).fadeIn(500).children().fadeIn(500);
-			$("#counters").delay(500).fadeIn(500);
-			$("#totalAttrPnts").delay(500).fadeIn(500);
-			$("#secondq").delay(500).fadeIn(500);
-			$("#as1").delay(500).fadeIn(500);
-			$(".return").fadeOut(500);
-			return false;
+			$("#lukCount").html(lukCount);
+			switchtoAtt();
 		}
 	});
 	$("#selectElf").click(function () {
@@ -130,18 +133,7 @@ $(document).ready(function () {
 			$("#mysCount").html(mysCount);
 			$("#perCount").html(perCount);
 			$("#lukCount").html(lukCount);				
-			$("li").children().fadeOut(500);
-			$("li").removeClass("inactive");
-			$("li").removeClass("active");
-			$("ul#attributeList li").delay(500).fadeIn(500).children().fadeIn(500);
-			$("#firstq").fadeOut(500);
-			$("#raceList").fadeOut(500);
-			$("#counters").delay(500).fadeIn(500);
-			$("#totalAttrPnts").delay(500).fadeIn(500);
-			$("#secondq").delay(500).fadeIn(500);
-			$("#as1").delay(500).fadeIn(500);
-			$(".return").fadeOut(500);
-			return false;
+			switchtoAtt();
 		}
 	});
 	$("#selectDwarf").click(function () {
@@ -173,18 +165,7 @@ $(document).ready(function () {
 			$("#mysCount").html(mysCount);
 			$("#perCount").html(perCount);
 			$("#lukCount").html(lukCount);	
-			$("li").children().fadeOut(500);
-			$("li").removeClass("inactive");
-			$("li").removeClass("active");
-			$("ul#attributeList li").delay(500).fadeIn(500).children().fadeIn(500);
-			$("#firstq").fadeOut(500);
-			$("#raceList").fadeOut(500);
-			$("#counters").delay(500).fadeIn(500);
-			$("#totalAttrPnts").delay(500).fadeIn(500);
-			$("#secondq").delay(500).fadeIn(500);
-			$("#as1").delay(500).fadeIn(500);
-			$(".return").fadeOut(500);
-			return false;
+			switchtoAtt();
 		}
 	});
 	$("#selectOrc").click(function () {
@@ -217,18 +198,7 @@ $(document).ready(function () {
 			$("#mysCount").html(mysCount);
 			$("#perCount").html(perCount);
 			$("#lukCount").html(lukCount);			
-			$("li").children().fadeOut(500);
-			$("li").removeClass("inactive");
-			$("li").removeClass("active");
-			$("ul#attributeList li").delay(500).fadeIn(500).children().fadeIn(500);
-			$("#firstq").fadeOut(500);
-			$("#raceList").fadeOut(500);
-			$("#counters").delay(500).fadeIn(500);
-			$("#totalAttrPnts").delay(500).fadeIn(500);
-			$("#secondq").delay(500).fadeIn(500);
-			$("#as1").delay(500).fadeIn(500);
-			$(".return").fadeOut(500);
-			return false;
+			switchtoAtt();
 		}
 	});
 	$("#incStr").click(function () {
