@@ -44,6 +44,7 @@ $(document).ready(function () {
 	$("#as1").hide();
 	$("#secondq").hide();
 	$("#counters").hide();
+	$("ul#skillList li").hide();
 	$("ul#attributeList li").hide();
 	$(".unlockable").hide();
 	$("ul#raceList li").children().hide();
