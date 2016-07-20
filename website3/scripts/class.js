@@ -512,7 +512,9 @@ $(document).ready(function () {
 		$("#manaPreview").html("Mana: ");
 		$("#manaPreview").append(localStorage.Mana);
 		$("#staminaPreview").html("Stamina: ");
-		$("#staminaPreview").append(localStorage.Stamina);	
+		$("#staminaPreview").append(localStorage.Stamina);
+		$("#racePreview").html("Race: ");
+		$("#racePreview").append(localStorage.Race);		
 		$("#goldPreview").html("Gold: ");
 		$("#goldPreview").append(localStorage.Gold);		
 		$("#bladePreview").html("Blade: ");
