@@ -10,7 +10,7 @@ localStorage.getItem('Personality');
 localStorage.getItem('User_Name');
 var race = localStorage.Race;
 var attrRemain = 25;
-var nextCounter = 1;
+var nextCounter = 0;
 var strCount; 
 var agiCount;
 var dexCount; 
@@ -34,6 +34,17 @@ var switchtoAtt = function() {
 	$("#as1").delay(500).fadeIn(500);
 	$(".return").fadeOut(500);
 };
+var switchtoSki = function() {
+	$("li").children().fadeOut(500);
+	$("li").removeClass("inactive");
+	$("li").removeClass("active");
+	$("secondq").fadeOut(500);
+	$("ul#attributeList li").fadeOut(500);
+	$("#counters").fadeOut(500);
+	$("as1").fadeOut(500);
+	$("ul#skillList li").delay(500).fadeIn(500);
+	nextCounter++;
+};
 $(document).ready(function () {
 	$("#firstq").hide().delay(500).fadeIn(1000);
 	$("#attributeList").hide().delay(500).fadeIn(1000);
@@ -43,6 +54,7 @@ $(document).ready(function () {
 	$(".next").hide();
 	$("#as1").hide();
 	$("#secondq").hide();
+	$("#thirdq").hide();
 	$("#counters").hide();
 	$("ul#skillList li").hide();
 	$("ul#attributeList li").hide();
@@ -252,6 +264,11 @@ $(document).ready(function () {
 			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			strCount--;
 			$("#strCount").html(strCount);
+		}
+	});
+	$(".next").click(function () {
+		if (nextCounter == 0) {
+			switchtoSki();
 		}
 	});
 	$("#incAgl").click(function () {
