@@ -228,6 +228,7 @@ div:hover {
 	cursor: text;
 	padding-right: 17px;
 	position: fixed;
+	border: 3px groove #cfcfcf;
 }
 #userNamePreview, #healthPreview, #manaPreview, #staminaPreview {
 	cursor: text !important; 
