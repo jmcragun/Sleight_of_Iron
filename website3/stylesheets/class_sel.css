@@ -221,9 +221,9 @@ div:hover {
 	position: absolute;
 	left: 80%;
 	overflow-y: scroll;
-	height: 90%; 
+	height: 80%; 
 	width: 20%;
-	top: 5%;
+	top: 10%;
 	z-index: 100;
 	cursor: text;
 	padding-right: 17px;
