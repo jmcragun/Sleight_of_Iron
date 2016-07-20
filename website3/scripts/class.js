@@ -206,6 +206,14 @@ $(document).ready(function () {
 			return false;
 		}
 	});
+	$(".incAtt").click(function () {
+		if (attrRemain == 1) {
+			$(".next").fadeIn(500);
+		} 
+	});
+	$(".decAtt").click(function () {
+		$(".next").fadeOut(500);
+	});
 	$("#incStr").click(function () {
 		if (attrRemain >= 1){
 			attrRemain--;

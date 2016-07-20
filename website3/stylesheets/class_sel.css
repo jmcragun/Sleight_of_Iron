@@ -247,3 +247,10 @@ div:hover {
 .userNamePreview {
 	display: inline-block;
 }
+.next {
+	color:#cfcfcf;
+	font-family: 'Lunchds';
+	text-align: center;
+	margin-top: 20px;
+	font-size: 18px;
+}
