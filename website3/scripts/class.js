@@ -480,7 +480,16 @@ $(document).ready(function () {
 	});
 	$(document).ready(function () {
 		var name_preview_intro = "Name: ";
+		var health_preview_intro = "Health: ";
+		var mana_preview_intro = "Mana: ";
+		var stamina_preview_intro = "Stamina: ";
 		$("#userNamePreview").html(name_preview_intro);
 		$("#userNamePreview").append(localStorage.User_Name);
+		$("#healthPreview").html(health_preview_intro);
+		$("#healthPreview").append(localStorage.Health);
+		$("#manaPreview").html(mana_preview_intro);
+		$("#manaPreview").append(localStorage.Mana);
+		$("#staminaPreview").html(stamina_preview_intro);
+		$("#staminaPreview").append(localStorage.Stamina);		
 	});	
 });	

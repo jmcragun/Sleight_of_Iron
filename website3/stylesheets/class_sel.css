@@ -9,6 +9,7 @@
 }
 body {
 	background-color: black;
+	overflow-x: hidden;
 }
 h1 {
 	margin: 0 auto;
@@ -214,9 +215,33 @@ div:hover {
 	width: 12.5%;
     margin: 0 42.5% 0 47%
 }
-.preview {
+#preview {
 	border: 2px;
-	display: inline;
+	position: absolute;
+	left: 80%;
+	overflow-y: scroll;
+	height: 90%; 
+	width: 20%;
+	top: 5%;
+	z-index: 100;
+	cursor: text;
+	padding-right: 17px;
+}
+#userNamePreview, #healthPreview, #manaPreview, #staminaPreview {
+	cursor: text !important; 
+	color: white;
+}
+#userNamePreview:hover {
+	color: white;
+}
+#healthPreview:hover {
+	color: white;
+}
+#manaPreview:hover {
+	color: white;
+}
+#staminaPreview:hover {
+	color: white;
 }
 .userNamePreview {
 	display: inline-block;
