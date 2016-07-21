@@ -145,9 +145,9 @@ $(document).ready(function () {
 			localStorage.Strength = Number(localStorage.Strength)-1;
 			localStorage.Race = "Elf";
 			console.log(race);
-			localStorage.Health = 75;
-			localStorage.Mana = 25;
-			localStorage.Stamina = 75;
+			localStorage.Health = 40;
+			localStorage.Mana = 75;
+			localStorage.Stamina = 40;
 			$("#healthPreview").html("Health: ");
 			$("#healthPreview").append(localStorage.Health);
 			$("#manaPreview").html("Mana: ");
@@ -193,9 +193,9 @@ $(document).ready(function () {
 			localStorage.Agility = Number(localStorage.Agility)-1;
 			localStorage.Race = "Dwarf";
 			console.log(race);
-			localStorage.Health = 75;
-			localStorage.Mana = 25;
-			localStorage.Stamina = 75;
+			localStorage.Health = 60;
+			localStorage.Mana = 35;
+			localStorage.Stamina = 60;
 			$("#healthPreview").html("Health: ");
 			$("#healthPreview").append(localStorage.Health);
 			$("#manaPreview").html("Mana: ");
@@ -243,8 +243,8 @@ $(document).ready(function () {
 			localStorage.Race = "Orc";
 			console.log(race);
 			localStorage.Health = 75;
-			localStorage.Mana = 25;
-			localStorage.Stamina = 75;
+			localStorage.Mana = 15;
+			localStorage.Stamina = 60;
 			$("#healthPreview").html("Health: ");
 			$("#healthPreview").append(localStorage.Health);
 			$("#manaPreview").html("Mana: ");
