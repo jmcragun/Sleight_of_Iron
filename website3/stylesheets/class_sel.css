@@ -252,7 +252,7 @@ div:hover {
 	cursor: default !important;
 }
 /* There's a whole lot of CSS here because doing it automatically didn't work for some reason. ¯\_(ツ)_/¯ */
-#userNamePreview, #healthPreview, #manaPreview, #staminaPreview, #goldPreview, #bladePreview, #bluntPreview, #one_handedPreview, #two_handedPreview, #light_armorPreview, #heavy_armorPreview, #blockPreview, #dodgePreview, #brawlerPreview, #archeryPreview, #marksmanPreview, #throwingPreview, #divinationPreview, #covenantPreview, #pyromancyPreview, #hydromancyPreview, #aeromancyPreview, #geomancyPreview, #electromancyPreview, #fitnessPreview, #survivalPreview, #armorerPreview, #weapon_masterPreview, #alchemyPreview, #engineeringPreview, #tacticsPreview, #mappingPreview, #trackingPreview, #looterPreview, #barterPreview, #intimidationPreview, #persuasionPreview, #leadershipPreview, #deceptionPreview, #stealthPreview {
+#userNamePreview, #healthPreview, #manaPreview, #staminaPreview, #racePreview, #goldPreview, #bladePreview, #bluntPreview, #one_handedPreview, #two_handedPreview, #light_armorPreview, #heavy_armorPreview, #blockPreview, #dodgePreview, #brawlerPreview, #archeryPreview, #marksmanPreview, #throwingPreview, #divinationPreview, #covenantPreview, #pyromancyPreview, #hydromancyPreview, #aeromancyPreview, #geomancyPreview, #electromancyPreview, #fitnessPreview, #survivalPreview, #armorerPreview, #weapon_masterPreview, #alchemyPreview, #engineeringPreview, #tacticsPreview, #mappingPreview, #trackingPreview, #looterPreview, #barterPreview, #intimidationPreview, #persuasionPreview, #leadershipPreview, #deceptionPreview, #stealthPreview {
 	cursor: default !important; 
 	color: #CFCFCF;
 }
@@ -266,6 +266,9 @@ div:hover {
 	color: #CFCFCF;
 }
 #staminaPreview:hover {
+	color: #CFCFCF;
+}
+#racePreview:hover {
 	color: #CFCFCF;
 }
 #goldPreview:hover {

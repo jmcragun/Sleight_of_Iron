@@ -31,7 +31,7 @@ var switchtoAtt = function() {
 	$("#counters").delay(500).fadeIn(500);
 	$("#totalAttrPnts").delay(500).fadeIn(500);
 	$("#secondq").delay(500).fadeIn(500);
-	$("#as1").delay(500).fadeIn(500);
+	$("#as1").delay(500).fadeIn(500);	
 	$(".return").fadeOut(500);
 };
 var switchtoSki = function() {
@@ -47,6 +47,8 @@ var switchtoSki = function() {
 	nextCounter++;
 };
 $(document).ready(function () {
+	$("#userNamePreview").html("Name: ");
+	$("#userNamePreview").append(localStorage.User_Name);
 	$("#firstq").hide().delay(500).fadeIn(1000);
 	$("#attributeList").hide().delay(500).fadeIn(1000);
 	$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
@@ -61,7 +63,7 @@ $(document).ready(function () {
 	$("ul#attributeList li").hide();
 	$(".unlockable").hide();
 	$("ul#raceList li").children().hide();
-	$("ul#raceList").hide().delay(500).fadeIn(1000);
+	$("ul#raceList").hide().delay(500).fadeIn(1000);	
 	$("ul#raceList li").click(function () {
 		$(this).siblings().not(".unlockable").addClass("inactive2");
 		$(this).addClass("active2");
@@ -95,6 +97,21 @@ $(document).ready(function () {
 		if (acceptHuman == true) {
 			localStorage.Race = "Human";
 			console.log(race);
+			localStorage.Health = 50;
+			localStorage.Mana = 50;
+			localStorage.Stamina = 50;
+			$("#healthPreview").html("Health: ");
+			$("#healthPreview").append(localStorage.Health);
+			$("#manaPreview").html("Mana: ");
+			$("#manaPreview").append(localStorage.Mana);
+			$("#staminaPreview").html("Stamina: ");
+			$("#staminaPreview").append(localStorage.Stamina);
+			$("#racePreview").html("Race: ");
+			$("#racePreview").append(localStorage.Race);
+			$("#goldPreview").html("Gold: ");
+			$("#goldPreview").append(localStorage.Gold);			
+			$("#racePreview").html("Race: ");
+			$("#racePreview").append(localStorage.Race);			
 			strCount = 1;
 			agiCount = 1;
 			dexCount = 1;
@@ -128,6 +145,21 @@ $(document).ready(function () {
 			localStorage.Strength = Number(localStorage.Strength)-1;
 			localStorage.Race = "Elf";
 			console.log(race);
+			localStorage.Health = 75;
+			localStorage.Mana = 25;
+			localStorage.Stamina = 75;
+			$("#healthPreview").html("Health: ");
+			$("#healthPreview").append(localStorage.Health);
+			$("#manaPreview").html("Mana: ");
+			$("#manaPreview").append(localStorage.Mana);
+			$("#staminaPreview").html("Stamina: ");
+			$("#staminaPreview").append(localStorage.Stamina);
+			$("#racePreview").html("Race: ");
+			$("#racePreview").append(localStorage.Race);
+			$("#goldPreview").html("Gold: ");
+			$("#goldPreview").append(localStorage.Gold);			
+			$("#racePreview").html("Race: ");
+			$("#racePreview").append(localStorage.Race);
 			strCount = 0;
 			agiCount = 1;
 			dexCount = 2;
@@ -161,6 +193,21 @@ $(document).ready(function () {
 			localStorage.Agility = Number(localStorage.Agility)-1;
 			localStorage.Race = "Dwarf";
 			console.log(race);
+			localStorage.Health = 75;
+			localStorage.Mana = 25;
+			localStorage.Stamina = 75;
+			$("#healthPreview").html("Health: ");
+			$("#healthPreview").append(localStorage.Health);
+			$("#manaPreview").html("Mana: ");
+			$("#manaPreview").append(localStorage.Mana);
+			$("#staminaPreview").html("Stamina: ");
+			$("#staminaPreview").append(localStorage.Stamina);
+			$("#racePreview").html("Race: ");
+			$("#racePreview").append(localStorage.Race);
+			$("#goldPreview").html("Gold: ");
+			$("#goldPreview").append(localStorage.Gold);
+			$("#racePreview").html("Race: ");
+			$("#racePreview").append(localStorage.Race);			
 			strCount = 2;
 			agiCount = 0;
 			dexCount = 1;
@@ -195,6 +242,19 @@ $(document).ready(function () {
 			localStorage.Luck = Number(localStorage.Luck)-1;
 			localStorage.Race = "Orc";
 			console.log(race);
+			localStorage.Health = 75;
+			localStorage.Mana = 25;
+			localStorage.Stamina = 75;
+			$("#healthPreview").html("Health: ");
+			$("#healthPreview").append(localStorage.Health);
+			$("#manaPreview").html("Mana: ");
+			$("#manaPreview").append(localStorage.Mana);
+			$("#staminaPreview").html("Stamina: ");
+			$("#staminaPreview").append(localStorage.Stamina);
+			$("#racePreview").html("Race: ");
+			$("#racePreview").append(localStorage.Race);
+			$("#goldPreview").html("Gold: ");
+			$("#goldPreview").append(localStorage.Gold);		
 			strCount = 3;
 			agiCount = 1;
 			dexCount = 1;
@@ -504,19 +564,11 @@ $(document).ready(function () {
 			$("#lukCount").html(lukCount);
 		}
 	});
-	$(document).ready(function () {
-		$("#userNamePreview").html("Name: ");
-		$("#userNamePreview").append(localStorage.User_Name);
-		$("#healthPreview").html("Health: ");
-		$("#healthPreview").append(localStorage.Health);
-		$("#manaPreview").html("Mana: ");
-		$("#manaPreview").append(localStorage.Mana);
-		$("#staminaPreview").html("Stamina: ");
-		$("#staminaPreview").append(localStorage.Stamina);
-		$("#racePreview").html("Race: ");
-		$("#racePreview").append(localStorage.Race);		
-		$("#goldPreview").html("Gold: ");
-		$("#goldPreview").append(localStorage.Gold);		
+
+		/*		
+
+		These will be used once the player submits their values for them
+		
 		$("#bladePreview").html("Blade: ");
 		$("#bladePreview").append(localStorage.blade);
 		$("#bluntPreview").html("Blunt: ");
@@ -586,6 +638,6 @@ $(document).ready(function () {
 		$("#deceptionPreview").html("Deception: ");
 		$("#deceptionPreview").append(localStorage.deception);
 		$("#stealthPreview").html("Stealth: ");
-		$("#stealthPreview").append(localStorage.stealth);		
-	});	
+		$("#stealthPreview").append(localStorage.stealth);	
+		*/
 });	
