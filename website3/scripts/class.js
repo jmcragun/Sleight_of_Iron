@@ -42,6 +42,7 @@ var switchtoSki = function() {
 	$("ul#attributeList li").fadeOut(500);
 	$("#counters").fadeOut(500);
 	$("#totalAttrPnts").fadeOut(500);
+	$(".attributeContainer").fadeOut(500);
 	$("#as1").fadeOut(500);
 	$("ul#skillList li").delay(500).fadeIn(500);
 	$("#thirdq").delay(500).fadeIn(500);
