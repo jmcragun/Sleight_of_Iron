@@ -86,6 +86,17 @@ $(document).ready(function () {
 					localStorage.setItem("barter", 1);
 					localStorage.setItem("leadership", 1);	
 					localStorage.setItem("deception", 1);
+					localStorage.setItem("Attack_rating", 1);
+					localStorage.setItem("Physical_defense", 1);
+					localStorage.setItem("Mystic_attack", 1);
+					localStorage.setItem("Mystic_defence", 1);
+					localStorage.setItem("Priority_Points", 1);
+					localStorage.setItem("Action_deduction", 1);
+					localStorage.setItem("Training_affinity", 1);
+					localStorage.setItem("Magic_affinity", 1);
+					localStorage.setItem("Critical_chance", 1);
+					localStorage.setItem("Magic_critical_chance", 1);
+					localStorage.setItem("Skill_points", 1);
 					localStorage.setItem("Main_hand", undefined);
 					localStorage.setItem("Off_hand", undefined);
 					localStorage.setItem("Gold", 1);	

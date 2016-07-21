@@ -110,8 +110,28 @@ $(document).ready(function () {
 			$("#staminaPreview").append(localStorage.Stamina);
 			$("#racePreview").html("Race: ");
 			$("#racePreview").append(localStorage.Race);			
-			$("#racePreview").html("Race: ");
-			$("#racePreview").append(localStorage.Race);			
+			$("#attackRatingPreview").html("Attack Rating: ");
+			$("#attackRatingPreview").append(localStorage.Attack_rating);				
+			$("#physicalDefPreview").html("Physical Defence: ");
+			$("#physicalDefPreview").append(localStorage.Physical_defense);
+			$("#mysAttackPreview").html("Mystic Attack: ");
+			$("#mysAttackPreview").append(localStorage.Mystic_attack);
+			$("#mysDefPreview").html("Mystic Defence: ");
+			$("#mysDefPreview").append(localStorage.Mystic_defence);
+			$("#priorityPntsPreview").html("Priority Points: ");
+			$("#priorityPntsPreview").append(localStorage.Priority_Points);
+			$("#actionDeductPreview").html("Action Deduction: ");
+			$("#actionDeductPreview").append(localStorage.Action_deduction);
+			$("#trainingAffinityPreview").html("Training Affinity: ");
+			$("#trainingAffinityPreview").append(localStorage.Training_affinity);
+			$("#magicAffinityPreview").html("Magic Affinity: ");
+			$("#magicAffinityPreview").append(localStorage.Magic_affinity);
+			$("#critChancePreview").html("Critical Chance: ");
+			$("#critChancePreview").append(localStorage.Critical_chance);
+			$("#magicCritChancePreview").html("Magic Critical Chance: ");
+			$("#magicCritChancePreview").append(localStorage.Magic_critical_chance);
+			$("#skillPntsPreview").html("Skill Points: ");
+			$("#skillPntsPreview").append(localStorage.Skill_points);			
 			strCount = 1;
 			agiCount = 1;
 			dexCount = 1;
@@ -155,9 +175,7 @@ $(document).ready(function () {
 			$("#staminaPreview").html("Stamina: ");
 			$("#staminaPreview").append(localStorage.Stamina);
 			$("#racePreview").html("Race: ");
-			$("#racePreview").append(localStorage.Race);
-			$("#racePreview").html("Race: ");
-			$("#racePreview").append(localStorage.Race);					
+			$("#racePreview").append(localStorage.Race);				
 			strCount = 0;
 			agiCount = 1;
 			dexCount = 2;
@@ -201,9 +219,7 @@ $(document).ready(function () {
 			$("#staminaPreview").html("Stamina: ");
 			$("#staminaPreview").append(localStorage.Stamina);
 			$("#racePreview").html("Race: ");
-			$("#racePreview").append(localStorage.Race);
-			$("#racePreview").html("Race: ");
-			$("#racePreview").append(localStorage.Race);			
+			$("#racePreview").append(localStorage.Race);		
 			strCount = 2;
 			agiCount = 0;
 			dexCount = 1;
@@ -633,5 +649,6 @@ $(document).ready(function () {
 		$("#deceptionPreview").append(localStorage.deception);
 		$("#stealthPreview").html("Stealth: ");
 		$("#stealthPreview").append(localStorage.stealth);	
+		
 		*/
 });	
