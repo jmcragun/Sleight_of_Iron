@@ -111,9 +111,7 @@ $(document).ready(function () {
 			$("#racePreview").html("Race: ");
 			$("#racePreview").append(localStorage.Race);			
 			$("#racePreview").html("Race: ");
-			$("#racePreview").append(localStorage.Race);
-			$("#goldPreview").html("Gold: ");
-			$("#goldPreview").append(localStorage.Gold);			
+			$("#racePreview").append(localStorage.Race);			
 			strCount = 1;
 			agiCount = 1;
 			dexCount = 1;
@@ -159,9 +157,7 @@ $(document).ready(function () {
 			$("#racePreview").html("Race: ");
 			$("#racePreview").append(localStorage.Race);
 			$("#racePreview").html("Race: ");
-			$("#racePreview").append(localStorage.Race);			
-			$("#goldPreview").html("Gold: ");
-			$("#goldPreview").append(localStorage.Gold);			
+			$("#racePreview").append(localStorage.Race);					
 			strCount = 0;
 			agiCount = 1;
 			dexCount = 2;
@@ -207,9 +203,7 @@ $(document).ready(function () {
 			$("#racePreview").html("Race: ");
 			$("#racePreview").append(localStorage.Race);
 			$("#racePreview").html("Race: ");
-			$("#racePreview").append(localStorage.Race);
-			$("#goldPreview").html("Gold: ");
-			$("#goldPreview").append(localStorage.Gold);			
+			$("#racePreview").append(localStorage.Race);			
 			strCount = 2;
 			agiCount = 0;
 			dexCount = 1;
@@ -254,9 +248,7 @@ $(document).ready(function () {
 			$("#staminaPreview").html("Stamina: ");
 			$("#staminaPreview").append(localStorage.Stamina);
 			$("#racePreview").html("Race: ");
-			$("#racePreview").append(localStorage.Race);			
-			$("#goldPreview").html("Gold: ");
-			$("#goldPreview").append(localStorage.Gold);				
+			$("#racePreview").append(localStorage.Race);						
 			strCount = 3;
 			agiCount = 1;
 			dexCount = 1;

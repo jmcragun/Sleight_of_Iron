@@ -252,7 +252,7 @@ div:hover {
 	cursor: default !important;
 }
 /* There's a whole lot of CSS here because doing it automatically didn't work for some reason. ¯\_(ツ)_/¯ */
-#userNamePreview, #healthPreview, #manaPreview, #staminaPreview, #racePreview, #goldPreview, #bladePreview, #bluntPreview, #one_handedPreview, #two_handedPreview, #light_armorPreview, #heavy_armorPreview, #blockPreview, #dodgePreview, #brawlerPreview, #archeryPreview, #marksmanPreview, #throwingPreview, #divinationPreview, #covenantPreview, #pyromancyPreview, #hydromancyPreview, #aeromancyPreview, #geomancyPreview, #electromancyPreview, #fitnessPreview, #survivalPreview, #armorerPreview, #weapon_masterPreview, #alchemyPreview, #engineeringPreview, #tacticsPreview, #mappingPreview, #trackingPreview, #looterPreview, #barterPreview, #intimidationPreview, #persuasionPreview, #leadershipPreview, #deceptionPreview, #stealthPreview {
+#userNamePreview, #healthPreview, #manaPreview, #staminaPreview, #racePreview {
 	cursor: default !important; 
 	color: #CFCFCF;
 }
@@ -269,111 +269,6 @@ div:hover {
 	color: #CFCFCF;
 }
 #racePreview:hover {
-	color: #CFCFCF;
-}
-#goldPreview:hover {
-	color: #CFCFCF;
-}
-#bladePreview:hover {
-	color: #CFCFCF;
-}
-#bluntPreview:hover {
-	color: #CFCFCF;
-}
-#one_handedPreview:hover {
-	color: #CFCFCF;
-}
-#two_handedPreview:hover {
-	color: #CFCFCF;
-}
-#light_armorPreview:hover {
-	color: #CFCFCF;
-}
-#heavy_armorPreview:hover {
-	color: #CFCFCF;
-}
-#blockPreview:hover {
-	color: #CFCFCF;
-}
-#dodgePreview:hover {
-	color: #CFCFCF;
-}
-#brawlerPreview:hover {
-	color: #CFCFCF;
-}
-#archeryPreview:hover {
-	color: #CFCFCF;
-}
-#marksmanPreview:hover {
-	color: #CFCFCF;
-}
-#throwingPreview:hover {
-	color: #CFCFCF;
-}
-#divinationPreview:hover {
-	color: #CFCFCF;
-}
-#covenantPreview:hover {
-	color: #CFCFCF;
-}
-#pyromancyPreview:hover {
-	color: #CFCFCF;
-}
-#hydromancyPreview:hover {
-	color: #CFCFCF;
-}
-#aeromancyPreview:hover {
-	color: #CFCFCF;
-}
-#electromancyPreview:hover {
-	color: #CFCFCF;
-}
-#fitnessPreview:hover {
-	color: #CFCFCF;
-}
-#survivalPreview:hover {
-	color: #CFCFCF;
-}
-#armorerPreview:hover {
-	color: #CFCFCF;
-}
-#weapon_masterPreview:hover {
-	color: #CFCFCF;
-}
-#alchemyPreview:hover {
-	color: #CFCFCF;
-}
-#engineeringPreview:hover {
-	color: #CFCFCF;
-}
-#tacticsPreview:hover {
-	color: #CFCFCF;
-}
-#mappingPreview:hover {
-	color: #CFCFCF;
-}
-#trackingPreview:hover {
-	color: #CFCFCF;
-}
-#looterPreview:hover {
-	color: #CFCFCF;
-}
-#barterPreview:hover {
-	color: #CFCFCF;
-}
-#intimidationPreview:hover {
-	color: #CFCFCF;
-}
-#persuasionPreview:hover {
-	color: #CFCFCF;
-}
-#leadershipPreview:hover {
-	color: #CFCFCF;
-}
-#deceptionPreview:hover {
-	color: #CFCFCF;
-}
-#stealthPreview:hover {
 	color: #CFCFCF;
 }
 .userNamePreview {
