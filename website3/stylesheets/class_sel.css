@@ -383,11 +383,11 @@ div:hover {
 	color:#cfcfcf;
 	font-family: 'Lunchds';
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
 	font-size: 18px;
 }
 #skillList {
-	margin-top: 5%;
 	text-align: center;
 }
 #skillList li {
