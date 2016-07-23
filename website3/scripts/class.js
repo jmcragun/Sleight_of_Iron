@@ -76,6 +76,9 @@ var save_Skills = function() {
 var userName = "";
 var nameAccepted = false;
 $(document).ready(function () {
+	$("#selectDwarf").click(function () {
+		switchtoSki();
+	});	
 	$("#preview").hide();
 	$(function() {
 		$("form").submit(function() { return false; });
