@@ -73,38 +73,6 @@ var save_Attributes = function() {
 var save_Skills = function() {
 	//same configuration as above//
 };
-var sidebar_render = function() {
-	$("#healthPreview").html("Health: ");
-	$("#healthPreview").append(localStorage.Health);
-	$("#staminaPreview").html("Stamina: ");
-	$("#staminaPreview").append(localStorage.Stamina);
-	$("#manaPreview").html("Mana: ");
-	$("#manaPreview").append(localStorage.Mana);
-	$("#racePreview").html("Race: ");
-	$("#racePreview").append(localStorage.Race);	
-	$("#attackRatingPreview").html("Attack Rating: ");
-	$("#attackRatingPreview").append(localStorage.Attack_rating);				
-	$("#physicalDefPreview").html("Physical Defence: ");
-	$("#physicalDefPreview").append(localStorage.Physical_defense);
-	$("#mysAttackPreview").html("Mystic Attack: ");
-	$("#mysAttackPreview").append(localStorage.Mystic_attack);
-	$("#mysDefPreview").html("Mystic Defence: ");
-	$("#mysDefPreview").append(localStorage.Mystic_defence);
-	$("#priorityPntsPreview").html("Priority Points: ");
-	$("#priorityPntsPreview").append(localStorage.Priority_Points);
-	$("#actionDeductPreview").html("Action Deduction: ");
-	$("#actionDeductPreview").append(localStorage.Action_deduction);
-	$("#trainingAffinityPreview").html("Training Affinity: ");
-	$("#trainingAffinityPreview").append(localStorage.Training_affinity);
-	$("#magicAffinityPreview").html("Magic Affinity: ");
-	$("#magicAffinityPreview").append(localStorage.Magic_affinity);
-	$("#critChancePreview").html("Critical Chance: ");
-	$("#critChancePreview").append(localStorage.Critical_chance);
-	$("#magicCritChancePreview").html("Magic Critical Chance: ");
-	$("#magicCritChancePreview").append(localStorage.Magic_critical_chance);
-	$("#skillPntsPreview").html("Skill Points: ");
-	$("#skillPntsPreview").append(localStorage.Skill_points);
-};
 var userName = "";
 var nameAccepted = false;
 $(document).ready(function () {
@@ -276,6 +244,7 @@ $(document).ready(function () {
 		var acceptHuman = confirm("Do you truly wish to walk the sunken path as a human?");
 		if (acceptHuman == true) {
 			localStorage.Race = "Human";
+			race = "Human";
 			console.log(race);
 			localStorage.Health = 50;
 			localStorage.Mana = 50;
@@ -313,6 +282,7 @@ $(document).ready(function () {
 			localStorage.Endurance = Number(localStorage.Endurance)-1;
 			localStorage.Strength = Number(localStorage.Strength)-1;
 			localStorage.Race = "Elf";
+			race = "Elf";
 			console.log(race);
 			localStorage.Health = 40;
 			localStorage.Mana = 75;
@@ -350,6 +320,7 @@ $(document).ready(function () {
 			localStorage.Mysterium = Number(localStorage.Mysterium)-1;
 			localStorage.Agility = Number(localStorage.Agility)-1;
 			localStorage.Race = "Dwarf";
+			race = "Dwarf";
 			console.log(race);
 			localStorage.Health = 60;
 			localStorage.Mana = 35;
@@ -388,6 +359,7 @@ $(document).ready(function () {
 			localStorage.Wisdom = Number(localStorage.Wisdom)-1;
 			localStorage.Luck = Number(localStorage.Luck)-1;
 			localStorage.Race = "Orc";
+			race = "Orc";
 			console.log(race);
 			localStorage.Health = 75;
 			localStorage.Mana = 15;
@@ -417,6 +389,38 @@ $(document).ready(function () {
 			return false;
 		}
 	});
+	var sidebar_render = function() {
+		$("#healthPreview").html("Health: ");
+		$("#healthPreview").append(localStorage.Health);
+		$("#staminaPreview").html("Stamina: ");
+		$("#staminaPreview").append(localStorage.Stamina);
+		$("#manaPreview").html("Mana: ");
+		$("#manaPreview").append(localStorage.Mana);
+		$("#racePreview").html("Race: ");
+		$("#racePreview").append(localStorage.Race);	
+		$("#attackRatingPreview").html("Attack Rating: ");
+		$("#attackRatingPreview").append(localStorage.Attack_rating);				
+		$("#physicalDefPreview").html("Physical Defence: ");
+		$("#physicalDefPreview").append(localStorage.Physical_defense);
+		$("#mysAttackPreview").html("Mystic Attack: ");
+		$("#mysAttackPreview").append(localStorage.Mystic_attack);
+		$("#mysDefPreview").html("Mystic Defence: ");
+		$("#mysDefPreview").append(localStorage.Mystic_defence);
+		$("#priorityPntsPreview").html("Priority Points: ");
+		$("#priorityPntsPreview").append(localStorage.Priority_Points);
+		$("#actionDeductPreview").html("Action Deduction: ");
+		$("#actionDeductPreview").append(localStorage.Action_deduction);
+		$("#trainingAffinityPreview").html("Training Affinity: ");
+		$("#trainingAffinityPreview").append(localStorage.Training_affinity);
+		$("#magicAffinityPreview").html("Magic Affinity: ");
+		$("#magicAffinityPreview").append(localStorage.Magic_affinity);
+		$("#critChancePreview").html("Critical Chance: ");
+		$("#critChancePreview").append(localStorage.Critical_chance);
+		$("#magicCritChancePreview").html("Magic Critical Chance: ");
+		$("#magicCritChancePreview").append(localStorage.Magic_critical_chance);
+		$("#skillPntsPreview").html("Skill Points: ");
+		$("#skillPntsPreview").append(localStorage.Skill_points);
+	};
 	$(".incAtt").click(function () {
 		if (attrRemain == 1) {
 			$(".next").fadeIn(500);
@@ -434,7 +438,7 @@ $(document).ready(function () {
 		}
 	});
 	$("#decStr").click(function () {
-		if (race == "Dwarf"){
+		if (localStorage.Race == "Dwarf"){
 			if (strCount >= 3) {
 				attrRemain++;
 				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
@@ -442,7 +446,7 @@ $(document).ready(function () {
 				$("#strCount").html(strCount);
 			}
 		}
-		else if (race == "Orc") {
+		else if (localStorage.Race == "Orc") {
 			if (strCount >= 4) {
 				attrRemain++;
 				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
@@ -450,7 +454,7 @@ $(document).ready(function () {
 				$("#strCount").html(strCount);
 			}
 		}
-		else if (race == "Elf") {
+		else if (localStorage.Race == "Elf") {
 			if (strCount >= 1) {
 				attrRemain++;
 				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
@@ -474,7 +478,7 @@ $(document).ready(function () {
 		}
 	});
 	$("#decAgl").click(function () {
-		if (race == "Elf"){
+		if (localStorage.Race == "Elf"){
 			if (agiCount >= 3) {
 				attrRemain++;
 				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
@@ -482,7 +486,7 @@ $(document).ready(function () {
 				$("#agiCount").html(agiCount);
 			}
 		}
-		else if (race == "Dwarf"){
+		else if (localStorage.Race == "Dwarf"){
 			if (agiCount >= 1) {
 				attrRemain++;
 				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
@@ -506,7 +510,7 @@ $(document).ready(function () {
 		}
 	});
 	$("#decDex").click(function () {
-		if (race == "Elf"){
+		if (localStorage.Race == "Elf"){
 			if (dexCount >= 3) {
 				attrRemain++;
 				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
@@ -530,7 +534,7 @@ $(document).ready(function () {
 		}
 	});
 	$("#decEnd").click(function () {
-		if (race == "Elf") {
+		if (localStorage.Race == "Elf") {
 			if (endCount >= 1) {
 				attrRemain++;
 				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
@@ -538,7 +542,7 @@ $(document).ready(function () {
 				$("#endCount").html(endCount);
 			}
 		}
-		else if (race == "Orc") {
+		else if (localStorage.Race == "Orc") {
 			if (endCount >= 3) {
 				attrRemain++;
 				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
@@ -562,7 +566,7 @@ $(document).ready(function () {
 		}
 	});
 	$("#decInt").click(function () {
-		if (race == "Dwarf") {
+		if (localStorage.Race == "Dwarf") {
 			if (intCount >= 3) {
 				attrRemain++;
 				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
@@ -570,7 +574,7 @@ $(document).ready(function () {
 				$("#intCount").html(intCount);
 			}
 		}
-		else if (race == "Orc") {
+		else if (localStorage.Race == "Orc") {
 			if (intCount >= 1) {
 				attrRemain++;
 				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
@@ -594,7 +598,7 @@ $(document).ready(function () {
 		}
 	});
 	$("#decWis").click(function () {
-		if (race == "Orc") {
+		if (localStorage.Race == "Orc") {
 			if (wisCount >= 1) {
 				attrRemain++;
 				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
@@ -634,7 +638,7 @@ $(document).ready(function () {
 		}
 	});
 	$("#decMys").click(function () {
-		if (race == "Elf") {
+		if (localStorage.Race == "Elf") {
 			if (mysCount >= 3) {
 				attrRemain++;
 				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
@@ -642,7 +646,7 @@ $(document).ready(function () {
 				$("#mysCount").html(mysCount);
 			}
 		}
-		else if (race == "Dwarf") {
+		else if (localStorage.Race == "Dwarf") {
 			if (mysCount >= 1) {
 				attrRemain++;
 				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
@@ -682,7 +686,7 @@ $(document).ready(function () {
 		}
 	});
 	$("#decLuc").click(function () {
-		if (race == "Orc") {
+		if (localStorage.Race == "Orc") {
 			if (lukCount >= 1) {
 				attrRemain++;
 				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
