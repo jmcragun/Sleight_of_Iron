@@ -343,17 +343,21 @@ div:hover {
 	display: flex;
 }
 #phySkill {
-	margin-left: 11%;
+	margin-left: 12%;
 }
 #mysSkill {
+<<<<<<< HEAD
 	display: inline-block; 
 	margin-left: 11%;
+=======
+	margin-left: 12%;
+>>>>>>> 3f484bacc8295d54eaaa4e84789fe9ad57707cda
 }
 #intSkill {
-	margin-left: 11%;
+	margin-left: 12%;
 }
 #thiefSkill {
-	margin-left: 11%;
+	margin-left: 12%;
 }
 #head1 {
 	font-size: 24px;
