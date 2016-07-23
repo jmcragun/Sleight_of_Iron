@@ -134,7 +134,7 @@ ul li:hover {
 }
 #attributeList li div{
 	display: inline-block;
-	color: black;
+	color: #cfcfcf;
 }
 
 .active:hover {
@@ -329,4 +329,14 @@ div:hover {
 }
 #racePreview:hover {
 	color: #CFCFCF;
+}
+.funText {
+	color: #cfcfcf;
+	font-family: 'Lunchds';
+	text-align: center;
+}
+#greeting {
+	color: #cfcfcf;
+	font-family: 'Lunchds';
+	text-align: center;
 }
