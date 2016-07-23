@@ -33,6 +33,7 @@ var switchtoAtt = function() {
 	$("#totalAttrPnts").delay(500).fadeIn(500);
 	$("#secondq").delay(500).fadeIn(500);
 	$("#as1").delay(500).fadeIn(500);	
+	$(".next").css("margin-top", "450px")
 	$(".return").fadeOut(500);
 };
 var switchtoSki = function() {
@@ -48,7 +49,6 @@ var switchtoSki = function() {
 	$("#as1").fadeOut(500);
 	$("ul#skillList li").delay(500).fadeIn(500);
 	$("#thirdq").delay(500).fadeIn(500);
-	$("next").css("margin-top", "450px")
 	nextCounter++;
 };
 var switchtoRace = function() {
