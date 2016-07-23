@@ -49,6 +49,7 @@ var switchtoSki = function() {
 	$("#as1").fadeOut(500);
 	$("ul#skillList li").delay(500).fadeIn(500);
 	$("#thirdq").delay(500).fadeIn(500);
+	$(".next").css("margin-top", "10px")
 	nextCounter++;
 };
 var switchtoRace = function() {
