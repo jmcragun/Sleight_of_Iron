@@ -76,6 +76,7 @@ var save_Skills = function() {
 var userName = "";
 var nameAccepted = false;
 $(document).ready(function () {
+	$("#preview").hide();
 	$(function() {
 		$("form").submit(function() { return false; });
 	});
@@ -188,6 +189,7 @@ $(document).ready(function () {
 			nextCounter++;
 		} else if (nextCounter == 3) {
 			switchtoRace();
+			$("#preview").delay(500).fadeIn(1000);
 			$("#userNamePreview").html("Name: ");
 			$("#userNamePreview").append(localStorage.User_Name);			
 			nextCounter++;
