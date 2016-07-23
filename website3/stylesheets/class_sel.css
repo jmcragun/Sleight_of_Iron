@@ -136,7 +136,6 @@ ul li:hover {
 	display: inline-block;
 	color: #cfcfcf;
 }
-
 .active:hover {
 	cursor: text;
 }
@@ -274,7 +273,7 @@ div:hover {
 	color:#cfcfcf;
 	font-family: 'Lunchds';
 	text-align: center;
-	margin-top: 450px;
+	margin-top: 10px;
 	margin-bottom: 20px;
 	font-size: 18px;
 }
