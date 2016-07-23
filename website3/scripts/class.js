@@ -49,6 +49,12 @@ var switchtoSki = function() {
 	$("#thirdq").delay(500).fadeIn(500);
 	nextCounter++;
 };
+var switchtoRace = function() {
+	$(".funText").fadeOut(500);
+	$(".next").fadeOut(500);
+	$("firstq").delay(500).fadeIn(500);
+	$("ul#raceList").delay.fadeIn(500);
+};
 var save_Attributes = function() {
 	localStorage.Strength = strCount;
 	localStorage.Agility = agiCount;
@@ -199,18 +205,19 @@ $(document).ready(function () {
 					localStorage.setItem("Gold", 1);	
 					$("#greeting").fadeOut(1000);
 					$("#whatsYourName").fadeOut(1000);
-					var statement1 = "<p class="funText">Well then " + userName + ", a world in turmoil rests at your feet. Will you save it, or shall you destroy it?</p>";
+					var statement1 = "<p class=\"funText\">Well then " + userName + ", a world in turmoil rests at your feet. Will you save it, or shall you destroy it?</p>";
 					$(statement1).hide().delay(1000).appendTo("body").fadeIn(1000);
 					nextCounter++;
 				}
 			}
 		} else if (nextCounter == 2) {
 			$(statement1).fadeOut(1000);
-			var statement2 = "<p class="funText">But before you are cast into this world, tell me about yourself.</p>";
+			var statement2 = "<p class=\"funText\">But before you are cast into this world, tell me about yourself.</p>";
 			$(statement2).hide().appendTo("body").fadeIn(1000);
 			nextCounter++;
 		} else if (nextCounter == 3) {
-			
+			switchtoRace();
+			nextCounter++;
 		}
 	});
 });
@@ -453,7 +460,7 @@ $(document).ready(function () {
 		}
 	});
 	$(".next").click(function () {
-		if (nextCounter == 0) {
+		if (nextCounter == 4) {
 			switchtoSki();
 		}
 	});
