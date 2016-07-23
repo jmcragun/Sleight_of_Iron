@@ -251,38 +251,6 @@ div:hover {
 	border: 3px groove #cfcfcf;
 	cursor: default !important;
 }
-/* There's a whole lot of CSS here because doing it automatically didn't work for some reason. ¯\_(ツ)_/¯ */
-#userNamePreview, #healthPreview, #manaPreview, #staminaPreview, #racePreview {
-	cursor: default !important; 
-	color: #CFCFCF;
-}
-#userNamePreview {
-	color: #ffffb3;
-}
-#healthPreview {
-	color: #b30000;
-}
-#manaPreview{
-	color: #006bb3;
-}
-#staminaPreview{
-	color: #008000;
-}
-#userNamePreview:hover {
-	color: #CFCFCF;
-}
-#healthPreview:hover {
-	color: #CFCFCF;
-}
-#manaPreview:hover {
-	color: #CFCFCF;
-}
-#staminaPreview:hover {
-	color: #CFCFCF;
-}
-#racePreview:hover {
-	color: #CFCFCF;
-}
 .userNamePreview {
 	display: inline-block;
 }
@@ -305,5 +273,44 @@ div:hover {
 	color: #CFCFCF;
 }
 .previewClass:hover {
+	color: #CFCFCF;
+}
+.characterPreview li {
+	cursor: default !important; 
+	color: #CFCFCF;
+}
+.characterPreview li:hover {
+	cursor: default !important; 
+	color: #CFCFCF;
+}
+#userNamePreview, #healthPreview, #manaPreview, #staminaPreview, #racePreview {
+	cursor: default !important; 
+	color: #CFCFCF;
+}
+#userNamePreview {
+	color: #ffffb3;
+}
+#healthPreview {
+	color: #b30000;
+}
+#manaPreview{
+	color: #006bb3;
+}
+#staminaPreview{
+	color: #008000;
+}
+#userNamePreview:hover {
+	color: #ffffb3;
+}
+#healthPreview:hover {
+	color: #b30000;
+}
+#manaPreview:hover {
+	color: #006bb3;
+}
+#staminaPreview:hover {
+	color: #008000;
+}
+#racePreview:hover {
 	color: #CFCFCF;
 }
