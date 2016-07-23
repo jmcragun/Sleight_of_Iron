@@ -339,17 +339,24 @@ div:hover {
 	font-family: 'Lunchds';
 	text-align: center;
 }
+#skills {
+	display: flex;
+}
 #phySkill {
-	display: inline-block;
+	margin-left: 11%;
 }
 #mysSkill {
+<<<<<<< HEAD
 	display: inline-block; 
+=======
+	margin-left: 11%;
+>>>>>>> 5f820d2dfdc47b0828a7bf018a6fd902c2afa1a9
 }
 #intSkill {
-	display: inline-block;
+	margin-left: 11%;
 }
 #thiefSkill {
-	display: inline-block;
+	margin-left: 11%;
 }
 #head1 {
 	font-size: 24px;
