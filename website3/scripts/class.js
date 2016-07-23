@@ -27,6 +27,7 @@ var switchtoAtt = function() {
 	$("li").removeClass("active");
 	$("#firstq").fadeOut(500);
 	$("#raceList").fadeOut(500);
+	$("ul#attributeList").delay(500).fadeIn(500);
 	$("ul#attributeList li").delay(500).fadeIn(500).children().fadeIn(500);
 	$("#counters").delay(500).fadeIn(500);
 	$("#totalAttrPnts").delay(500).fadeIn(500);
