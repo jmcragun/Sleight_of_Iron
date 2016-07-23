@@ -53,7 +53,7 @@ var switchtoSki = function() {
 var switchtoRace = function() {
 	$(".funText").fadeOut(500);
 	$(".next").fadeOut(500);
-	$("firstq").delay(500).fadeIn(500);
+	$("#firstq").delay(500).fadeIn(500);
 	$("ul#raceList").delay(500).fadeIn(500);
 };
 var save_Attributes = function() {
