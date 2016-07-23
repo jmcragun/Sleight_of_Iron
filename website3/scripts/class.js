@@ -177,14 +177,14 @@ $(document).ready(function () {
 					$("#greeting").fadeOut(1000);
 					$("#whatsYourName").fadeOut(1000);
 					var statement1 = "<p class=\"funText\">Well then " + userName + ", a world in turmoil rests at your feet. Will you save it, or shall you destroy it?</p>";
-					$(statement1).hide().delay(1000).appendTo("body").fadeIn(1000);
+					$(statement1).hide().delay(1000).appendTo(".story_begin_part").fadeIn(1000);
 					nextCounter++;
 				}
 			}
 		} else if (nextCounter == 2) {
 			$(statement1).fadeOut(1000);
 			var statement2 = "<p class=\"funText\">But before you are cast into this world, tell me about yourself.</p>";
-			$(statement2).hide().appendTo("body").fadeIn(1000);
+			$(statement2).hide().appendTo(".story_begin_part").fadeIn(1000);
 			nextCounter++;
 		} else if (nextCounter == 3) {
 			switchtoRace();
