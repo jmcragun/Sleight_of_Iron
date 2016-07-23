@@ -151,7 +151,7 @@ $(document).ready(function () {
 					localStorage.setItem("arcanomancy", 0);
 					localStorage.setItem("fitness", 1);	
 					localStorage.setItem("armorer", 1);
-					localStorage.setItem("weapon_master", 1);
+					localStorage.setItem("weapon_crafter", 1);
 					localStorage.setItem("alchemy", 1);
 					localStorage.setItem("engineering", 1);	
 					localStorage.setItem("tactics", 1);
