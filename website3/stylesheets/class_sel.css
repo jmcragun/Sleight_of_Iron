@@ -352,26 +352,34 @@ div:hover {
 	display: inline-block;
 }
 #head1 {
-	
+	font-size: 24px;
+	color: #FFDF00;
 }
 #head1:hover {
-	
+	color: #FFDF00;
+	cursor: text;
 }
 #head2 {
-	
+	font-size: 24px;
+	color: #FFDF00;
 }
 #head2:hover {
-	
+	color: #FFDF00;
+	cursor: text;
 }
 #head3 {
-	
+	font-size: 24px;
+	color: #FFDF00;
 }
 #head3:hover {
-	
+	color: #FFDF00;
+	cursor: text;
 }
 #head4 {
-	
+	font-size: 24px;
+	color: #FFDF00;
 }
 #head4:hover {
-	
+	color: #FFDF00;
+	cursor: text;
 }
