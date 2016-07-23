@@ -218,13 +218,15 @@ $(document).ready(function () {
 			nextCounter++;
 		} else if (nextCounter == 3) {
 			switchtoRace();
+			$("#userNamePreview").html("Name: ");
+			$("#userNamePreview").append(localStorage.User_Name);			
 			nextCounter++;
 		} else if (nextCounter == 4) {
 			switchtoRace();
 		}
 	});
-	$("#userNamePreview").html("Name: ");
-	$("#userNamePreview").append(localStorage.User_Name);
+	//$("#userNamePreview").html("Name: ");
+	//$("#userNamePreview").append(localStorage.User_Name);
 	$("#firstq").hide();
 	$("#attributeList").hide();
 	$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
