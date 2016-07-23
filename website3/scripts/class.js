@@ -223,7 +223,8 @@ $(document).ready(function () {
 			$("#userNamePreview").append(localStorage.User_Name);			
 			nextCounter++;
 		} else if (nextCounter == 4) {
-			switchtoRace();
+			switchtoSki();
+			nextCounter++
 		}
 	});
 	//$("#userNamePreview").html("Name: ");
