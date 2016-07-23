@@ -134,7 +134,7 @@ ul li:hover {
 }
 #attributeList li div{
 	display: inline-block;
-	color: #cfcfcf;
+	color: black;
 }
 .active:hover {
 	cursor: text;
