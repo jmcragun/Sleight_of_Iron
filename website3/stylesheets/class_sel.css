@@ -256,6 +256,18 @@ div:hover {
 	cursor: default !important; 
 	color: #CFCFCF;
 }
+#userNamePreview {
+	color: #ffffb3;
+}
+#healthPreview {
+	color: #b30000;
+}
+#manaPreview{
+	color: #006bb3;
+}
+#staminaPreview{
+	color: #008000;
+}
 #userNamePreview:hover {
 	color: #CFCFCF;
 }
