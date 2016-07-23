@@ -4,7 +4,7 @@ $(document).ready(function () {
 	$("#newG").click(function () {
 		var acceptNewG = confirm("Are you sure you want to start a new game?");
 		if (acceptNewG == true) {
-			location.href='./storypages/newgame.html'
+			location.href='./storypages/classselector.html'
 		}
 	});
 	$("#quit").click(function () {
