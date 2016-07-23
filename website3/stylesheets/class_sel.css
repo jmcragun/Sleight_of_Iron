@@ -346,12 +346,7 @@ div:hover {
 	margin-left: 12%;
 }
 #mysSkill {
-<<<<<<< HEAD
-	display: inline-block; 
-	margin-left: 11%;
-=======
 	margin-left: 12%;
->>>>>>> 3f484bacc8295d54eaaa4e84789fe9ad57707cda
 }
 #intSkill {
 	margin-left: 12%;
@@ -390,4 +385,7 @@ div:hover {
 #head4:hover {
 	color: #FFDF00;
 	cursor: text;
+}
+#dev_skip {
+	color: red;
 }
