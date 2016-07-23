@@ -218,10 +218,10 @@ $(document).ready(function () {
 		} else if (nextCounter == 3) {
 			switchtoRace();
 			nextCounter++;
+		} else if (nextCounter == 4) {
+			switchtoRace();
 		}
 	});
-});
-$(document).ready(function () {
 	$("#userNamePreview").html("Name: ");
 	$("#userNamePreview").append(localStorage.User_Name);
 	$("#firstq").hide();
@@ -457,11 +457,6 @@ $(document).ready(function () {
 			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			strCount--;
 			$("#strCount").html(strCount);
-		}
-	});
-	$(".next").click(function () {
-		if (nextCounter == 4) {
-			switchtoSki();
 		}
 	});
 	$("#incAgl").click(function () {
