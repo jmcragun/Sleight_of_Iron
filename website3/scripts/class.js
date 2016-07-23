@@ -47,7 +47,7 @@ var switchtoSki = function() {
 	$("#totalAttrPnts").fadeOut(500);
 	$(".attributeContainer").fadeOut(500);
 	$("#as1").fadeOut(500);
-	$("ul#skillList li").delay(500).fadeIn(500);
+	$("#skills").children().delay(500).fadeIn(500);
 	$("#thirdq").delay(500).fadeIn(500);
 	$(".next").css("margin-top", "10px")
 	nextCounter++;
@@ -207,7 +207,7 @@ $(document).ready(function () {
 	$("#secondq").hide();
 	$("#thirdq").hide();
 	$("#counters").hide();
-	$("ul#skillList li").hide();
+	$("#skills").children().hide();
 	$("ul#attributeList li").hide();
 	$(".unlockable").hide();
 	$("ul#raceList li").children().hide();
