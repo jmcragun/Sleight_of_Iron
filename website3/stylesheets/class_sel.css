@@ -24,6 +24,22 @@ h1 {
 	-ms-user-select: none;
 	user-select: none;
 }
+#whatsYourName {
+	background-color: #424242;
+	width: 500px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	height: 45px;
+	font-family: 'Lunchds';
+	color: #cfcfcf;
+	text-align: center;
+	font-size: 24px;
+}
+input:focus {
+	outline: none;
+}
 #firstq:hover {
 	cursor: text;
 	color:#cfcfcf;
