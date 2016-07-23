@@ -199,14 +199,14 @@ $(document).ready(function () {
 					localStorage.setItem("Gold", 1);	
 					$("#greeting").fadeOut(1000);
 					$("#whatsYourName").fadeOut(1000);
-					var statement1 = "<p>Well then " + userName + ", a world in turmoil rests at your feet. Will you save it, or shall you destroy it?</p>";
+					var statement1 = "<p class="funText">Well then " + userName + ", a world in turmoil rests at your feet. Will you save it, or shall you destroy it?</p>";
 					$(statement1).hide().delay(1000).appendTo("body").fadeIn(1000);
 					nextCounter++;
 				}
 			}
 		} else if (nextCounter == 2) {
 			$(statement1).fadeOut(1000);
-			var statement2 = "<p>But before you are cast into this world, tell me about yourself.</p>";
+			var statement2 = "<p class="funText">But before you are cast into this world, tell me about yourself.</p>";
 			$(statement2).hide().appendTo("body").fadeIn(1000);
 			nextCounter++;
 		} else if (nextCounter == 3) {
@@ -222,7 +222,6 @@ $(document).ready(function () {
 	$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 	$("#totalAttrPnts").hide();
 	$(".return").hide();
-	$(".next").hide();
 	$("#as1").hide();
 	$("#secondq").hide();
 	$("#thirdq").hide();
@@ -231,7 +230,7 @@ $(document).ready(function () {
 	$("ul#attributeList li").hide();
 	$(".unlockable").hide();
 	$("ul#raceList li").children().hide();
-	$("ul#raceList").hide().delay(500).fadeIn(1000);	
+	$("ul#raceList").hide();	
 	$("ul#raceList li").click(function () {
 		$(this).siblings().not(".unlockable").addClass("inactive2");
 		$(this).addClass("active2");
