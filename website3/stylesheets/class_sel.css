@@ -269,9 +269,10 @@ div:hover {
 	color:#cfcfcf;
 	font-family: 'Lunchds';
 	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 20px;
+	margin-top: 5%;
 	font-size: 18px;
+	position: absolute;
+	left: 49%;
 }
 #skillList {
 	text-align: center;
