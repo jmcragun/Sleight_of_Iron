@@ -76,6 +76,10 @@ var save_Skills = function() {
 var userName = "";
 var nameAccepted = false;
 $(document).ready(function () {
+	$("#mute_button").click(function() {
+        var bool = $("#music").prop("muted");
+        $("#music").prop("muted",!bool);
+	});
 	$("#dev_skip").click(function () {
 		switchtoSki();
 	});	
