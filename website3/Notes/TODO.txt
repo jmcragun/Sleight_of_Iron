@@ -1,0 +1,1 @@
+Next button and spacing between counters and left arrows on attributes list
