@@ -385,3 +385,6 @@ div:hover {
 #dev_skip {
 	color: red;
 }
+#skills:hover {
+	cursor: default;
+}
