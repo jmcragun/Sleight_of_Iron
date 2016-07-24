@@ -121,9 +121,8 @@ ul li:hover {
 	user-select: none;
 }
 #attributeList {
-	display: inline-block;
-	position: fixed;
-	text-align: center;
+	margin-right: 30%;
+	display: inline;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -133,8 +132,26 @@ ul li:hover {
 	margin: 95.188 auto auto 16
 }
 #attributeList li div{
-	display: inline-block;
+	display: inline;
 	color: black;
+}
+#counters {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#counters li {
+	color: #FFDF00;
+}
+#counters li:hover {
+	cursor: text;
+	color: #FFDF00;
+}
+.attributeContainer {
+	display: flex;
 }
 .active:hover {
 	cursor: text;
@@ -208,28 +225,7 @@ div:hover {
 	font-family: 'Lunchds';
 	display: inline;
 }
-#counters {
-	position: fixed;
-	display:  inline-block;
-	color: #07e6ed;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-#counters li {
-	color: #FFDF00;
-}
-#counters li:hover {
-	cursor: text;
-	color: #FFDF00;
-}
-.attributeContainer {
-	width: 12.5%;
-    margin: 0 42.5% 0 47%
-}
+
 #preview {
 	background-color: #222222;
 	border: 2px;
@@ -385,7 +381,4 @@ div:hover {
 #head4:hover {
 	color: #FFDF00;
 	cursor: text;
-}
-#dev_skip {
-	color: red;
 }
