@@ -129,7 +129,7 @@ ul li:hover {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	margin: 95.188 auto auto 16
+	margin-left: -20%;
 }
 #attributeList li div{
 	display: inline;
