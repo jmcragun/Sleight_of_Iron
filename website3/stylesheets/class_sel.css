@@ -390,3 +390,10 @@ div:hover {
 #skills:hover {
 	cursor: default;
 }
+#phySkill {
+	display: inline;
+}
+#phySkill li div {
+	display: inline;
+	color: black;
+}
