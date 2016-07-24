@@ -382,3 +382,6 @@ div:hover {
 	color: #FFDF00;
 	cursor: text;
 }
+#dev_skip {
+	color: red;
+}
