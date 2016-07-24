@@ -33,7 +33,7 @@ var switchtoAtt = function() {
 	$("#totalAttrPnts").delay(500).fadeIn(500);
 	$("#secondq").delay(500).fadeIn(500);
 	$("#as1").delay(500).fadeIn(500);	
-	$(".next").css("margin-top", "450px")
+	$(".next").css("margin-top", "10px")
 	$(".return").fadeOut(500);
 };
 var switchtoSki = function() {
@@ -49,7 +49,7 @@ var switchtoSki = function() {
 	$("#as1").fadeOut(500);
 	$("#skills").children().delay(500).fadeIn(500);
 	$("#thirdq").delay(500).fadeIn(500);
-	$(".next").css("margin-top", "10px")
+	$(".next").css("margin-top", "35px")
 	nextCounter++;
 };
 var switchtoRace = function() {
