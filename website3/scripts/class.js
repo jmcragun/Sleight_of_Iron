@@ -253,6 +253,38 @@ $(document).ready(function () {
 		$("li").removeClass("active2");
 		$(".return").fadeOut(500);
 	});
+	$("ul#phySkill li").click(function () {
+		if ($(this).hasClass("inactive")) {
+			$(this).removeClass("inactive");
+		}
+		$(this).addClass("active");
+		$(this).siblings().removeClass("active").addClass("inactive");
+		$(this).parent().siblings().children().removeClass("active").addClass("inactive");
+	});
+	$("ul#mysSkill li").click(function () {
+		if ($(this).hasClass("inactive")) {
+			$(this).removeClass("inactive");
+		}
+		$(this).addClass("active");
+		$(this).siblings().removeClass("active").addClass("inactive");
+		$(this).parent().siblings().children().removeClass("active").addClass("inactive");
+	});
+	$("ul#intSkill li").click(function () {
+		if ($(this).hasClass("inactive")) {
+			$(this).removeClass("inactive");
+		}
+		$(this).addClass("active");
+		$(this).siblings().removeClass("active").addClass("inactive");
+		$(this).parent().siblings().children().removeClass("active").addClass("inactive");
+	});
+	$("ul#thiefSkill li").click(function () {
+		if ($(this).hasClass("inactive")) {
+			$(this).removeClass("inactive");
+		}
+		$(this).addClass("active");
+		$(this).siblings().removeClass("active").addClass("inactive");
+		$(this).parent().siblings().children().removeClass("active").addClass("inactive");
+	});
 	$("#selectHuman").click(function () {
 		var acceptHuman = confirm("Do you truly wish to walk the sunken path as a human?");
 		if (acceptHuman == true) {
