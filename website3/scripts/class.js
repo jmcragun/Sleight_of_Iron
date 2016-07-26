@@ -277,6 +277,7 @@ $(document).ready(function () {
 		if ($(this).hasClass("inactive")) {
 			$(this).removeClass("inactive");
 		}
+		$(this).addClass("active");
 		$(this).siblings().removeClass("active").addClass("inactive");
 		$(this).parent().siblings().children().removeClass("active").addClass("inactive");
 	});
