@@ -409,3 +409,6 @@ div:hover {
 #skills:hover {
 	cursor: default;
 }
+#phySkill li div {
+	display: inline;
+}
