@@ -411,4 +411,17 @@ div:hover {
 }
 #phySkill li div {
 	display: inline;
+	color: black;
+}
+#mysSkill li div {
+	display: inline;
+	color: black;
+}
+#intSkill li div {
+	display: inline;
+	color: black;
+}
+#thiefSkill li div {
+	display: inline;
+	color: black;
 }

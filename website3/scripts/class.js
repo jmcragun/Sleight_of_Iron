@@ -50,6 +50,10 @@ var switchtoSki = function() {
 	$(".attributeContainer").fadeOut(500);
 	$("#as1").fadeOut(500);
 	$("#skills").children().delay(500).fadeIn(500);
+	$("ul#phySkill li").children().delay(500).fadeIn(500);
+	$("ul#mysSkill li").children().delay(500).fadeIn(500);
+	$("ul#intSkill li").children().delay(500).fadeIn(500);
+	$("ul#thiefSkill li").children().delay(500).fadeIn(500);
 	$("#thirdq").delay(500).fadeIn(500);
 	$("#totalSkillPnts").delay(500).fadeIn(500);
 	$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
@@ -273,7 +277,6 @@ $(document).ready(function () {
 		if ($(this).hasClass("inactive")) {
 			$(this).removeClass("inactive");
 		}
-		$(this).addClass("active");
 		$(this).siblings().removeClass("active").addClass("inactive");
 		$(this).parent().siblings().children().removeClass("active").addClass("inactive");
 	});
