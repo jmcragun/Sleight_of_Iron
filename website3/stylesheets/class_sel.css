@@ -225,7 +225,26 @@ div:hover {
 	font-family: 'Lunchds';
 	display: inline;
 }
-
+#totalSkillPnts {
+	color: #07e6ed;
+	font-size: 24px;
+	font-family: 'Lunchds';
+	margin-top: 1%;
+}
+#totalSkillPnts p {
+	color: #cfcfcf;
+	font-family: 'Lunchds';
+	display: inline;
+}
+#totalSkillPnts {
+	float: right;
+	background-color: black;
+	width: 350px;
+	height: 150px;
+	position: absolute;
+	left: 81%;
+	z-index: -1;
+}
 #preview {
 	background-color: #222222;
 	border: 2px;

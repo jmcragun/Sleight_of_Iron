@@ -10,6 +10,7 @@ localStorage.getItem('Personality');
 localStorage.getItem('User_Name');
 var race = localStorage.Race;
 var attrRemain = 25;
+var skillRemain = 30;
 var nextCounter = 0;
 var strCount; 
 var agiCount;
@@ -30,6 +31,7 @@ var switchtoAtt = function() {
 	$("ul#attributeList").delay(500).fadeIn(500);
 	$("ul#attributeList li").delay(500).fadeIn(500).children().fadeIn(500);
 	$("#counters").delay(500).fadeIn(500);
+	$("#totalSkillPnts").hide();
 	$("#totalAttrPnts").delay(500).fadeIn(500);
 	$("#secondq").delay(500).fadeIn(500);
 	$("#as1").delay(500).fadeIn(500);	
@@ -49,6 +51,8 @@ var switchtoSki = function() {
 	$("#as1").fadeOut(500);
 	$("#skills").children().delay(500).fadeIn(500);
 	$("#thirdq").delay(500).fadeIn(500);
+	$("#totalSkillPnts").delay(500).fadeIn(500);
+	$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 	$(".next").css("margin-top", "35px")
 	nextCounter++;
 };
