@@ -84,6 +84,7 @@ var save_Skills = function() {
 var userName = "";
 var nameAccepted = false;
 $(document).ready(function () {
+	$("#classselector_black").delay(250).fadeOut(500);
 	$("#mute_button").click(function() {
         var bool = $("#music").prop("muted");
         $("#music").prop("muted",!bool);
