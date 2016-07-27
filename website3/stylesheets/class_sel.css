@@ -292,6 +292,12 @@ div:hover {
 	font-size: 18px;
 	position: absolute;
 	left: 49.25%;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 #skillList {
 	text-align: center;
@@ -377,7 +383,7 @@ div:hover {
 }
 #head1:hover {
 	color: #FFDF00;
-	cursor: text;
+	cursor: default;
 }
 #head2 {
 	font-size: 24px;
@@ -385,7 +391,7 @@ div:hover {
 }
 #head2:hover {
 	color: #FFDF00;
-	cursor: text;
+	cursor: default;
 }
 #head3 {
 	font-size: 24px;
@@ -393,7 +399,7 @@ div:hover {
 }
 #head3:hover {
 	color: #FFDF00;
-	cursor: text;
+	cursor: default;
 }
 #head4 {
 	font-size: 24px;
@@ -401,7 +407,7 @@ div:hover {
 }
 #head4:hover {
 	color: #FFDF00;
-	cursor: text;
+	cursor: default;
 }
 #dev_skip {
 	color: red;
