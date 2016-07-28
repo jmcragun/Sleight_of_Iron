@@ -405,7 +405,6 @@ $(document).ready(function () {
 					localStorage.setItem("alchemy", 1);
 					localStorage.setItem("engineering", 1);	
 					localStorage.setItem("tactics", 1);
-					localStorage.setItem("mapping", 1);
 					localStorage.setItem("tracking", 1);
 					localStorage.setItem("looter", 1);
 					localStorage.setItem("barter", 1);
