@@ -406,7 +406,6 @@ $(document).ready(function () {
 					localStorage.setItem("alchemy", 1);
 					localStorage.setItem("engineering", 1);	
 					localStorage.setItem("tactics", 1);
-					localStorage.setItem("mapping", 1);
 					localStorage.setItem("tracking", 1);
 					localStorage.setItem("looter", 1);
 					localStorage.setItem("barter", 1);
@@ -771,8 +770,8 @@ $(document).ready(function () {
 				if (attrRemain >= 1){
 					attrRemain--;
 					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-					mysCount++;
-					$("#mysCount").html(mysCount);
+					perCount++;
+					$("#perCount").html(perCount);
 				}
 				break;
 			case "incLuc": 
@@ -789,207 +788,221 @@ $(document).ready(function () {
 		$(".next").fadeOut(500);
 		switch (this.id) {
 			case "decStr": 
+				switch (localStorage.Race) {
+					case "Elf": 
+						if (strCount >= 1) {
+							attrRemain++;
+							$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+							strCount--;
+							$("#strCount").html(strCount);
+						}
+						break;
+					case "Dwarf":
+						if (strCount >= 3) {
+							attrRemain++;
+							$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+							strCount--;
+							$("#strCount").html(strCount);
+						}
+						break;
+					case "Orc":
+						if (strCount >= 4) {
+							attrRemain++;
+							$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+							strCount--;
+							$("#strCount").html(strCount);
+						}
+						break;
+					default:
+						if (strCount >= 2) {
+							attrRemain++;
+							$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+							strCount--;
+							$("#strCount").html(strCount);
+						}
+						break;
+				}
+				break;
 			case "decAgl":
+				switch (localStorage.Race) {
+					case "Dwarf":
+						if (agiCount >= 1) {
+							attrRemain++;
+							$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+							agiCount--;
+							$("#agiCount").html(agiCount);
+						}
+						break;
+					default:
+						if (agiCount >= 2) {
+							attrRemain++;
+							$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+							agiCount--;
+							$("#agiCount").html(agiCount);
+						}
+						break;
+				}
+				break;
 			case "decDex":
+				switch (localStorage.Race) {
+					case "Elf": 
+						if (dexCount >= 3) {
+							attrRemain++;
+							$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+							dexCount--;
+							$("#dexCount").html(dexCount);
+						}
+						break;
+					default:
+						if (dexCount >= 2) {
+							attrRemain++;
+							$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+							dexCount--;
+							$("#dexCount").html(dexCount);
+						}
+						break;
+				}
+				break;
 			case "decEnd":
+				switch (localStorage.Race) {
+					case "Elf":
+						if (endCount >= 1) {
+							attrRemain++;
+							$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+							endCount--;
+							$("#endCount").html(endCount);
+						}
+						break;
+					case "Orc":
+						if (endCount >= 3) {
+							attrRemain++;
+							$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+							endCount--;
+							$("#endCount").html(endCount);
+						}
+						break;
+					default:
+						if (endCount >= 2){
+							attrRemain++;
+							$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+							endCount--;
+							$("#endCount").html(endCount);
+						}
+						break;
+				}
+				break;
 			case "decInt":
+				switch (localStorage.Race) {
+					case "Dwarf":
+						if (intCount >= 3) {
+							attrRemain++;
+							$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+							intCount--;
+							$("#intCount").html(intCount);
+						}
+						break;
+					case "Orc":
+						if (intCount >= 1) {
+							attrRemain++;
+							$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+							intCount--;
+							$("#intCount").html(intCount);
+						}
+						break;
+					default:
+						if (intCount >= 2){
+							attrRemain++;
+							$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+							intCount--;
+							$("#intCount").html(intCount);
+						}
+						break;
+				}
+				break;
 			case "decWis":
+				switch (localStorage.Race) {
+					case "Orc":
+						if (wisCount >= 1) {
+							attrRemain++;
+							$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+							wisCount--;
+							$("#wisCount").html(wisCount);
+						}
+						break;
+					default:
+						if (wisCount >= 2){
+							attrRemain++;
+							$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+							wisCount--;
+							$("#wisCount").html(wisCount);
+						}
+						break;
+				}
+				break;
 			case "decFat":
+				if (fatCount >= 2){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					fatCount--;
+					$("#fatCount").html(fatCount);
+				}
+				break;
 			case "decMys":
+				switch (localStorage.Race) {
+					case "Elf":
+						if (mysCount >= 3) {
+						attrRemain++;
+						$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+						mysCount--;
+						$("#mysCount").html(mysCount);
+					}
+						break;
+					case "Dwarf":
+						if (mysCount >= 1) {
+							attrRemain++;
+							$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+							mysCount--;
+							$("#mysCount").html(mysCount);
+						}
+						break;
+					default:
+						if (mysCount >= 2){
+							attrRemain++;
+							$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+							mysCount--;
+							$("#mysCount").html(mysCount);
+						}
+						break;
+				}
+				break;
 			case "decPer":
+				if (perCount >= 2){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					perCount--;
+					$("#perCount").html(perCount);
+				}
+				break;
 			case "decLuc":
-		}
-	});
-	$("#decStr").click(function () {
-		if (localStorage.Race == "Dwarf"){
-			if (strCount >= 3) {
-				attrRemain++;
-				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-				strCount--;
-				$("#strCount").html(strCount);
-			}
-		}
-		else if (localStorage.Race == "Orc") {
-			if (strCount >= 4) {
-				attrRemain++;
-				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-				strCount--;
-				$("#strCount").html(strCount);
-			}
-		}
-		else if (localStorage.Race == "Elf") {
-			if (strCount >= 1) {
-				attrRemain++;
-				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-				strCount--;
-				$("#strCount").html(strCount);
-			}
-		}
-		else if (strCount >= 2) {
-			attrRemain++;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-			strCount--;
-			$("#strCount").html(strCount);
-		}
-	});
-	$("#decAgl").click(function () {
-		if (localStorage.Race == "Elf"){
-			if (agiCount >= 3) {
-				attrRemain++;
-				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-				agiCount--;
-				$("#agiCount").html(agiCount);
-			}
-		}
-		else if (localStorage.Race == "Dwarf"){
-			if (agiCount >= 1) {
-				attrRemain++;
-				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-				agiCount--;
-				$("#agiCount").html(agiCount);
-			}
-		}
-		else if (agiCount >= 2) {
-			attrRemain++;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-			agiCount--;
-			$("#agiCount").html(agiCount);
-		}
-	});
-	$("#decDex").click(function () {
-		if (localStorage.Race == "Elf"){
-			if (dexCount >= 3) {
-				attrRemain++;
-				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-				dexCount--;
-				$("#dexCount").html(dexCount);
-			}
-		}
-		else if (dexCount >= 2) {
-			attrRemain++;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-			dexCount--;
-			$("#dexCount").html(dexCount);
-		}
-	});
-	$("#decEnd").click(function () {
-		if (localStorage.Race == "Elf") {
-			if (endCount >= 1) {
-				attrRemain++;
-				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-				endCount--;
-				$("#endCount").html(endCount);
-			}
-		}
-		else if (localStorage.Race == "Orc") {
-			if (endCount >= 3) {
-				attrRemain++;
-				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-				endCount--;
-				$("#endCount").html(endCount);
-			}
-		}
-		else if (endCount >= 2){
-			attrRemain++;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-			endCount--;
-			$("#endCount").html(endCount);
-		}
-	});
-	$("#decInt").click(function () {
-		if (localStorage.Race == "Dwarf") {
-			if (intCount >= 3) {
-				attrRemain++;
-				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-				intCount--;
-				$("#intCount").html(intCount);
-			}
-		}
-		else if (localStorage.Race == "Orc") {
-			if (intCount >= 1) {
-				attrRemain++;
-				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-				intCount--;
-				$("#intCount").html(intCount);
-			}
-		}
-			else if (intCount >= 2){
-			attrRemain++;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-			intCount--;
-			$("#intCount").html(intCount);
-		}
-	});
-	$("#decWis").click(function () {
-		if (localStorage.Race == "Orc") {
-			if (wisCount >= 1) {
-				attrRemain++;
-				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-				wisCount--;
-			$("#wisCount").html(wisCount);
-			}
-		}
-		else if (wisCount >= 2){
-			attrRemain++;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-			wisCount--;
-			$("#wisCount").html(wisCount);
-		}
-	});
-	$("#decFat").click(function () {
-		if (fatCount >= 2){
-			attrRemain++;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-			fatCount--;
-			$("#fatCount").html(fatCount);
-		}
-	});
-	$("#decMys").click(function () {
-		if (localStorage.Race == "Elf") {
-			if (mysCount >= 3) {
-				attrRemain++;
-				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-				mysCount--;
-				$("#mysCount").html(mysCount);
-			}
-		}
-		else if (localStorage.Race == "Dwarf") {
-			if (mysCount >= 1) {
-				attrRemain++;
-				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-				mysCount--;
-				$("#mysCount").html(mysCount);
-			}
-		}
-		else if (mysCount >= 2){
-			attrRemain++;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-			mysCount--;
-			$("#mysCount").html(mysCount);
-		}
-	});
-	$("#decPer").click(function () {
-		if (perCount >= 2){
-			attrRemain++;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-			perCount--;
-			$("#perCount").html(perCount);
-		}
-	});
-	$("#decLuc").click(function () {
-		if (localStorage.Race == "Orc") {
-			if (lukCount >= 1) {
-				attrRemain++;
-				$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-				lukCount--;
-				$("#lukCount").html(lukCount);
-			}
-		}
-		else if (lukCount >= 2){
-			attrRemain++;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-			lukCount--;
-			$("#lukCount").html(lukCount);
+				switch (localStorage.Race) {
+					case "Orc":
+						if (lukCount >= 1) {
+							attrRemain++;
+							$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+							lukCount--;
+							$("#lukCount").html(lukCount);
+						}
+						break;
+					default:
+						if (lukCount >= 2){
+							attrRemain++;
+							$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+							lukCount--;
+							$("#lukCount").html(lukCount);
+						}
+						break;
+				}
+				break;
 		}
 	});
 	$(".incSki").click(function () {
