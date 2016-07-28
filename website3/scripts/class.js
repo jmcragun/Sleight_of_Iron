@@ -977,7 +977,82 @@ $(document).ready(function () {
 			$("#lukCount").html(lukCount);
 		}
 	});
-
+	$(".incSki").click(function () {
+		switch (this.id) {
+			case "incBla": 
+			case "incBlu":
+			case "inc1h":
+			case "inc2h":
+			case "incLA":
+			case "incHA":
+			case "incBlo":
+			case "incDod":
+			case "incBra":
+			case "incArc":
+			case "incMar":
+			case "incThro":
+			case "incFit":
+			case "incDiv":
+			case "incCov":
+			case "incPyro":
+			case "incHydro":
+			case "incAero":
+			case "incGeo":
+			case "incElec":
+			case "incArmo":
+			case "incWC":
+			case "incSurv":
+			case "incAlc":
+			case "incEng":
+			case "incTact":
+			case "incTrack":
+			case "incLoo":
+			case "incBart":
+			case "incIntim":
+			case "incPers":
+			case "incLead":
+			case "incDec":
+			case "incSte":
+		}
+	});
+	$(".decSki").click(function () {
+		switch (this.id) {
+			case "decBla":
+			case "decBlu":
+			case "dec1h":
+			case "dec2h":
+			case "decLA":
+			case "decHA":
+			case "decBlo":
+			case "decDod":
+			case "decBra":
+			case "decArc":
+			case "decMar":
+			case "decThro":
+			case "decFit":
+			case "decDiv":
+			case "decCov":
+			case "decPyro":
+			case "decHydro":
+			case "decAero":
+			case "decGeo":
+			case "decElec":
+			case "decArmo":
+			case "decWC":
+			case "decSurv":
+			case "decAlc":
+			case "decEng":
+			case "decTact":
+			case "decTrack":
+			case "decLoo":
+			case "decBart":
+			case "decIntim":
+			case "decPers":
+			case "decLead":
+			case "decDec":
+			case "decSte":
+		}
+	});
 		/*		
 
 		These will be used once the player submits their values for them
