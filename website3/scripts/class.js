@@ -22,6 +22,40 @@ var fatCount;
 var mysCount;
 var perCount;
 var lukCount;
+var blaCount;
+var bluCount;
+var onehCount;
+var twohCount;
+var laCount;
+var haCount;
+var bloCount;
+var dodCount;
+var braCount;
+var arcCount;
+var marCount;
+var throCount;
+var fitCount;
+var divCount;
+var covCount;
+var pyroCount;
+var hydroCount;
+var aeroCount;
+var geoCount;
+var elecCount;
+var armoCount;
+var wcCount;
+var survCount;
+var alcCount;
+var engCount;
+var tactCount;
+var trackCount;
+var looCount;
+var bartCount;
+var intimCount;
+var pers
+var leadCount;
+var decCount;
+var steCount;
 var sidebar_render = function() {
 	$("#healthPreview").html("Health: ");
 	$("#healthPreview").append(localStorage.Health);
@@ -280,6 +314,7 @@ var calc_luckbon = function(luck) {
 	return round(.0266667 * luck);
 }
 var expMod = undefined;
+localStorage.setItem("expMod", expMod);
 var userName = "";
 var nameAccepted = false;
 $(document).ready(function () {
