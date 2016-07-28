@@ -87,8 +87,8 @@ var calc_basic_stats = function(init, attrLvl, lvl) { /*for health, stamina, and
 var calc_attackrating = function(ari, str, lvl) {
 	return ari + round((str/lvl) + (str/1000));
 };
-var calc_defencerating = function(str, lvl, armr) {
-	return 100 * (str/lvl) + armr;
+var calc_defencerating = function(str, lvl) {
+	return 100 * (str/lvl);
 };
 var calc_luckbon = function(luck) {
 	return round(.0266667 * luck);
