@@ -701,16 +701,102 @@ $(document).ready(function () {
 		if (attrRemain == 1) {
 			$(".next").fadeIn(500);
 		} 
+		switch (this.id) {
+			case "incStr": 
+				if (attrRemain >= 1){
+					attrRemain--;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					strCount++;
+					$("#strCount").html(strCount);
+				}
+				break;
+			case "incAgl":
+				if (attrRemain >= 1){
+					attrRemain--;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					agiCount++;
+					$("#agiCount").html(agiCount);
+				}
+				break;
+			case "incDex": 
+				if (attrRemain >= 1){
+					attrRemain--;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					dexCount++;
+					$("#dexCount").html(dexCount);
+				}
+				break;
+			case "incEnd": 
+				if (attrRemain >= 1){
+					attrRemain--;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					endCount++;
+					$("#endCount").html(endCount);
+				}
+				break;
+			case "incInt": 
+				if (attrRemain >= 1){
+					attrRemain--;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					intCount++;
+					$("#intCount").html(intCount);
+				}
+				break;
+			case "incWis": 
+				if (attrRemain >= 1){
+					attrRemain--;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					wisCount++;
+					$("#wisCount").html(wisCount);
+				}
+				break;
+			case "incFat": 
+				if (attrRemain >= 1){
+					attrRemain--;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					fatCount++;
+					$("#fatCount").html(fatCount);
+				}
+				break;
+			case "incMys": 
+				if (attrRemain >= 1){
+					attrRemain--;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					mysCount++;
+					$("#mysCount").html(mysCount);
+				}
+				break;
+			case "incPer": 
+				if (attrRemain >= 1){
+					attrRemain--;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					mysCount++;
+					$("#mysCount").html(mysCount);
+				}
+				break;
+			case "incLuc": 
+				if (attrRemain >= 1){
+					attrRemain--;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					lukCount++;
+					$("#lukCount").html(lukCount);
+				}
+				break;
+		}
 	});
 	$(".decAtt").click(function () {
 		$(".next").fadeOut(500);
-	});
-	$("#incStr").click(function () {
-		if (attrRemain >= 1){
-			attrRemain--;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-			strCount++;
-			$("#strCount").html(strCount);
+		switch (this.id) {
+			case "decStr": 
+			case "decAgl":
+			case "decDex":
+			case "decEnd":
+			case "decInt":
+			case "decWis":
+			case "decFat":
+			case "decMys":
+			case "decPer":
+			case "decLuc":
 		}
 	});
 	$("#decStr").click(function () {
@@ -745,14 +831,6 @@ $(document).ready(function () {
 			$("#strCount").html(strCount);
 		}
 	});
-	$("#incAgl").click(function () {
-		if (attrRemain >= 1){
-			attrRemain--;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-			agiCount++;
-			$("#agiCount").html(agiCount);
-		}
-	});
 	$("#decAgl").click(function () {
 		if (localStorage.Race == "Elf"){
 			if (agiCount >= 3) {
@@ -777,14 +855,6 @@ $(document).ready(function () {
 			$("#agiCount").html(agiCount);
 		}
 	});
-	$("#incDex").click(function () {
-		if (attrRemain >= 1){
-			attrRemain--;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-			dexCount++;
-			$("#dexCount").html(dexCount);
-		}
-	});
 	$("#decDex").click(function () {
 		if (localStorage.Race == "Elf"){
 			if (dexCount >= 3) {
@@ -799,14 +869,6 @@ $(document).ready(function () {
 			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			dexCount--;
 			$("#dexCount").html(dexCount);
-		}
-	});
-	$("#incEnd").click(function () {
-		if (attrRemain >= 1){
-			attrRemain--;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-			endCount++;
-			$("#endCount").html(endCount);
 		}
 	});
 	$("#decEnd").click(function () {
@@ -833,14 +895,6 @@ $(document).ready(function () {
 			$("#endCount").html(endCount);
 		}
 	});
-	$("#incInt").click(function () {
-		if (attrRemain >= 1){
-			attrRemain--;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-			intCount++;
-			$("#intCount").html(intCount);
-		}
-	});
 	$("#decInt").click(function () {
 		if (localStorage.Race == "Dwarf") {
 			if (intCount >= 3) {
@@ -865,14 +919,6 @@ $(document).ready(function () {
 			$("#intCount").html(intCount);
 		}
 	});
-	$("#incWis").click(function () {
-		if (attrRemain >= 1){
-			attrRemain--;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-			wisCount++;
-			$("#wisCount").html(wisCount);
-		}
-	});
 	$("#decWis").click(function () {
 		if (localStorage.Race == "Orc") {
 			if (wisCount >= 1) {
@@ -889,28 +935,12 @@ $(document).ready(function () {
 			$("#wisCount").html(wisCount);
 		}
 	});
-	$("#incFat").click(function () {
-		if (attrRemain >= 1){
-			attrRemain--;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-			fatCount++;
-			$("#fatCount").html(fatCount);
-		}
-	});
 	$("#decFat").click(function () {
 		if (fatCount >= 2){
 			attrRemain++;
 			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			fatCount--;
 			$("#fatCount").html(fatCount);
-		}
-	});
-	$("#incMys").click(function () {
-		if (attrRemain >= 1){
-			attrRemain--;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-			mysCount++;
-			$("#mysCount").html(mysCount);
 		}
 	});
 	$("#decMys").click(function () {
@@ -937,28 +967,12 @@ $(document).ready(function () {
 			$("#mysCount").html(mysCount);
 		}
 	});
-	$("#incPer").click(function () {
-		if (attrRemain >= 1){
-			attrRemain--;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-			perCount++;
-			$("#perCount").html(perCount);
-		}
-	});
 	$("#decPer").click(function () {
 		if (perCount >= 2){
 			attrRemain++;
 			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
 			perCount--;
 			$("#perCount").html(perCount);
-		}
-	});
-	$("#incLuc").click(function () {
-		if (attrRemain >= 1){
-			attrRemain--;
-			$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
-			lukCount++;
-			$("#lukCount").html(lukCount);
 		}
 	});
 	$("#decLuc").click(function () {
