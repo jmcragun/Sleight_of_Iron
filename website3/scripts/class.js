@@ -93,6 +93,7 @@ var calc_defencerating = function(str, lvl) {
 var calc_luckbon = function(luck) {
 	return round(.0266667 * luck);
 }
+var expMod = undefined;
 var userName = "";
 var nameAccepted = false;
 $(document).ready(function () {
@@ -311,6 +312,12 @@ $(document).ready(function () {
 			localStorage.Health = 50;
 			localStorage.Mana = 50;
 			localStorage.Stamina = 50;
+			expMod = {
+				Physical: 5,
+				Mystical: 5,
+				Intellectual: 5,
+				Other: 5,
+			};
 			sidebar_render();			
 			strCount = 1;
 			agiCount = 1;
@@ -349,6 +356,12 @@ $(document).ready(function () {
 			localStorage.Health = 40;
 			localStorage.Mana = 75;
 			localStorage.Stamina = 40;
+			expMod = {
+				Physical: 0,
+				Mystical: 15,
+				Intellectual: 5,
+				Other: 0,
+			};
 			sidebar_render();				
 			strCount = 0;
 			agiCount = 1;
@@ -387,6 +400,12 @@ $(document).ready(function () {
 			localStorage.Health = 60;
 			localStorage.Mana = 35;
 			localStorage.Stamina = 60;
+			expMod = {
+				Physical: 10,
+				Mystical: 0,
+				Intellectual: 10,
+				Other: 0,
+			};
 			sidebar_render();		
 			strCount = 2;
 			agiCount = 0;
@@ -426,6 +445,12 @@ $(document).ready(function () {
 			localStorage.Health = 75;
 			localStorage.Mana = 15;
 			localStorage.Stamina = 60;
+			expMod = {
+				Physical: 20,
+				Mystical: 0,
+				Intellectual: 0,
+				Other: 0,
+			};
 			sidebar_render();
 			strCount = 3;
 			agiCount = 1;
