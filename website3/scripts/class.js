@@ -82,7 +82,7 @@ var save_Skills = function() {
 	//same configuration as above//
 };
 var calc_basic_stats = function(init, attrLvl, lvl) { /*for health, stamina, and mana */
-	return init + round(attrLvl/lvl) + 10;
+	return init + 10 * round(attrLvl/lvl) + 10;
 };
 var calc_attackrating = function(ari, str, lvl) {
 	return ari + round((str/lvl) + (str/1000));
