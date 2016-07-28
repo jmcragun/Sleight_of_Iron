@@ -81,6 +81,18 @@ var save_Attributes = function() {
 var save_Skills = function() {
 	//same configuration as above//
 };
+var calc_basic_stats = function(init, attrLvl, lvl) { /*for health, stamina, and mana */
+	return init + round(attrLvl/lvl) + 10;
+};
+var calc_attackrating = function(ari, str, lvl) {
+	return ari + round((str/lvl) + (str/1000));
+};
+var calc_defencerating = function(str, lvl, armr) {
+	return 100 * (str/lvl) + armr;
+};
+var calc_luckbon = function(luck) {
+	return round(.0266667 * luck);
+}
 var userName = "";
 var nameAccepted = false;
 $(document).ready(function () {
@@ -190,7 +202,7 @@ $(document).ready(function () {
 					localStorage.setItem("Skill_points", 1);
 					localStorage.setItem("Main_hand", undefined);
 					localStorage.setItem("Off_hand", undefined);
-					localStorage.setItem("Gold", 1);	
+					localStorage.setItem("Gold",0);	
 					$("#greeting").fadeOut(1000);
 					$("#whatsYourName").fadeOut(1000);
 					var statement1 = "<p class=\"funText\">Well then " + userName + ", a world in turmoil rests at your feet. Will you save it, or shall you destroy it?</p>";
