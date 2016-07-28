@@ -268,7 +268,7 @@ var fade_in_ski_page = function() {
 	$("#stealthPreview").delay(1000).fadeIn(500);
 };
 var calc_basic_stats = function(init, attrLvl, lvl) { /*for health, stamina, and mana */
-	return init + round(attrLvl/lvl) + 10;
+	return init + 10 * round(attrLvl/lvl) + 10;
 };
 var calc_attackrating = function(ari, str, lvl) {
 	return ari + round((str/lvl) + (str/1000));
