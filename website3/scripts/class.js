@@ -1318,39 +1318,311 @@ $(document).ready(function () {
 	$(".decSki").click(function () {
 		switch (this.id) {
 			case "decBla":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					blaCount--;
+					$("#bladePreview").html("Blade: ");
+					$("#bladePreview").append(blaCount);
+				}
+				break;
 			case "decBlu":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					bluCount--;
+					$("#bluntPreview").html("Blunt: ");
+					$("#bluntPreview").append(bluCount);
+				}
+				break;
 			case "dec1h":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					onehCount--;
+					$("#one_handedPreview").html("One Handed: ");
+					$("#one_handedPreview").append(onehCount);
+				}
+				break;
 			case "dec2h":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					twohCount--;
+					$("#two_handedPreview").html("Two Handed: ");
+					$("#two_handedPreview").append(twohCount);
+				}
+				break;
 			case "decLA":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					laCount--;
+					$("#light_armorPreview").html("Light Armor: ");
+					$("#light_armorPreview").append(laCount);
+				}
+				break;
 			case "decHA":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					haCount--;
+					$("#heavy_armorPreview").html("Heavy Armor: ");
+					$("#heavy_armorPreview").append(haCount);
+				}
+				break;
 			case "decBlo":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					bloCount--;
+					$("#blockPreview").html("Block: ");
+					$("#blockPreview").append(bloCount);
+				}
+				break;
 			case "decDod":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					dodCount--;
+					$("#dodgePreview").html("Dodge: ");
+					$("#dodgePreview").append(dodCount);
+				}
+				break;
 			case "decBra":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					braCount--;
+					$("#brawlerPreview").html("Brawler: ");
+					$("#brawlerPreview").append(braCount);
+				}
+				break;
 			case "decArc":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					arcCount--;
+					$("#archeryPreview").html("Archery: ");
+					$("#archeryPreview").append(arcCount);
+				}
+				break;
 			case "decMar":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					marCount--;
+					$("#marksmanPreview").html("Marksman: ");
+					$("#marksmanPreview").append(marCount);
+				}
+				break;
 			case "decThro":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					throCount--;
+					$("#throwingPreview").html("Throwing: ");
+					$("#throwingPreview").append(throCount);
+				}
+				break;
 			case "decFit":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					fitCount--;
+					$("#fitnessPreview").html("Fitness: ");
+					$("#fitnessPreview").append(fitCount);
+				}
+				break;
 			case "decDiv":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					divCount--;
+					$("#divinationPreview").html("Divination: ");
+					$("#divinationPreview").append(divCount);
+				}
+				break;
 			case "decCov":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					covCount--;
+					$("#covenantPreview").html("Covenant: ");
+					$("#covenantPreview").append(covCount);
+				}
+				break;
 			case "decPyro":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					pyroCount--;
+					$("#pyromancyPreview").html("Pyromancy: ");
+					$("#pyromancyPreview").append(pyroCount);
+				}
+				break;
 			case "decHydro":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					hydroCount--;
+					$("#hydromancyPreview").html("Hydromancy: ");
+					$("#hydromancyPreview").append(hydroCount);
+				}
+				break;
 			case "decAero":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					aeroCount--;
+					$("#aeromancyPreview").html("Aeromancy: ");
+					$("#aeromancyPreview").append(aeroCount);
+				}
+				break;
 			case "decGeo":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					geoCount--;
+					$("#geomancyPreview").html("Geomancy: ");
+					$("#geomancyPreview").append(geoCount);
+				}
+				break;
 			case "decElec":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					elecCount--;
+					$("#electromancyPreview").html("Electromancy: ");
+					$("#electromancyPreview").append(elecCount);
+				}
+				break;
 			case "decArmo":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					armoCount--;
+					$("#armorerPreview").html("Armorer: ");
+					$("#armorerPreview").append(armoCount);
+				}
+				break;
 			case "decWC":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					wcCount--;
+					$("#weapon_crafterPreview").html("Weapon Crafter: ");
+					$("#weapon_crafterPreview").append(wcCount);
+				}
+				break;
 			case "decSurv":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					survCount--;
+					$("#survivalPreview").html("Survival: ");
+					$("#survivalPreview").append(survCount);
+				}
+				break;
 			case "decAlc":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					alcCount--;
+					$("#alchemyPreview").html("Alchemy: ");
+					$("#alchemyPreview").append(alcCount);
+				}
+				break;
 			case "decEng":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					engCount--;
+					$("#engineeringPreview").html("Engineering: ");
+					$("#engineeringPreview").append(engCount);
+				}
+				break;
 			case "decTact":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					tactCount--;
+					$("#tacticsPreview").html("Tactics: ");
+					$("#tacticsPreview").append(tactCount);
+				}
+				break;
 			case "decTrack":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					trackCount--;
+					$("#trackingPreview").html("Tracking: ");
+					$("#trackingPreview").append(trackCount);
+				}
+				break;
 			case "decLoo":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					looCount--;
+					$("#looterPreview").html("Looter: ");
+					$("#looterPreview").append(looCount);
+				}
+				break;
 			case "decBart":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					bartCount--;
+					$("#barterPreview").html("Barter: ");
+					$("#barterPreview").append(bartCount);
+				}
+				break;
 			case "decIntim":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					intimCount--;
+					$("#intimidationPreview").html("Intimidation: ");
+					$("#intimidationPreview").append(intimCount);
+				}
+				break;
 			case "decPers":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					persCount--;
+					$("#persuasionPreview").html("Persuasion: ");
+					$("#persuasionPreview").append(persCount);
+				}
+				break;
 			case "decLead":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					leadCount--;
+					$("#leadershipPreview").html("Leadership: ");
+					$("#leadershipPreview").append(leadCount);
+				}
+				break;
 			case "decDec":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					decCount--;
+					$("#deceptionPreview").html("Deception: ");
+					$("#deceptionPreview").append(decCount);
+				}
+				break;
 			case "decSte":
+				if (attrRemain >= 1){
+					attrRemain++;
+					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+					steCount--;
+					$("#stealthPreview").html("Stealth: ");
+					$("#stealthPreview").append(steCount);
+				}
+				break;
 		}
 	});
 		/*		
