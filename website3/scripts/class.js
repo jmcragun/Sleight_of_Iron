@@ -334,6 +334,10 @@ $(document).ready(function () {
 		localStorage.setItem("User_Name", userName);
 		$("#userNamePreview").html("Name: ");
 		$("#userNamePreview").append(localStorage.User_Name);
+		localStorage.setItem("User_Name", userName);
+		localStorage.setItem("Health", 69);
+		localStorage.setItem("Stamina", 69);
+		localStorage.setItem("Mana", 69);
 		localStorage.setItem("Race", "Weeaboo");
 		switchtoSki();
 		$("#greeting").hide();
