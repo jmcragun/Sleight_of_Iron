@@ -324,9 +324,25 @@ $(document).ready(function () {
         var bool = $("#music").prop("muted");
         $("#music").prop("muted",!bool);
 	});
+	///////////////////////////////////
+	//////////DEVELOPER SKIP///////////
+	//vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 	$("#dev_skip").click(function () {
+		var bool = $("#music").prop("muted");
+        $("#music").prop("muted",!bool);
+		userName = "SKIPPED TO SKILLS";
+		localStorage.setItem("User_Name", userName);
+		$("#userNamePreview").html("Name: ");
+		$("#userNamePreview").append(localStorage.User_Name);
 		switchtoSki();
+		$("#greeting").hide();
+		$("#preview").delay(500).fadeIn(500);
+		sidebar_render();
+		sidebar_render_2();
 	});	
+	//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+	//////////DEVELOPER SKIP///////////
+	///////////////////////////////////
 	$("#preview").hide();
 	$(function() {
 		$("form").submit(function() { return false; });
@@ -496,7 +512,7 @@ $(document).ready(function () {
 		if ($(this).hasClass("inactive")) {
 			$(this).removeClass("inactive");
 		}
-		$(this).not("#head1").toggleClass("active");
+		$(this).not("#head1").addClass("active");
 		$(this).siblings().removeClass("active").addClass("inactive");
 		$(this).parent().siblings().children().removeClass("active").addClass("inactive");
 	});
@@ -504,7 +520,7 @@ $(document).ready(function () {
 		if ($(this).hasClass("inactive")) {
 			$(this).removeClass("inactive");
 		}
-		$(this).not("#head2").toggleClass("active");
+		$(this).not("#head2").addClass("active");
 		$(this).siblings().removeClass("active").addClass("inactive");
 		$(this).parent().siblings().children().removeClass("active").addClass("inactive");
 	});
@@ -512,7 +528,7 @@ $(document).ready(function () {
 		if ($(this).hasClass("inactive")) {
 			$(this).removeClass("inactive");
 		}
-		$(this).not("#head3").toggleClass("active");
+		$(this).not("#head3").addClass("active");
 		$(this).siblings().removeClass("active").addClass("inactive");
 		$(this).parent().siblings().children().removeClass("active").addClass("inactive");
 	});
@@ -520,7 +536,7 @@ $(document).ready(function () {
 		if ($(this).hasClass("inactive")) {
 			$(this).removeClass("inactive");
 		}
-		$(this).not("#head4").toggleClass("active");
+		$(this).not("#head4").addClass("active");
 		$(this).siblings().removeClass("active").addClass("inactive");
 		$(this).parent().siblings().children().removeClass("active").addClass("inactive");
 	});
@@ -1627,7 +1643,7 @@ $(document).ready(function () {
 	});
 		/*		
 
-		These will be used once the player submits their values for them
+		These are currently being used as a reference point...
 		
 		$("#bladePreview").html("Blade: ");
 		$("#bladePreview").append(localStorage.blade);
