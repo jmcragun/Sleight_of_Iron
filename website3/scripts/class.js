@@ -23,40 +23,41 @@ var mysCount;
 var perCount;
 var lukCount;
 
-var blaCount;
-var bluCount;
-var onehCount;
-var twohCount;
-var laCount;
-var haCount;
-var bloCount;
-var dodCount;
-var braCount;
-var arcCount;
-var marCount;
-var throCount;
-var fitCount;
-var divCount;
-var covCount;
-var pyroCount;
-var hydroCount;
-var aeroCount;
-var geoCount;
-var elecCount;
-var armoCount;
-var wcCount;
-var survCount;
-var alcCount;
-var engCount;
-var tactCount;
-var trackCount;
-var looCount;
-var bartCount;
-var intimCount;
+var blaCount = 1;
+var bluCount = 1;
+var onehCount = 1;
+var twohCount = 1;
+var laCount = 1;
+var haCount = 1;
+var bloCount = 1;
+var dodCount = 1;
+var braCount = 1;
+var arcCount = 1;
+var marCount = 1;
+var throCount = 1;
+var fitCount = 1;
+var divCount = 1;
+var covCount = 1;
+var pyroCount = 1;
+var hydroCount = 1;
+var aeroCount = 1;
+var geoCount = 1;
+var elecCount = 1;
+var armoCount = 1;
+var wcCount = 1;
+var survCount = 1;
+var alcCount = 1;
+var engCount = 1;
+var tactCount = 1;
+var trackCount = 1;
+var looCount = 1;
+var bartCount = 1;
+var intimCount = 1;
 var pers
-var leadCount;
-var decCount;
-var steCount;
+var leadCount = 1;
+var decCount = 1;
+var steCount = 1;
+
 var sidebar_render = function() {
 	$("#healthPreview").html("Health: ");
 	$("#healthPreview").append(localStorage.Health);
@@ -1029,306 +1030,306 @@ $(document).ready(function () {
 	$(".incSki").click(function () {
 		switch (this.id) {
 			case "incBla":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					blaCount++;
 					$("#bladePreview").html("Blade: ");
 					$("#bladePreview").append(blaCount);
 				}
 				break;
 			case "incBlu":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					bluCount++;
 					$("#bluntPreview").html("Blunt: ");
 					$("#bluntPreview").append(bluCount);
 				}
 				break;
 			case "inc1h":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					onehCount++;
 					$("#one_handedPreview").html("One Handed: ");
 					$("#one_handedPreview").append(onehCount);
 				}
 				break;
 			case "inc2h":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					twohCount++;
 					$("#two_handedPreview").html("Two Handed: ");
 					$("#two_handedPreview").append(twohCount);
 				}
 				break;
 			case "incLA":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					laCount++;
 					$("#light_armorPreview").html("Light Armor: ");
 					$("#light_armorPreview").append(laCount);
 				}
 				break;
 			case "incHA":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					haCount++;
 					$("#heavy_armorPreview").html("Heavy Armor: ");
 					$("#heavy_armorPreview").append(haCount);
 				}
 				break;
 			case "incBlo":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					bloCount++;
 					$("#blockPreview").html("Block: ");
 					$("#blockPreview").append(bloCount);
 				}
 				break;
 			case "incDod":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					dodCount++;
 					$("#dodgePreview").html("Dodge: ");
 					$("#dodgePreview").append(dodCount);
 				}
 				break;
 			case "incBra":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					braCount++;
 					$("#brawlerPreview").html("Brawler: ");
 					$("#brawlerPreview").append(braCount);
 				}
 				break;
 			case "incArc":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					arcCount++;
 					$("#archeryPreview").html("Archery: ");
 					$("#archeryPreview").append(arcCount);
 				}
 				break;
 			case "incMar":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					marCount++;
 					$("#marksmanPreview").html("Marksman: ");
 					$("#marksmanPreview").append(marCount);
 				}
 				break;
 			case "incThro":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					throCount++;
 					$("#throwingPreview").html("Throwing: ");
 					$("#throwingPreview").append(throCount);
 				}
 				break;
 			case "incFit":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					fitCount++;
 					$("#fitnessPreview").html("Fitness: ");
 					$("#fitnessPreview").append(fitCount);
 				}
 				break;
 			case "incDiv":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					divCount++;
 					$("#divinationPreview").html("Divination: ");
 					$("#divinationPreview").append(divCount);
 				}
 				break;
 			case "incCov":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					covCount++;
 					$("#covenantPreview").html("Covenant: ");
 					$("#covenantPreview").append(covCount);
 				}
 				break;
 			case "incPyro":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					pyroCount++;
 					$("#pyromancyPreview").html("Pyromancy: ");
 					$("#pyromancyPreview").append(pyroCount);
 				}
 				break;
 			case "incHydro":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					hydroCount++;
 					$("#hydromancyPreview").html("Hydromancy: ");
 					$("#hydromancyPreview").append(hydroCount);
 				}
 				break;
 			case "incAero":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					aeroCount++;
 					$("#aeromancyPreview").html("Aeromancy: ");
 					$("#aeromancyPreview").append(aeroCount);
 				}
 				break;
 			case "incGeo":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					geoCount++;
 					$("#geomancyPreview").html("Geomancy: ");
 					$("#geomancyPreview").append(geoCount);
 				}
 				break;
 			case "incElec":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					elecCount++;
 					$("#electromancyPreview").html("Electromancy: ");
 					$("#electromancyPreview").append(elecCount);
 				}
 				break;
 			case "incArmo":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					armoCount++;
 					$("#armorerPreview").html("Armorer: ");
 					$("#armorerPreview").append(armoCount);
 				}
 				break;
 			case "incWC":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					wcCount++;
 					$("#weapon_crafterPreview").html("Weapon Crafter: ");
 					$("#weapon_crafterPreview").append(wcCount);
 				}
 				break;
 			case "incSurv":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					survCount++;
 					$("#survivalPreview").html("Survival: ");
 					$("#survivalPreview").append(survCount);
 				}
 				break;
 			case "incAlc":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					alcCount++;
 					$("#alchemyPreview").html("Alchemy: ");
 					$("#alchemyPreview").append(alcCount);
 				}
 				break;
 			case "incEng":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					engCount++;
 					$("#engineeringPreview").html("Engineering: ");
 					$("#engineeringPreview").append(engCount);
 				}
 				break;
 			case "incTact":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					tactCount++;
 					$("#tacticsPreview").html("Tactics: ");
 					$("#tacticsPreview").append(tactCount);
 				}
 				break;
 			case "incTrack":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					trackCount++;
 					$("#trackingPreview").html("Tracking: ");
 					$("#trackingPreview").append(trackCount);
 				}
 				break;
 			case "incLoo":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					looCount++;
 					$("#looterPreview").html("Looter: ");
 					$("#looterPreview").append(looCount);
 				}
 				break;
 			case "incBart":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					bartCount++;
 					$("#barterPreview").html("Barter: ");
 					$("#barterPreview").append(bartCount);
 				}
 				break;
 			case "incIntim":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					intimCount++;
 					$("#intimidationPreview").html("Intimidation: ");
 					$("#intimidationPreview").append(intimCount);
 				}
 				break;
 			case "incPers":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					persCount++;
 					$("#persuasionPreview").html("Persuasion: ");
 					$("#persuasionPreview").append(persCount);
 				}
 				break;
 			case "incLead":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					leadCount++;
 					$("#leadershipPreview").html("Leadership: ");
 					$("#leadershipPreview").append(leadCount);
 				}
 				break;
 			case "incDec":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					decCount++;
 					$("#deceptionPreview").html("Deception: ");
 					$("#deceptionPreview").append(decCount);
 				}
 				break;
 			case "incSte":
-				if (attrRemain >= 1){
-					attrRemain--;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain--;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					steCount++;
 					$("#stealthPreview").html("Stealth: ");
 					$("#stealthPreview").append(steCount);
@@ -1339,306 +1340,306 @@ $(document).ready(function () {
 	$(".decSki").click(function () {
 		switch (this.id) {
 			case "decBla":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					blaCount--;
 					$("#bladePreview").html("Blade: ");
 					$("#bladePreview").append(blaCount);
 				}
 				break;
 			case "decBlu":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					bluCount--;
 					$("#bluntPreview").html("Blunt: ");
 					$("#bluntPreview").append(bluCount);
 				}
 				break;
 			case "dec1h":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					onehCount--;
 					$("#one_handedPreview").html("One Handed: ");
 					$("#one_handedPreview").append(onehCount);
 				}
 				break;
 			case "dec2h":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					twohCount--;
 					$("#two_handedPreview").html("Two Handed: ");
 					$("#two_handedPreview").append(twohCount);
 				}
 				break;
 			case "decLA":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					laCount--;
 					$("#light_armorPreview").html("Light Armor: ");
 					$("#light_armorPreview").append(laCount);
 				}
 				break;
 			case "decHA":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					haCount--;
 					$("#heavy_armorPreview").html("Heavy Armor: ");
 					$("#heavy_armorPreview").append(haCount);
 				}
 				break;
 			case "decBlo":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					bloCount--;
 					$("#blockPreview").html("Block: ");
 					$("#blockPreview").append(bloCount);
 				}
 				break;
 			case "decDod":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					dodCount--;
 					$("#dodgePreview").html("Dodge: ");
 					$("#dodgePreview").append(dodCount);
 				}
 				break;
 			case "decBra":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					braCount--;
 					$("#brawlerPreview").html("Brawler: ");
 					$("#brawlerPreview").append(braCount);
 				}
 				break;
 			case "decArc":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					arcCount--;
 					$("#archeryPreview").html("Archery: ");
 					$("#archeryPreview").append(arcCount);
 				}
 				break;
 			case "decMar":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					marCount--;
 					$("#marksmanPreview").html("Marksman: ");
 					$("#marksmanPreview").append(marCount);
 				}
 				break;
 			case "decThro":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					throCount--;
 					$("#throwingPreview").html("Throwing: ");
 					$("#throwingPreview").append(throCount);
 				}
 				break;
 			case "decFit":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					fitCount--;
 					$("#fitnessPreview").html("Fitness: ");
 					$("#fitnessPreview").append(fitCount);
 				}
 				break;
 			case "decDiv":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					divCount--;
 					$("#divinationPreview").html("Divination: ");
 					$("#divinationPreview").append(divCount);
 				}
 				break;
 			case "decCov":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					covCount--;
 					$("#covenantPreview").html("Covenant: ");
 					$("#covenantPreview").append(covCount);
 				}
 				break;
 			case "decPyro":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					pyroCount--;
 					$("#pyromancyPreview").html("Pyromancy: ");
 					$("#pyromancyPreview").append(pyroCount);
 				}
 				break;
 			case "decHydro":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					hydroCount--;
 					$("#hydromancyPreview").html("Hydromancy: ");
 					$("#hydromancyPreview").append(hydroCount);
 				}
 				break;
 			case "decAero":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					aeroCount--;
 					$("#aeromancyPreview").html("Aeromancy: ");
 					$("#aeromancyPreview").append(aeroCount);
 				}
 				break;
 			case "decGeo":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					geoCount--;
 					$("#geomancyPreview").html("Geomancy: ");
 					$("#geomancyPreview").append(geoCount);
 				}
 				break;
 			case "decElec":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					elecCount--;
 					$("#electromancyPreview").html("Electromancy: ");
 					$("#electromancyPreview").append(elecCount);
 				}
 				break;
 			case "decArmo":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					armoCount--;
 					$("#armorerPreview").html("Armorer: ");
 					$("#armorerPreview").append(armoCount);
 				}
 				break;
 			case "decWC":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					wcCount--;
 					$("#weapon_crafterPreview").html("Weapon Crafter: ");
 					$("#weapon_crafterPreview").append(wcCount);
 				}
 				break;
 			case "decSurv":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					survCount--;
 					$("#survivalPreview").html("Survival: ");
 					$("#survivalPreview").append(survCount);
 				}
 				break;
 			case "decAlc":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					alcCount--;
 					$("#alchemyPreview").html("Alchemy: ");
 					$("#alchemyPreview").append(alcCount);
 				}
 				break;
 			case "decEng":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					engCount--;
 					$("#engineeringPreview").html("Engineering: ");
 					$("#engineeringPreview").append(engCount);
 				}
 				break;
 			case "decTact":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					tactCount--;
 					$("#tacticsPreview").html("Tactics: ");
 					$("#tacticsPreview").append(tactCount);
 				}
 				break;
 			case "decTrack":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					trackCount--;
 					$("#trackingPreview").html("Tracking: ");
 					$("#trackingPreview").append(trackCount);
 				}
 				break;
 			case "decLoo":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					looCount--;
 					$("#looterPreview").html("Looter: ");
 					$("#looterPreview").append(looCount);
 				}
 				break;
 			case "decBart":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					bartCount--;
 					$("#barterPreview").html("Barter: ");
 					$("#barterPreview").append(bartCount);
 				}
 				break;
 			case "decIntim":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					intimCount--;
 					$("#intimidationPreview").html("Intimidation: ");
 					$("#intimidationPreview").append(intimCount);
 				}
 				break;
 			case "decPers":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					persCount--;
 					$("#persuasionPreview").html("Persuasion: ");
 					$("#persuasionPreview").append(persCount);
 				}
 				break;
 			case "decLead":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					leadCount--;
 					$("#leadershipPreview").html("Leadership: ");
 					$("#leadershipPreview").append(leadCount);
 				}
 				break;
 			case "decDec":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					decCount--;
 					$("#deceptionPreview").html("Deception: ");
 					$("#deceptionPreview").append(decCount);
 				}
 				break;
 			case "decSte":
-				if (attrRemain >= 1){
-					attrRemain++;
-					$("#totalAttrPnts").html("<p>Points remaining: </p>" + attrRemain);
+				if (skillRemain >= 1){
+					skillRemain++;
+					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					steCount--;
 					$("#stealthPreview").html("Stealth: ");
 					$("#stealthPreview").append(steCount);
