@@ -326,7 +326,7 @@ $(document).ready(function () {
 	});
 	///////////////////////////////////
 	//////////DEVELOPER SKIP///////////
-	//vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+	//vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv//
 	$("#dev_skip").click(function () {
 		var bool = $("#music").prop("muted");
         $("#music").prop("muted",!bool);
@@ -334,13 +334,14 @@ $(document).ready(function () {
 		localStorage.setItem("User_Name", userName);
 		$("#userNamePreview").html("Name: ");
 		$("#userNamePreview").append(localStorage.User_Name);
+		localStorage.setItem("Race", "Weeaboo");
 		switchtoSki();
 		$("#greeting").hide();
 		$("#preview").delay(500).fadeIn(500);
 		sidebar_render();
 		sidebar_render_2();
 	});	
-	//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+	//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
 	//////////DEVELOPER SKIP///////////
 	///////////////////////////////////
 	$("#preview").hide();
