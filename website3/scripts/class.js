@@ -1340,7 +1340,7 @@ $(document).ready(function () {
 	$(".decSki").click(function () {
 		switch (this.id) {
 			case "decBla":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && blaCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					blaCount--;
@@ -1349,7 +1349,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decBlu":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && bluCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					bluCount--;
@@ -1357,8 +1357,8 @@ $(document).ready(function () {
 					$("#bluntPreview").append(bluCount);
 				}
 				break;
-			case "dec1h":
-				if (skillRemain >= 1){
+			case "dec0h":
+				if (skillRemain >= 0 && onehCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					onehCount--;
@@ -1367,7 +1367,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "dec2h":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && twohCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					twohCount--;
@@ -1376,7 +1376,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decLA":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && laCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					laCount--;
@@ -1385,7 +1385,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decHA":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && haCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					haCount--;
@@ -1394,7 +1394,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decBlo":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && bloCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					bloCount--;
@@ -1403,7 +1403,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decDod":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && dodCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					dodCount--;
@@ -1412,7 +1412,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decBra":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && braCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					braCount--;
@@ -1421,7 +1421,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decArc":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && arcCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					arcCount--;
@@ -1430,7 +1430,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decMar":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && marCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					marCount--;
@@ -1439,7 +1439,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decThro":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && throCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					throCount--;
@@ -1448,7 +1448,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decFit":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && fitCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					fitCount--;
@@ -1457,7 +1457,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decDiv":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && divCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					divCount--;
@@ -1466,7 +1466,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decCov":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && covCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					covCount--;
@@ -1475,7 +1475,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decPyro":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && pyroCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					pyroCount--;
@@ -1484,7 +1484,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decHydro":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && hydroCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					hydroCount--;
@@ -1493,7 +1493,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decAero":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && aeroCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					aeroCount--;
@@ -1502,7 +1502,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decGeo":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && geoCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					geoCount--;
@@ -1511,7 +1511,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decElec":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && elecCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					elecCount--;
@@ -1520,7 +1520,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decArmo":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && armoCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					armoCount--;
@@ -1529,7 +1529,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decWC":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && wcCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					wcCount--;
@@ -1538,7 +1538,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decSurv":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && survCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					survCount--;
@@ -1547,7 +1547,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decAlc":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && alcCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					alcCount--;
@@ -1556,7 +1556,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decEng":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && engCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					engCount--;
@@ -1565,7 +1565,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decTact":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && tactCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					tactCount--;
@@ -1574,7 +1574,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decTrack":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && trackCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					trackCount--;
@@ -1583,7 +1583,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decLoo":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && looCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					looCount--;
@@ -1592,7 +1592,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decBart":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && bartCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					bartCount--;
@@ -1601,7 +1601,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decIntim":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && intimCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					intimCount--;
@@ -1610,7 +1610,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decPers":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && persCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					persCount--;
@@ -1619,7 +1619,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decLead":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && leadCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					leadCount--;
@@ -1628,7 +1628,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decDec":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && decCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					decCount--;
@@ -1637,7 +1637,7 @@ $(document).ready(function () {
 				}
 				break;
 			case "decSte":
-				if (skillRemain >= 1){
+				if (skillRemain >= 0 && steCount >= 1){
 					skillRemain++;
 					$("#totalSkillPnts").html("<p>Points remaining: </p>" + skillRemain);
 					steCount--;
