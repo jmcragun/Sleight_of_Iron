@@ -1,5 +1,6 @@
 CREATE TABLE Character_data_table
 (
+Char_id int,
 User_name varchar(25),
 Health int,
 Stamina int,
